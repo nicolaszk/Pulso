@@ -1,10 +1,6 @@
 # Pulso
 
-Priorização da fila de cirurgias eletivas. Projeto da 9ª Hackatona de Engenharia de Software 2026 (Fin-x, PUCRS, Hospital São Lucas), Desafio 1: Priorização Inteligente da Fila Cirúrgica.
-
 Desenvolvemos um motor de regras determinístico baseado em filas de prioridade: cada paciente cai num nível de urgência, e a cada evento clínico novo (ida ao PS, internação, laudo, biópsia) o motor reavalia esse paciente e, se for o caso, propõe que ele mude de nível. Quem decide é o médico regulador, que aprova ou rejeita cada proposta; a fila oficial só muda com o aval dele. Usamos um LLM local apenas para reescrever, em linguagem clara, os fatos que o motor já calculou, sem que ele interfira na ordem da fila.
-
-**Regra de ouro:** nenhum paciente com CID `C*` fica abaixo de um paciente sem urgência clínica. Ela vale por construção no motor e é conferida de novo no banco a cada aprovação.
 
 <!-- prints da aplicação aqui -->
 
