@@ -1,0 +1,855 @@
+import { HOJE, idadeEm, somarDias } from '../lib/datas'
+import { montarCpf } from '../lib/documentos'
+import { ORDEM_FILAS, TAMANHO_FILA, type FilaCodigo } from './fila'
+import type { Decisao, EventoClinico, Paciente, SinalIA } from './types'
+
+export const PROFISSIONAIS = ['Dra. Camila Duarte', 'Dr. Henrique Prado', 'Dra. Patrícia Lemos']
+export const REGULADOR_ATUAL = 'Dr. Rafael Mendes'
+
+const antes = (dias: number) => somarDias(HOJE, -dias)
+
+function inclusao(data: string, para: FilaCodigo, justificativa: string, profissional = PROFISSIONAIS[0]): Decisao {
+  return { data: `${data}T09:00`, profissional, de: null, para, justificativa, tipo: 'inclusao' }
+}
+
+function sinal(id: string, trecho: string, rotulo: string): SinalIA {
+  return { id, trecho, rotulo, status: 'sugerido' }
+}
+
+type Base = Omit<Paciente, 'eventos' | 'decisoes' | 'sinais' | 'idade' | 'prioridadeManual'> & {
+  idade?: number
+  prioridadeManual?: Paciente['prioridadeManual']
+  eventos?: EventoClinico[]
+  decisoes?: Decisao[]
+  sinais?: SinalIA[]
+}
+
+function paciente(b: Base): Paciente {
+  const eventos: EventoClinico[] = [
+    { data: b.dataEntrada, tipo: 'entrada' as const, descricao: `Entrada na fila para ${b.procedimento.toLowerCase()}.` },
+    ...(b.eventos ?? []),
+  ].sort((x, y) => x.data.localeCompare(y.data))
+  return {
+    ...b,
+    idade: b.idade ?? (b.nascimento ? idadeEm(b.nascimento) : 0),
+    prioridadeManual: b.prioridadeManual ?? 'media',
+    eventos,
+    sinais: b.sinais ?? [],
+    decisoes: b.decisoes ?? [inclusao(b.dataEntrada, b.fila, 'Classificação inicial na inclusão da solicitação.')],
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Pacientes acompanhados de perto pela regulação                      */
+/* ------------------------------------------------------------------ */
+
+const acompanhados: Paciente[] = [
+  paciente({
+    id: 'SOL-2026-00412',
+    pacienteId: 'PAC-00512',
+    nome: 'Maria Oliveira',
+    sexo: 'F',
+    nascimento: '1974-03-14',
+    cpf: '52998224725',
+    cns: '898001234567891',
+    municipio: 'Porto Alegre',
+    procedimento: 'Colecistectomia videolaparoscópica',
+    especialidade: 'Cirurgia Geral',
+    cid: 'K80.1',
+    cidDescricao: 'Calculose da vesícula biliar com colecistite',
+    fila: 'G6',
+    prioridadeManual: 'baixa',
+    dataEntrada: '2026-05-12',
+    gravidade: 30,
+    risco: 8,
+    motivo: 'Colecistite com atendimento no pronto-socorro',
+    eventos: [
+      { data: '2026-07-21', tipo: 'consulta', descricao: 'Consulta ambulatorial de cirurgia geral. Mantém indicação cirúrgica.' },
+      { data: '2026-10-03', tipo: 'pronto-socorro', descricao: 'Pronto-socorro: dor em hipocôndrio direito, febre e vômitos. Colecistite aguda tratada clinicamente.', piora: true },
+      { data: '2026-10-04', tipo: 'contato', descricao: 'Contato telefônico: relata piora da dor e intolerância alimentar.', piora: true },
+    ],
+    justificativa:
+      'Paciente com colelitíase sintomática e episódios recorrentes de cólica biliar. Em 03/10/2026, atendida no pronto-socorro com dor em hipocôndrio direito, febre e vômitos; ultrassonografia sugestiva de colecistite aguda, tratada clinicamente. Relata piora da dor nas últimas semanas, com intolerância alimentar. Indico colecistectomia videolaparoscópica.',
+    sinais: [
+      sinal('mo-1', 'febre e vômitos', 'Sinal de agudização'),
+      sinal('mo-2', 'colecistite aguda', 'Complicação documentada'),
+      sinal('mo-3', 'piora da dor nas últimas semanas', 'Piora relatada'),
+    ],
+    decisoes: [inclusao('2026-05-12', 'G6', 'Colelitíase sintomática, sem complicações na inclusão.')],
+  }),
+  paciente({
+    id: 'SOL-2022-00002',
+    pacienteId: 'PAC-00685',
+    nome: 'Antônio Ferreira',
+    sexo: 'M',
+    nascimento: '1951-09-30',
+    cpf: montarCpf('204331578'),
+    municipio: 'Canoas',
+    procedimento: 'Exérese de tumor de pele',
+    especialidade: 'Cirurgia Plástica',
+    cid: 'C44.3',
+    cidDescricao: 'Neoplasia maligna da pele da face',
+    fila: 'G1a',
+    prioridadeManual: 'media',
+    dataEntrada: antes(118),
+    gravidade: 34,
+    risco: 9,
+    eventos: [
+      { data: antes(126), tipo: 'biopsia', descricao: 'Biópsia: carcinoma espinocelular.' },
+      { data: '2026-10-06', tipo: 'consulta', descricao: 'Lesão com crescimento e sangramento ao toque.', piora: true },
+    ],
+    justificativa: 'Carcinoma espinocelular em região malar esquerda, 2,2 cm, com crescimento rápido e sangramento ao toque. Indicada exérese com margens.',
+    sinais: [sinal('af-1', 'crescimento rápido', 'Progressão da lesão')],
+  }),
+  paciente({
+    id: 'SOL-2024-00224',
+    pacienteId: 'PAC-00224',
+    nome: 'Carlos Menezes',
+    sexo: 'M',
+    nascimento: '1957-04-19',
+    municipio: 'Porto Alegre',
+    procedimento: 'Prostatectomia radical',
+    especialidade: 'Urologia',
+    cid: 'C61',
+    cidDescricao: 'Neoplasia maligna da próstata',
+    fila: 'G1a',
+    prioridadeManual: 'alta',
+    dataEntrada: antes(97),
+    gravidade: 36,
+    risco: 8,
+    eventos: [{ data: '2026-10-08', tipo: 'exame', descricao: 'PSA subiu de 9,8 para 14,2 ng/mL.', piora: true }],
+    justificativa: 'Adenocarcinoma de próstata Gleason 7 (4+3), PSA em ascensão. Doença localizada à ressonância. Indicada prostatectomia radical.',
+    sinais: [sinal('cm-1', 'PSA em ascensão', 'Progressão laboratorial')],
+  }),
+  paciente({
+    id: 'SOL-2026-00118',
+    pacienteId: 'PAC-00731',
+    nome: 'Lúcia Fernandes',
+    sexo: 'F',
+    nascimento: '1965-05-30',
+    cpf: montarCpf('227390416'),
+    municipio: 'Gravataí',
+    procedimento: 'Colectomia parcial',
+    especialidade: 'Coloproctologia',
+    cid: 'C18.7',
+    cidDescricao: 'Neoplasia maligna do cólon sigmoide',
+    fila: 'G1a',
+    dataEntrada: antes(41),
+    gravidade: 40,
+    risco: 10,
+    eventos: [
+      { data: antes(52), tipo: 'biopsia', descricao: 'Colonoscopia com biópsia: adenocarcinoma de sigmoide.' },
+      { data: '2026-10-11', tipo: 'pronto-socorro', descricao: 'Pronto-socorro por sangramento retal.', piora: true },
+    ],
+    justificativa: 'Lesão vegetante em sigmoide, biópsia com adenocarcinoma moderadamente diferenciado. Episódios de sangramento retal. Indicada colectomia parcial.',
+    sinais: [sinal('lf-1', 'sangramento retal', 'Sangramento ativo')],
+  }),
+  paciente({
+    id: 'SOL-2026-00131',
+    pacienteId: 'PAC-00744',
+    nome: 'Beatriz Nunes',
+    sexo: 'F',
+    nascimento: '1960-11-09',
+    municipio: 'Alvorada',
+    procedimento: 'Gastrectomia subtotal',
+    especialidade: 'Cirurgia Geral',
+    cid: 'C16.9',
+    cidDescricao: 'Neoplasia maligna do estômago',
+    fila: 'G1a',
+    dataEntrada: antes(33),
+    gravidade: 40,
+    risco: 12,
+    eventos: [{ data: '2026-10-14', tipo: 'internacao', descricao: 'Internação por anemia (Hb 7,1 g/dL), com transfusão.', piora: true }],
+    justificativa: 'Adenocarcinoma gástrico em antro, sem doença à distância. Perda de 8 kg em três meses e anemia ferropriva. Indicada gastrectomia subtotal.',
+    sinais: [sinal('bn-1', 'Perda de 8 kg em três meses', 'Perda de peso relevante')],
+  }),
+  paciente({
+    id: 'SOL-2026-00094',
+    pacienteId: 'PAC-00702',
+    nome: 'Raimundo Nonato Lima',
+    sexo: 'M',
+    nascimento: '1954-02-17',
+    municipio: 'Viamão',
+    procedimento: 'Revascularização do miocárdio',
+    especialidade: 'Cirurgia Cardiovascular',
+    cid: 'I25.1',
+    cidDescricao: 'Doença aterosclerótica do coração',
+    fila: 'G1b',
+    prioridadeManual: 'alta',
+    dataEntrada: antes(58),
+    gravidade: 34,
+    risco: 15,
+    motivo: 'Angina com dois atendimentos no pronto-socorro',
+    eventos: [
+      { data: '2026-09-29', tipo: 'pronto-socorro', descricao: 'Pronto-socorro por dor torácica aos pequenos esforços.', piora: true },
+      { data: '2026-10-17', tipo: 'pronto-socorro', descricao: 'Novo atendimento por angina. Troponina negativa.', piora: true },
+    ],
+    justificativa: 'Doença triarterial com lesão de 80% em tronco de coronária esquerda. Angina aos pequenos esforços, apesar de tratamento clínico otimizado. Indicada revascularização do miocárdio.',
+    sinais: [sinal('rn-1', 'lesão de 80% em tronco de coronária esquerda', 'Anatomia de alto risco')],
+  }),
+  paciente({
+    id: 'SOL-2023-00045',
+    pacienteId: 'PAC-00330',
+    nome: 'João Baptista',
+    sexo: 'M',
+    nascimento: '1962-12-03',
+    municipio: 'Esteio',
+    procedimento: 'Safenectomia',
+    especialidade: 'Cirurgia Vascular',
+    cid: 'I80.0',
+    cidDescricao: 'Tromboflebite de veias superficiais dos membros inferiores',
+    fila: 'G1b',
+    prioridadeManual: 'baixa',
+    dataEntrada: antes(402),
+    gravidade: 26,
+    risco: 7,
+    motivo: 'Tromboflebite com internação recente',
+    eventos: [{ data: '2026-10-09', tipo: 'internacao', descricao: 'Internação por tromboflebite em safena magna.', piora: true }],
+    justificativa: 'Varizes de grosso calibre com dois episódios de tromboflebite no último ano, o último com internação. Indicada safenectomia.',
+    sinais: [sinal('jb-1', 'dois episódios de tromboflebite', 'Complicação recorrente')],
+  }),
+  paciente({
+    id: 'SOL-2022-00047',
+    pacienteId: 'PAC-00281',
+    nome: 'Marcos Vidal',
+    sexo: 'M',
+    nascimento: '1969-08-21',
+    municipio: 'Cachoeirinha',
+    procedimento: 'Correção de hérnia incisional',
+    especialidade: 'Cirurgia Geral',
+    cid: 'K43.9',
+    cidDescricao: 'Hérnia ventral',
+    fila: 'G1b',
+    dataEntrada: antes(640),
+    gravidade: 22,
+    risco: 6,
+    motivo: 'Suboclusão citada só na justificativa',
+    justificativa: 'Hérnia incisional volumosa com episódios de suboclusão intestinal, segundo relato do paciente. Indicada correção com tela.',
+    sinais: [sinal('mv-1', 'episódios de suboclusão intestinal', 'Risco de complicação')],
+  }),
+  paciente({
+    id: 'SOL-2023-00051',
+    pacienteId: 'PAC-00350',
+    nome: 'Edu Farias',
+    sexo: 'M',
+    nascimento: '1977-01-14',
+    municipio: 'Guaíba',
+    procedimento: 'Colecistectomia videolaparoscópica',
+    especialidade: 'Cirurgia Geral',
+    cid: 'K81.0',
+    cidDescricao: 'Colecistite aguda',
+    fila: 'G1b',
+    dataEntrada: antes(455),
+    gravidade: 24,
+    risco: 5,
+    justificativa: 'Colecistite aguda tratada clinicamente em internação. Indicada colecistectomia.',
+  }),
+  paciente({
+    id: 'SOL-2024-00071',
+    pacienteId: 'PAC-00660',
+    nome: 'Helena Duarte',
+    sexo: 'F',
+    nascimento: '1968-02-11',
+    cpf: montarCpf('318204557'),
+    municipio: 'Porto Alegre',
+    procedimento: 'Mastectomia com linfonodo sentinela',
+    especialidade: 'Mastologia',
+    cid: 'D48.6',
+    cidDescricao: 'Neoplasia de comportamento incerto da mama',
+    fila: 'G2',
+    prioridadeManual: 'baixa',
+    dataEntrada: antes(862),
+    gravidade: 38,
+    risco: 9,
+    motivo: 'Biópsia positiva com CID ainda benigno',
+    eventos: [
+      { data: '2024-06-12', tipo: 'biopsia', descricao: 'Anatomopatológico: carcinoma ductal invasivo, grau II.' },
+      { data: '2026-08-01', tipo: 'exame', descricao: 'HbA1c 9,2%.' },
+      { data: '2026-09-20', tipo: 'contato', descricao: 'Contato telefônico: relata piora.', piora: false },
+    ],
+    justificativa: 'Nódulo mamário com BI-RADS 5, biópsia confirmando malignidade; encaminhada para cirurgia.',
+    sinais: [sinal('hd-1', 'biópsia confirmando malignidade', 'Diagnóstico oncológico confirmado')],
+  }),
+  paciente({
+    id: 'SOL-2026-00102',
+    pacienteId: 'PAC-00719',
+    nome: 'Ana Beatriz Costa',
+    sexo: 'F',
+    nascimento: '1972-08-02',
+    municipio: 'Porto Alegre',
+    procedimento: 'Mastectomia com linfonodo sentinela',
+    especialidade: 'Mastologia',
+    cid: 'C50.9',
+    cidDescricao: 'Neoplasia maligna da mama',
+    fila: 'G2',
+    prioridadeManual: 'alta',
+    dataEntrada: antes(96),
+    gravidade: 40,
+    risco: 7,
+    eventos: [{ data: antes(104), tipo: 'biopsia', descricao: 'Biópsia por agulha grossa: carcinoma ductal invasivo.' }],
+    justificativa: 'Nódulo de 2,8 cm em mama esquerda. Biópsia confirma carcinoma ductal invasivo. Sem metástases à distância. Indicada mastectomia com pesquisa de linfonodo sentinela.',
+    sinais: [sinal('ab-1', 'carcinoma ductal invasivo', 'Diagnóstico oncológico confirmado')],
+  }),
+  paciente({
+    id: 'SOL-2026-00037',
+    pacienteId: 'PAC-00652',
+    nome: 'Joana Cardoso',
+    sexo: 'F',
+    nascimento: '1963-06-25',
+    municipio: 'Cachoeirinha',
+    procedimento: 'Nefrectomia parcial',
+    especialidade: 'Urologia',
+    cid: 'C64',
+    cidDescricao: 'Neoplasia maligna do rim',
+    fila: 'G2',
+    dataEntrada: antes(140),
+    gravidade: 34,
+    risco: 8,
+    eventos: [{ data: '2026-10-09', tipo: 'exame', descricao: 'Tomografia: lesão renal passou de 3,1 para 4,2 cm.', piora: true }],
+    justificativa: 'Massa renal sólida à direita, de 3,1 cm, com realce ao contraste, compatível com carcinoma de células renais. Indicada nefrectomia parcial.',
+    sinais: [sinal('jc-1', 'compatível com carcinoma de células renais', 'Suspeita oncológica')],
+  }),
+  paciente({
+    id: 'SOL-2023-00010',
+    pacienteId: 'PAC-00467',
+    nome: 'Roberto Simões',
+    sexo: 'M',
+    nascimento: '1959-10-27',
+    municipio: 'São Leopoldo',
+    procedimento: 'Colectomia parcial',
+    especialidade: 'Coloproctologia',
+    cid: 'C18.9',
+    cidDescricao: 'Neoplasia maligna do cólon',
+    fila: 'G2',
+    prioridadeManual: 'baixa',
+    dataEntrada: antes(66),
+    gravidade: 36,
+    risco: 9,
+    justificativa: 'Adenocarcinoma de cólon ascendente confirmado por colonoscopia. Indicada colectomia direita.',
+  }),
+  paciente({
+    id: 'SOL-2023-00088',
+    pacienteId: 'PAC-00491',
+    nome: 'Rafael Nunes',
+    sexo: 'M',
+    nascimento: '1971-07-08',
+    municipio: 'Novo Hamburgo',
+    procedimento: 'Tireoidectomia total',
+    especialidade: 'Cabeça e Pescoço',
+    cid: 'D44.0',
+    cidDescricao: 'Neoplasia de comportamento incerto da tireoide',
+    fila: 'G2',
+    dataEntrada: antes(210),
+    gravidade: 30,
+    risco: 5,
+    motivo: 'Anatomopatológico com carcinoma e CID não atualizado',
+    eventos: [{ data: antes(40), tipo: 'biopsia', descricao: 'Anatomopatológico: carcinoma papilífero.' }],
+    justificativa: 'Nódulo tireoidiano de 2 cm, punção Bethesda V. Indicada tireoidectomia total.',
+  }),
+  paciente({
+    id: 'SOL-2024-00112',
+    pacienteId: 'PAC-00588',
+    nome: 'Vera Lúcia',
+    sexo: 'F',
+    nascimento: '1958-03-05',
+    municipio: 'Alvorada',
+    procedimento: 'Mastectomia',
+    especialidade: 'Mastologia',
+    cid: 'C50.9',
+    cidDescricao: 'Neoplasia maligna da mama',
+    fila: 'G2',
+    dataEntrada: antes(54),
+    gravidade: 36,
+    risco: 8,
+    justificativa: 'Ca de mama. Cirurgia.',
+  }),
+  paciente({
+    id: 'SOL-2026-00155',
+    pacienteId: 'PAC-00760',
+    nome: 'Paulo Henrique Souza',
+    sexo: 'M',
+    nascimento: '1968-09-12',
+    municipio: 'Porto Alegre',
+    procedimento: 'Tireoidectomia total',
+    especialidade: 'Cabeça e Pescoço',
+    cid: 'C73',
+    cidDescricao: 'Neoplasia maligna da glândula tireoide',
+    fila: 'G2',
+    dataEntrada: antes(74),
+    gravidade: 28,
+    risco: 5,
+    justificativa: 'Carcinoma papilífero de tireoide, nódulo de 1,6 cm, sem linfonodos suspeitos. Indicada tireoidectomia total.',
+  }),
+  paciente({
+    id: 'SOL-2025-00075',
+    pacienteId: 'PAC-00075',
+    nome: 'Marina Lopes',
+    sexo: 'F',
+    nascimento: '1983-05-16',
+    municipio: 'Canoas',
+    procedimento: 'Exérese de lesão suspeita',
+    especialidade: 'Cirurgia Plástica',
+    cid: 'D48.5',
+    cidDescricao: 'Neoplasia de comportamento incerto da pele',
+    fila: 'G3',
+    dataEntrada: antes(120),
+    gravidade: 24,
+    risco: 3,
+    eventos: [
+      { data: antes(90), tipo: 'biopsia', descricao: 'Biópsia incisional: melanoma in situ.' },
+      { data: antes(35), tipo: 'biopsia', descricao: 'Revisão de lâmina: nevo displásico, sem malignidade.' },
+    ],
+    justificativa: 'Lesão pigmentada assimétrica em dorso, 9 mm, com bordas irregulares. Indicada exérese com margem.',
+  }),
+  paciente({
+    id: 'SOL-2026-00079',
+    pacienteId: 'PAC-00688',
+    nome: 'Tereza Lopes',
+    sexo: 'F',
+    nascimento: '1965-04-03',
+    municipio: 'Esteio',
+    procedimento: 'Tireoidectomia parcial',
+    especialidade: 'Cabeça e Pescoço',
+    cid: 'E04.1',
+    cidDescricao: 'Nódulo tireoidiano solitário não tóxico',
+    fila: 'G6',
+    dataEntrada: antes(150),
+    gravidade: 18,
+    risco: 5,
+    motivo: 'Punção com resultado suspeito (Bethesda IV)',
+    eventos: [{ data: '2026-10-12', tipo: 'exame', descricao: 'Punção aspirativa: Bethesda IV, neoplasia folicular suspeita.', piora: true }],
+    justificativa: 'Nódulo tireoidiano de 2,4 cm em lobo direito, com crescimento progressivo e queixa de disfagia leve. Indicada tireoidectomia parcial.',
+    sinais: [
+      sinal('tl-1', 'crescimento progressivo', 'Evolução da lesão'),
+      sinal('tl-2', 'disfagia leve', 'Sintoma compressivo'),
+    ],
+  }),
+  paciente({
+    id: 'SOL-2022-00018',
+    pacienteId: 'PAC-00384',
+    nome: 'Beatriz Antunes',
+    sexo: 'F',
+    nascimento: '1976-11-23',
+    municipio: 'Sapucaia do Sul',
+    procedimento: 'Histerectomia',
+    especialidade: 'Ginecologia',
+    cid: 'N93.9',
+    cidDescricao: 'Sangramento anormal do útero',
+    fila: 'G4',
+    dataEntrada: antes(700),
+    gravidade: 20,
+    risco: 6,
+    eventos: [{ data: '2026-10-01', tipo: 'pronto-socorro', descricao: 'Pronto-socorro por sangramento volumoso.', piora: true }],
+    justificativa: 'Sangramento uterino anormal refratário ao tratamento clínico. Indicada histerectomia.',
+  }),
+  paciente({
+    id: 'SOL-2022-00042',
+    pacienteId: 'PAC-00377',
+    nome: 'Clara Pons',
+    sexo: 'F',
+    nascimento: '1964-06-09',
+    municipio: 'Porto Alegre',
+    procedimento: 'Herniorrafia inguinal',
+    especialidade: 'Cirurgia Geral',
+    cid: 'K40.9',
+    cidDescricao: 'Hérnia inguinal unilateral',
+    fila: 'G4',
+    dataEntrada: antes(690),
+    gravidade: 14,
+    risco: 5,
+    motivo: 'Piora registrada há mais de 180 dias',
+    eventos: [{ data: antes(214), tipo: 'pronto-socorro', descricao: 'Pronto-socorro por dor em região inguinal.' }],
+    justificativa: 'Hérnia inguinal direita com dor aos esforços. Indicada herniorrafia.',
+  }),
+  paciente({
+    id: 'SOL-2026-00063',
+    pacienteId: 'PAC-00674',
+    nome: 'Miguel Freitas',
+    sexo: 'M',
+    nascimento: '1968-07-07',
+    municipio: 'Canoas',
+    procedimento: 'Herniorrafia inguinal',
+    especialidade: 'Cirurgia Geral',
+    cid: 'K40.9',
+    cidDescricao: 'Hérnia inguinal unilateral',
+    fila: 'G6',
+    dataEntrada: antes(210),
+    gravidade: 16,
+    risco: 6,
+    motivo: 'Encarceramento reduzido no pronto-socorro',
+    eventos: [{ data: '2026-10-07', tipo: 'pronto-socorro', descricao: 'Pronto-socorro: hérnia encarcerada, reduzida manualmente.', piora: true }],
+    justificativa: 'Hérnia inguinal direita volumosa, com dor ao esforço e episódio de encarceramento reduzido em pronto-socorro. Indicada herniorrafia com tela.',
+    sinais: [sinal('mf-1', 'episódio de encarceramento', 'Risco de estrangulamento')],
+  }),
+  paciente({
+    id: 'SOL-2026-00168',
+    pacienteId: 'PAC-00733',
+    nome: 'Carla Mendonça',
+    sexo: 'F',
+    nascimento: '1980-01-19',
+    municipio: 'Sapucaia do Sul',
+    procedimento: 'Histerectomia',
+    especialidade: 'Ginecologia',
+    cid: 'D25.9',
+    cidDescricao: 'Leiomioma do útero',
+    fila: 'G5',
+    dataEntrada: antes(88),
+    gravidade: 24,
+    risco: 6,
+    motivo: 'Sangramento uterino com anemia (Hb 8,4 g/dL)',
+    eventos: [{ data: '2026-09-30', tipo: 'exame', descricao: 'Hemoglobina 8,4 g/dL.', piora: true }],
+    justificativa: 'Miomatose uterina com sangramento aumentado e anemia sintomática, sem resposta ao tratamento hormonal. Indicada histerectomia.',
+    sinais: [sinal('cm2-1', 'anemia sintomática', 'Anemia')],
+  }),
+  paciente({
+    id: 'SOL-2022-00012',
+    pacienteId: 'PAC-00212',
+    nome: 'Diego Matos',
+    sexo: 'M',
+    nascimento: '1961-02-28',
+    municipio: 'Viamão',
+    procedimento: 'Artroplastia total de joelho',
+    especialidade: 'Ortopedia',
+    cid: 'M17.1',
+    cidDescricao: 'Gonartrose primária',
+    fila: 'G5',
+    dataEntrada: antes(610),
+    gravidade: 16,
+    risco: 7,
+    eventos: [
+      { data: antes(120), tipo: 'falta', descricao: 'Não compareceu à consulta de reavaliação.' },
+      { data: antes(60), tipo: 'falta', descricao: 'Não compareceu ao exame pré-operatório.' },
+    ],
+    justificativa: 'Gonartrose avançada com dor intensa e limitação para a marcha. Indicada artroplastia.',
+  }),
+  paciente({
+    id: 'SOL-2024-00480',
+    pacienteId: 'PAC-00480',
+    nome: 'Sebastião Rocha',
+    sexo: 'M',
+    nascimento: '1953-08-15',
+    municipio: 'Novo Hamburgo',
+    procedimento: 'Artroplastia total de quadril',
+    especialidade: 'Ortopedia',
+    cid: 'M16.1',
+    cidDescricao: 'Coxartrose primária',
+    fila: 'G5',
+    dataEntrada: antes(330),
+    gravidade: 18,
+    risco: 9,
+    justificativa: 'Coxartrose avançada com dor noturna e uso de andador. Indicada artroplastia total de quadril.',
+  }),
+  paciente({
+    id: 'SOL-2026-00141',
+    pacienteId: 'PAC-00752',
+    nome: 'Daniel Moreira',
+    sexo: 'M',
+    nascimento: '1987-10-15',
+    municipio: 'Porto Alegre',
+    procedimento: 'Septoplastia',
+    especialidade: 'Otorrinolaringologia',
+    cid: 'J34.2',
+    cidDescricao: 'Desvio do septo nasal',
+    fila: 'G5',
+    dataEntrada: antes(95),
+    gravidade: 8,
+    risco: 2,
+    motivo: 'Epistaxe de repetição',
+    eventos: [{ data: '2026-10-13', tipo: 'contato', descricao: 'Contato telefônico: melhora após tratamento clínico, sem novos sangramentos.' }],
+    justificativa: 'Desvio septal com obstrução nasal e epistaxe de repetição, três episódios no último mês. Indicada septoplastia.',
+  }),
+  paciente({
+    id: 'SOL-2025-00211',
+    pacienteId: 'PAC-00601',
+    nome: 'Rosa Carvalho',
+    sexo: 'F',
+    nascimento: '1955-03-28',
+    municipio: 'Novo Hamburgo',
+    procedimento: 'Artroplastia total de joelho',
+    especialidade: 'Ortopedia',
+    cid: 'M17.1',
+    cidDescricao: 'Gonartrose primária',
+    fila: 'G6',
+    dataEntrada: antes(320),
+    gravidade: 14,
+    risco: 9,
+    motivo: 'Queda recente e perda de marcha independente',
+    eventos: [
+      { data: '2026-10-02', tipo: 'pronto-socorro', descricao: 'Pronto-socorro após queda em domicílio. Sem fraturas.', piora: true },
+      { data: '2026-10-10', tipo: 'contato', descricao: 'Contato telefônico: passou a usar cadeira de rodas fora de casa.', piora: true },
+    ],
+    justificativa: 'Gonartrose avançada à direita, dor intensa (EVA 8) e limitação para caminhar mais de 100 metros. Indicada artroplastia total de joelho.',
+    sinais: [sinal('rc-1', 'limitação para caminhar mais de 100 metros', 'Limitação funcional')],
+  }),
+  paciente({
+    id: 'SOL-2022-00005',
+    pacienteId: 'PAC-00403',
+    nome: 'Paulo Cardoso',
+    sexo: 'M',
+    nascimento: '1956-12-12',
+    municipio: 'Eldorado do Sul',
+    procedimento: 'Ressecção transuretral de próstata',
+    especialidade: 'Urologia',
+    cid: 'N40',
+    cidDescricao: 'Hiperplasia da próstata',
+    fila: 'G6',
+    dataEntrada: antes(152),
+    gravidade: 12,
+    risco: 7,
+    eventos: [
+      { data: antes(20), tipo: 'contato', descricao: 'Tentativa de contato sem sucesso.' },
+      { data: antes(8), tipo: 'contato', descricao: 'Tentativa de contato sem sucesso. Número não existe.' },
+    ],
+    justificativa: 'Hiperplasia prostática com sintomas obstrutivos e resíduo pós-miccional elevado. Indicada RTU.',
+  }),
+  paciente({
+    id: 'SOL-2025-00190',
+    pacienteId: 'PAC-00597',
+    nome: 'Ivone Batista',
+    sexo: 'F',
+    nascimento: '1958-12-01',
+    municipio: 'São Leopoldo',
+    procedimento: 'Colecistectomia videolaparoscópica',
+    especialidade: 'Cirurgia Geral',
+    cid: 'K80.2',
+    cidDescricao: 'Calculose da vesícula biliar sem colecistite',
+    fila: 'G6',
+    dataEntrada: antes(280),
+    gravidade: 18,
+    risco: 12,
+    eventos: [{ data: '2026-10-01', tipo: 'exame', descricao: 'HbA1c 9,1% (anterior: 7,8%).' }],
+    justificativa: 'Colelitíase com cólicas biliares mensais. Diabetes tipo 2 em uso de insulina. Indicada colecistectomia.',
+  }),
+  paciente({
+    id: 'SOL-2022-00008',
+    pacienteId: 'PAC-00208',
+    nome: 'Íris Campos',
+    sexo: 'F',
+    nascimento: '1979-09-04',
+    municipio: 'Guaíba',
+    procedimento: 'Hemorroidectomia',
+    especialidade: 'Coloproctologia',
+    cid: 'K64.9',
+    cidDescricao: 'Hemorroidas',
+    fila: 'G6',
+    dataEntrada: antes(170),
+    gravidade: 8,
+    risco: 3,
+    eventos: [{ data: antes(12), tipo: 'contato', descricao: 'Contato telefônico: “Não deseja mais operar no momento”.' }],
+    justificativa: 'Doença hemorroidária grau III com sangramento eventual. Indicada hemorroidectomia.',
+  }),
+  paciente({
+    id: 'SOL-2024-00849',
+    pacienteId: 'PAC-00849',
+    nome: 'Luíza Fontes',
+    sexo: 'F',
+    nascimento: '1950-01-30',
+    municipio: 'Porto Alegre',
+    procedimento: 'Facectomia com implante de lente',
+    especialidade: 'Oftalmologia',
+    cid: 'H25.1',
+    cidDescricao: 'Catarata senil nuclear',
+    fila: 'G7',
+    dataEntrada: antes(300),
+    gravidade: 6,
+    risco: 3,
+    justificativa: 'Catarata nuclear em olho direito, acuidade visual 20/80. Indicada facectomia.',
+  }),
+  paciente({
+    id: 'SOL-2025-00088',
+    pacienteId: 'PAC-00615',
+    nome: 'Fernanda Rocha',
+    sexo: 'F',
+    nascimento: '1992-06-18',
+    municipio: 'Canoas',
+    procedimento: 'Herniorrafia umbilical',
+    especialidade: 'Cirurgia Geral',
+    cid: 'K42.9',
+    cidDescricao: 'Hérnia umbilical sem obstrução ou gangrena',
+    fila: 'G7',
+    dataEntrada: antes(230),
+    gravidade: 5,
+    risco: 2,
+    motivo: 'Hérnia sem sintomas',
+    justificativa: 'Hérnia umbilical de 1,5 cm, assintomática, redutível. Indicada correção eletiva.',
+  }),
+  paciente({
+    id: 'SOL-2024-00920',
+    pacienteId: 'PAC-00563',
+    nome: 'Sebastião Pereira',
+    sexo: 'M',
+    nascimento: '1971-02-05',
+    municipio: 'Alvorada',
+    procedimento: 'Tratamento cirúrgico de varizes',
+    especialidade: 'Cirurgia Vascular',
+    cid: 'I83.9',
+    cidDescricao: 'Varizes dos membros inferiores sem úlcera ou inflamação',
+    fila: 'G7',
+    dataEntrada: antes(410),
+    gravidade: 4,
+    risco: 4,
+    justificativa: 'Varizes em membro inferior esquerdo, sem úlcera, com sensação de peso ao fim do dia. Indicado tratamento cirúrgico.',
+  }),
+]
+
+/* ------------------------------------------------------------------ */
+/* Restante da fila                                                    */
+/* ------------------------------------------------------------------ */
+
+function gerador(semente: number) {
+  let s = semente
+  return () => {
+    s |= 0
+    s = (s + 0x6d2b79f5) | 0
+    let t = Math.imul(s ^ (s >>> 15), 1 | s)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+interface Modelo {
+  procedimento: string
+  especialidade: string
+  cid: string
+  cidDescricao: string
+  sexo?: 'F' | 'M'
+  texto: string
+}
+
+const M = (procedimento: string, especialidade: string, cid: string, cidDescricao: string, texto: string, sexo?: 'F' | 'M'): Modelo => ({
+  procedimento,
+  especialidade,
+  cid,
+  cidDescricao,
+  texto,
+  sexo,
+})
+
+const ONCO = [
+  M('Mastectomia com linfonodo sentinela', 'Mastologia', 'C50.9', 'Neoplasia maligna da mama', 'Carcinoma de mama confirmado por biópsia. Indicada mastectomia.', 'F'),
+  M('Prostatectomia radical', 'Urologia', 'C61', 'Neoplasia maligna da próstata', 'Adenocarcinoma de próstata localizado. Indicada prostatectomia radical.', 'M'),
+  M('Colectomia parcial', 'Coloproctologia', 'C18.9', 'Neoplasia maligna do cólon', 'Adenocarcinoma de cólon confirmado por colonoscopia. Indicada colectomia.'),
+  M('Tireoidectomia total', 'Cabeça e Pescoço', 'C73', 'Neoplasia maligna da glândula tireoide', 'Carcinoma de tireoide confirmado por punção. Indicada tireoidectomia total.'),
+  M('Nefrectomia parcial', 'Urologia', 'C64', 'Neoplasia maligna do rim', 'Massa renal compatível com carcinoma. Indicada nefrectomia parcial.'),
+  M('Exérese de tumor de pele', 'Cirurgia Plástica', 'C44.3', 'Neoplasia maligna da pele da face', 'Carcinoma de pele confirmado por biópsia. Indicada exérese com margens.'),
+]
+
+const MODELOS: Record<FilaCodigo, Modelo[]> = {
+  G1a: ONCO,
+  G1b: [
+    M('Colecistectomia videolaparoscópica', 'Cirurgia Geral', 'K81.0', 'Colecistite aguda', 'Colecistite aguda tratada clinicamente em internação recente. Indicada colecistectomia.'),
+    M('Herniorrafia inguinal', 'Cirurgia Geral', 'K40.3', 'Hérnia inguinal com obstrução', 'Hérnia inguinal com episódios de encarceramento. Indicada herniorrafia.'),
+    M('Revascularização do miocárdio', 'Cirurgia Cardiovascular', 'I20.0', 'Angina instável', 'Angina instável com doença multiarterial. Indicada revascularização.'),
+    M('Safenectomia', 'Cirurgia Vascular', 'I80.0', 'Tromboflebite de veias superficiais', 'Varizes com tromboflebite de repetição. Indicada safenectomia.'),
+  ],
+  G2: ONCO,
+  G3: [
+    M('Exérese de lesão suspeita', 'Cirurgia Plástica', 'D48.5', 'Neoplasia de comportamento incerto da pele', 'Lesão pigmentada com características suspeitas. Indicada exérese.'),
+    M('Setorectomia', 'Mastologia', 'N63', 'Nódulo mamário não especificado', 'Nódulo mamário BI-RADS 4. Indicada setorectomia.', 'F'),
+    M('Tireoidectomia parcial', 'Cabeça e Pescoço', 'E04.1', 'Nódulo tireoidiano solitário não tóxico', 'Nódulo tireoidiano com punção indeterminada. Indicada tireoidectomia parcial.'),
+  ],
+  G4: [
+    M('Colecistectomia videolaparoscópica', 'Cirurgia Geral', 'K80.2', 'Calculose da vesícula biliar sem colecistite', 'Colelitíase sintomática com atendimento recente em pronto-socorro. Indicada colecistectomia.'),
+    M('Herniorrafia inguinal', 'Cirurgia Geral', 'K40.9', 'Hérnia inguinal unilateral', 'Hérnia inguinal com piora da dor e atendimento recente. Indicada herniorrafia.'),
+    M('Histerectomia', 'Ginecologia', 'D25.9', 'Leiomioma do útero', 'Miomatose com sangramento e queda recente de hemoglobina. Indicada histerectomia.', 'F'),
+    M('Ressecção transuretral de próstata', 'Urologia', 'N40', 'Hiperplasia da próstata', 'Hiperplasia prostática com retenção urinária recente. Indicada RTU.', 'M'),
+  ],
+  G5: [
+    M('Artroplastia total de joelho', 'Ortopedia', 'M17.1', 'Gonartrose primária', 'Gonartrose com dor intensa e limitação importante para a marcha. Indicada artroplastia.'),
+    M('Artroplastia total de quadril', 'Ortopedia', 'M16.1', 'Coxartrose primária', 'Coxartrose com dor noturna e limitação funcional importante. Indicada artroplastia.'),
+    M('Histerectomia', 'Ginecologia', 'D25.9', 'Leiomioma do útero', 'Miomatose uterina com sangramento aumentado e anemia. Indicada histerectomia.', 'F'),
+  ],
+  G6: [
+    M('Colecistectomia videolaparoscópica', 'Cirurgia Geral', 'K80.2', 'Calculose da vesícula biliar sem colecistite', 'Colelitíase sintomática com cólicas biliares. Indicada colecistectomia.'),
+    M('Herniorrafia inguinal', 'Cirurgia Geral', 'K40.9', 'Hérnia inguinal unilateral', 'Hérnia inguinal redutível com desconforto aos esforços. Indicada herniorrafia.'),
+    M('Ressecção transuretral de próstata', 'Urologia', 'N40', 'Hiperplasia da próstata', 'Hiperplasia prostática com sintomas urinários obstrutivos. Indicada RTU.', 'M'),
+    M('Hemorroidectomia', 'Coloproctologia', 'K64.9', 'Hemorroidas', 'Doença hemorroidária com sangramento eventual. Indicada hemorroidectomia.'),
+    M('Artroscopia de joelho', 'Ortopedia', 'M23.2', 'Lesão de menisco', 'Lesão meniscal com dor e bloqueio intermitente. Indicada artroscopia.'),
+  ],
+  G7: [
+    M('Facectomia com implante de lente', 'Oftalmologia', 'H25.1', 'Catarata senil nuclear', 'Catarata com baixa de acuidade visual progressiva. Indicada facectomia.'),
+    M('Tratamento cirúrgico de varizes', 'Cirurgia Vascular', 'I83.9', 'Varizes dos membros inferiores sem úlcera ou inflamação', 'Varizes de membros inferiores sem úlcera. Indicado tratamento cirúrgico.'),
+    M('Herniorrafia umbilical', 'Cirurgia Geral', 'K42.9', 'Hérnia umbilical sem obstrução ou gangrena', 'Hérnia umbilical redutível e assintomática. Indicada correção eletiva.'),
+    M('Septoplastia', 'Otorrinolaringologia', 'J34.2', 'Desvio do septo nasal', 'Desvio septal com obstrução nasal. Indicada septoplastia.'),
+    M('Amigdalectomia', 'Otorrinolaringologia', 'J35.0', 'Amigdalite crônica', 'Amigdalites de repetição. Indicada amigdalectomia.'),
+  ],
+}
+
+/** Faixa de gravidade e de espera (dias) por nível. */
+const PERFIL: Record<FilaCodigo, { gravidade: [number, number]; espera: [number, number] }> = {
+  G1a: { gravidade: [32, 40], espera: [8, 160] },
+  G1b: { gravidade: [22, 32], espera: [6, 200] },
+  G2: { gravidade: [28, 38], espera: [6, 200] },
+  G3: { gravidade: [18, 28], espera: [20, 260] },
+  G4: { gravidade: [14, 26], espera: [20, 420] },
+  G5: { gravidade: [14, 24], espera: [20, 480] },
+  G6: { gravidade: [8, 18], espera: [15, 640] },
+  G7: { gravidade: [3, 10], espera: [30, 820] },
+}
+
+const NOMES_F = ['Adriana', 'Aline', 'Aparecida', 'Bruna', 'Camila', 'Cláudia', 'Cristina', 'Daniela', 'Denise', 'Eliane', 'Fátima', 'Gabriela', 'Gisele', 'Jaqueline', 'Juliana', 'Larissa', 'Luana', 'Luciana', 'Márcia', 'Marlene', 'Neusa', 'Patrícia', 'Regina', 'Rita', 'Sandra', 'Simone', 'Sônia', 'Tânia', 'Vera', 'Vanessa']
+const NOMES_M = ['Alexandre', 'André', 'Antônio', 'Carlos', 'César', 'Claudio', 'Diego', 'Edson', 'Fábio', 'Felipe', 'Francisco', 'Gilberto', 'Gustavo', 'Jorge', 'Leandro', 'Luiz', 'Marcelo', 'Mário', 'Nelson', 'Osvaldo', 'Paulo', 'Rafael', 'Renato', 'Ricardo', 'Rodrigo', 'Sérgio', 'Valdir', 'Vinícius', 'Wagner', 'Wilson']
+const SOBRENOMES = ['Silva', 'Santos', 'Souza', 'Pereira', 'Lima', 'Ferreira', 'Rodrigues', 'Alves', 'Gomes', 'Ribeiro', 'Martins', 'Carvalho', 'Rocha', 'Barbosa', 'Moraes', 'Machado', 'Cardoso', 'Teixeira', 'Correia', 'Vieira', 'Schmidt', 'Becker', 'Fagundes', 'Brum', 'Quadros', 'Bittencourt', 'Pires', 'Nunes', 'Dutra', 'Medeiros']
+const MUNICIPIOS = ['Porto Alegre', 'Porto Alegre', 'Porto Alegre', 'Canoas', 'Gravataí', 'Viamão', 'Alvorada', 'Cachoeirinha', 'Esteio', 'Sapucaia do Sul', 'Novo Hamburgo', 'São Leopoldo', 'Guaíba', 'Eldorado do Sul']
+const MANUAL: Paciente['prioridadeManual'][] = ['alta', 'media', 'media', 'baixa', 'baixa']
+
+function gerarFila(): Paciente[] {
+  const r = gerador(2310)
+  const entre = (a: number, b: number) => a + Math.floor(r() * (b - a + 1))
+  const um = <T,>(lista: T[]) => lista[Math.floor(r() * lista.length)]
+  const lista: Paciente[] = []
+  let seq = 1000
+
+  for (const fila of ORDEM_FILAS) {
+    const faltam = TAMANHO_FILA[fila] - acompanhados.filter((p) => p.fila === fila).length
+    const perfil = PERFIL[fila]
+    for (let i = 0; i < faltam; i++) {
+      const m = um(MODELOS[fila])
+      const sexo = m.sexo ?? (r() < 0.55 ? 'F' : 'M')
+      const [min, max] = perfil.espera
+      const dias = min + Math.floor(Math.pow(r(), 1.6) * (max - min))
+      const dataEntrada = antes(dias)
+      const eventos: EventoClinico[] = []
+      // Níveis de progressão e deterioração sempre têm um evento recente que os sustenta.
+      if (fila === 'G1a' || fila === 'G1b' || fila === 'G4' || r() < 0.06)
+        eventos.push({
+          data: antes(entre(2, Math.min(28, dias - 1))),
+          tipo: um(['pronto-socorro', 'internacao', 'exame'] as const),
+          descricao: fila === 'G1a' ? 'Exame de controle com progressão da doença.' : 'Atendimento recente relacionado à condição de base.',
+          piora: true,
+        })
+      if (r() < 0.18 && dias > 60)
+        eventos.push({ data: antes(entre(31, dias - 1)), tipo: 'contato', descricao: 'Contato telefônico: dados cadastrais confirmados.' })
+
+      seq += entre(1, 9)
+      const ano = 2026 - Math.floor(dias / 365)
+      lista.push(
+        paciente({
+          id: `SOL-${ano}-${String(seq).padStart(5, '0')}`,
+          pacienteId: `PAC-${String(1000 + lista.length).padStart(5, '0')}`,
+          nome: `${um(sexo === 'F' ? NOMES_F : NOMES_M)} ${um(SOBRENOMES)} ${um(SOBRENOMES)}`,
+          sexo,
+          idade: entre(24, 86),
+          municipio: um(MUNICIPIOS),
+          procedimento: m.procedimento,
+          especialidade: m.especialidade,
+          cid: m.cid,
+          cidDescricao: m.cidDescricao,
+          fila,
+          prioridadeManual: um(MANUAL),
+          dataEntrada,
+          gravidade: entre(...perfil.gravidade),
+          risco: entre(1, 12),
+          eventos,
+          justificativa: m.texto,
+          decisoes: [inclusao(dataEntrada, fila, 'Classificação inicial na inclusão da solicitação.', um(PROFISSIONAIS))],
+        }),
+      )
+    }
+  }
+  return lista
+}
+
+export function filaInicial(): Paciente[] {
+  return [...acompanhados, ...gerarFila()]
+}

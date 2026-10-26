@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-titulo: "Raleway", system-ui, sans-serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+
+  /* Paleta oceano, levemente mais saturada que a referência */
+  --color-petroleo: #064f5f;
+  --color-petroleo-900: #043a46;
+  --color-oceano: #1f727c;
+  --color-agua: #6aa9ab;
+  --color-nevoa: #cfdee3;
+  --color-nevoa-50: #e7eff1;
+  --color-areia: #f1efeb;
+  --color-bege: #cdb9a3;
+  --color-bege-50: #ece4da;
+  --color-tinta: #2a4347;
+  --color-tinta-soft: #566d70;
+  --color-linha: #dcd8d1;
+
+  --color-urgente: #9a3324;
+  --color-urgente-50: #f5e1dc;
+  --color-prioritario: #85560a;
+  --color-prioritario-50: #f5e8cf;
+  /* 7 níveis da fila, do mais urgente ao mais estável */
+  --color-g1: #a32d2d;
+  --color-g1-50: #f7dedb;
+  --color-g2: #bf4a1f;
+  --color-g2-50: #fae3d8;
+  --color-g3: #a8620b;
+  --color-g3-50: #f8ead4;
+  --color-g4: #87700a;
+  --color-g4-50: #f3edc8;
+  --color-g5: #4f7a26;
+  --color-g5-50: #e3eed6;
+  --color-g6: #1d6f8a;
+  --color-g6-50: #d9eaf1;
+  --color-g7: #55628c;
+  --color-g7-50: #e3e6f1;
+  --color-sucesso: #2c6b47;
+  --color-sucesso-50: #dcebe1;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-areia font-sans text-tinta antialiased;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-titulo text-petroleo;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+  /* Raleway usa algarismos antigos por padrão; nos títulos e números queremos alinhados */
+  .font-titulo,
+  h1,
+  h2,
+  h3 {
+    font-variant-numeric: lining-nums;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-oceano);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  ::selection {
+    background: var(--color-nevoa);
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.anim-subir {
+  animation: subir 0.22s ease-out both;
+}
