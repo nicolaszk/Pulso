@@ -5,7 +5,7 @@
 ## Situação
 
 O pipeline funciona de ponta a ponta sobre o dataset completo (backend/), com a API usada pelo frontend, as explicações em linguagem clara e a máquina do tempo.
-Ainda não feito: JEV no pipeline, os agentes de monitoramento, DECISOES.md (veja [ideas/ROADMAP.md](ideas/ROADMAP.md)).
+Ficaram de fora o JEV (modelo de risco) e os agentes de monitoramento; o porquê está em [DECISOES.md](DECISOES.md).
 
 ## Rodar (máquina limpa)
 
@@ -24,7 +24,7 @@ A primeira subida leva cerca de um minuto: o container `api` espera o Postgres, 
 
 - Explicações sem texto em cache são geradas na hora pelo Ollama que roda na sua máquina (`PULSO_LLM_URL` no docker-compose.yml aponta o container para ele). Sem o Ollama ou sem o modelo (`ollama pull gemma4:e4b`), vale o texto padrão (template). Veja "Explicações em linguagem clara" abaixo.
 - Zerar tudo, inclusive o volume: `docker compose down -v`
-- Frontend: veja [../Pulso-Frontend](../Pulso-Frontend). A entrada do médico usa um CRM de `GET /medicos` (ex.: `CRM-RS 900001`) e qualquer senha com 4+ caracteres.
+- Frontend: veja [../frontend](../frontend/README.md). A entrada do médico usa um CRM de `GET /medicos` (ex.: `CRM-RS 900001`) e qualquer senha com 4+ caracteres.
 
 Sem Docker para a API (precisa de Python 3.10+; o Postgres continua vindo do Docker):
 

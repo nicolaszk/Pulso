@@ -100,7 +100,7 @@ Priorização da fila de cirurgias eletivas (Desafio 1, 9ª Hackatona · Fin-x �
 - **FastAPI**, com docker compose: banco + API, carregando o dataset na primeira subida.
 - **Entregável:** `GET /export/fila_priorizada.csv` ou `python -m src.pipeline exportar` (a fila recomendada, com 897 posições). O verificador oficial passa: regra de ouro respeitada, com o último oncológico na posição 265 e o primeiro paciente sem urgência na 266. As 44 solicitações fora do arquivo são 22 duplicatas, 17 saídas e 5 pedidos de saída; os 5 oncológicos entre elas são duplicatas, e a solicitação original de cada um está na fila.
 
-### 7. Frontend (`Pulso-Frontend`)
+### 7. Frontend (`frontend/`)
 
 - **Área profissional:** visão geral, fila, paciente (com marcações e pendências) e revisão humana (caixa de pedidos com evidências, explicação e posição estimada, e o botão "Processar até novo pedido", que lê os eventos um a um e para quando surge um pedido novo). Lê e decide direto na API.
 - **Área pública:** o paciente consulta o próprio encaminhamento (nível, posição na fila, situação e tempo de espera).
@@ -130,7 +130,7 @@ Priorização da fila de cirurgias eletivas (Desafio 1, 9ª Hackatona · Fin-x �
 ```mermaid
 flowchart LR
   CSV[CSVs do desafio<br/>ideas/data/dataset] --> CARGA
-  subgraph Backend [Pulso-Backend · Python 3.12]
+  subgraph Backend [backend/ · Python 3.12]
     CARGA[carga.py<br/>limpeza + triagem só pelo cadastro] --> PG[(PostgreSQL 16)]
     PROC[processamento.py<br/>evento a evento] --> PG
     MOTOR[[fila_cirurgica/priorizacao<br/>motor de regras, puro]] -.-> CARGA
@@ -144,14 +144,14 @@ flowchart LR
     MT[[fila_cirurgica/maquina_tempo<br/>replay]] -.-> API
   end
   EXP <--> LLM[Ollama local<br/>gemma4:e4b]
-  WEB[Pulso-Frontend<br/>React 19 + Vite] -- HTTP/JSON --> API
+  WEB[frontend/<br/>React 19 + Vite] -- HTTP/JSON --> API
 ```
 
-- **Dois repositórios:** `Pulso-Backend` (motor, pipeline, banco e API) e `Pulso-Frontend` (SPA).
+- **Um repositório, duas pastas:** `backend/` (motor, pipeline, banco e API) e `frontend/` (SPA).
 - **O motor é uma biblioteca pura,** sem banco e sem rede. O backend a importa por paciente (`avaliacao.avaliar`) para a carga, o processamento de eventos e a varredura. A Máquina do Tempo usa as mesmas funções em replay.
 - **O backend é o dono do estado.** Guarda a fila oficial, o que o motor recomenda, os pedidos, as decisões, o histórico e as explicações. O frontend só lê e chama ações.
 
-## 2. Estrutura do repositório (`Pulso-Backend`)
+## 2. Estrutura do backend (`backend/`)
 
 | Pasta | Conteúdo |
 |---|---|
@@ -161,7 +161,7 @@ flowchart LR
 | `backend/src/pipeline/` | `carga`, `avaliacao`, `processamento`, `fila`, `consultas`, `explicacao`, CLI (`__main__`) |
 | `backend/tests/` | Testes de integração com Postgres (banco `pulso_teste`) |
 | `db/` | `schema.sql`, `seed.sql` + `gerar_seed.py` (caminho só SQL), `explicacoes.jsonl` (textos do LLM versionados) |
-| `ideas/` | Dataset do desafio, verificador oficial, `build_features.py` (features por paciente) e notas de planejamento |
+| `ideas/` | Dataset do desafio, verificador oficial, `build_features.py` (features por paciente) |
 | `resultados/` | `fila_priorizada.csv` (+ versão com explicação) e métricas do verificador |
 
 ## 3. Stack
@@ -276,7 +276,7 @@ python -m src.pipeline resumo
 - `replay.posicao_em(D)` reconstrói a posição na fila numa data. É cara (re-ranqueia a coorte inteira), então só serve para casos de demonstração.
 - CLI, de `fila_cirurgica/`: `python -m maquina_tempo [--json | --caso SOL-...]`. API: `GET /maquina-tempo`.
 
-## 11. Frontend (`Pulso-Frontend`)
+## 11. Frontend (`frontend/`)
 
 | Rota | Tela | Dados |
 |---|---|---|
@@ -323,7 +323,7 @@ docker compose exec api python -m src.pipeline rodar --recriar                  
 OLLAMA_NUM_PARALLEL=4 ollama serve && ollama pull gemma4:e4b
 
 # Frontend em :5173
-cd ../Pulso-Frontend && npm install && npm run dev
+cd ../frontend && npm install && npm run dev
 ```
 
 Para zerar tudo, volume do banco incluído: `docker compose down -v`.

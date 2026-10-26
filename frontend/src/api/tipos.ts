@@ -1,4 +1,4 @@
-// Formato das respostas da API do Pulso (Pulso-Backend/backend/src/main.py).
+// Formato das respostas da API do Pulso (backend/backend/src/main.py).
 import type { FilaCodigo, Severidade } from '../data/fila'
 
 export interface ItemFila {

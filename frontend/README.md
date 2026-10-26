@@ -3,13 +3,13 @@
 Plataforma de regulação da fila de cirurgias eletivas. Duas áreas separadas:
 
 - **Pública** (`/`, `/como-funciona`): o paciente consulta só o próprio encaminhamento com CPF ou Cartão Nacional de Saúde e data de nascimento.
-- **Profissional** (`/profissional/*`): médicos reguladores acessam Visão geral, Fila, Revisão humana e a tela de cada paciente, lendo e decidindo direto na API do [Pulso-Backend](../Pulso-Backend).
+- **Profissional** (`/profissional/*`): médicos reguladores acessam Visão geral, Fila, Revisão humana e a tela de cada paciente, lendo e decidindo direto na API do [backend](../backend/README.md).
 
 E a página **Pipeline** (`/pipeline`), que mostra em rolagem como a fila é montada (entrada e limpeza, motor, decisão do médico, máquina do tempo e saída). Ela tem link no menu da área profissional e no fim de "Como funciona".
 
 ## Rodar
 
-1. Suba o backend (repositório `Pulso-Backend`, branch `main`): banco, carga e API em `http://localhost:8000`. O passo a passo está no README de lá. Para a demo, carregue assim:
+1. Suba o backend (pasta [`backend/`](../backend/README.md) deste repositório): banco, carga e API em `http://localhost:8000`. O passo a passo está no README de lá. Para a demo, carregue assim:
 
    ```bash
    python -m src.pipeline carregar --recriar --ate-pedidos 3

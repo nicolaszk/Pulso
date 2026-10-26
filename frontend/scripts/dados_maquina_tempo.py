@@ -4,13 +4,13 @@ Roda o módulo fila_cirurgica/maquina_tempo do backend (replay determinístico d
 sem banco) e guarda a manchete, a distribuição e a linha do tempo da SOL-2026-00610 ("a 621").
 
 Uso (não precisa do Postgres):
-    cd Pulso-Backend/fila_cirurgica && ../.venv/bin/python ../../Pulso-Frontend/scripts/dados_maquina_tempo.py ../../Pulso-Frontend/src/pages/publico/pipeline/dados
+    cd backend/fila_cirurgica && ../.venv/bin/python ../../frontend/scripts/dados_maquina_tempo.py ../../frontend/src/pages/publico/pipeline/dados
 """
 import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path.cwd()))  # roda de dentro de Pulso-Backend/fila_cirurgica
+sys.path.insert(0, str(Path.cwd()))  # roda de dentro de backend/fila_cirurgica
 
 from priorizacao import config  # noqa: E402
 

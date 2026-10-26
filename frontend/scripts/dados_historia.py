@@ -4,9 +4,9 @@ Roda o pipeline num banco separado (pulso_historia), processa os eventos um por 
 registrando o que cada um causou, e cruza com a definição de "sem urgência" do verificador.
 
 Uso (com o Postgres do docker compose do backend no ar):
-    docker exec pulso-backend-db-1 psql -U pulso -d pulso -c "CREATE DATABASE pulso_historia"
-    cd Pulso-Backend/backend && ../.venv/bin/python ../../Pulso-Frontend/scripts/dados_historia.py ../../Pulso-Frontend/src/pages/publico/pipeline/dados
-    docker exec pulso-backend-db-1 psql -U pulso -d pulso -c "DROP DATABASE pulso_historia"
+    cd backend && docker compose exec db psql -U pulso -d pulso -c "CREATE DATABASE pulso_historia"
+    cd backend/backend && ../.venv/bin/python ../../frontend/scripts/dados_historia.py ../../frontend/src/pages/publico/pipeline/dados
+    cd backend && docker compose exec db psql -U pulso -d pulso -c "DROP DATABASE pulso_historia"
 """
 import json
 import os
@@ -14,7 +14,7 @@ import re
 import sys
 from pathlib import Path
 
-BACK = Path.cwd().parent  # roda de dentro de Pulso-Backend/backend
+BACK = Path.cwd().parent  # roda de dentro de backend/backend
 sys.path.insert(0, str(BACK / "backend"))
 os.environ["DATABASE_URL"] = "postgresql://pulso:pulso@localhost:5432/pulso_historia"
 
