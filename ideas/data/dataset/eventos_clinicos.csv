@@ -1,0 +1,1506 @@
+evento_id,solicitacao_id,paciente_id,data_evento,tipo_evento,resultado,valor_numerico,descricao,origem
+EVT-000001,SOL-2022-00032,PAC-00533,2022-08-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000002,SOL-2022-00023,PAC-00480,2022-09-17,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000003,SOL-2022-00029,PAC-00849,2022-10-24,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000004,SOL-2022-00005,PAC-00632,2022-11-11,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000005,SOL-2022-00005,PAC-00632,2022-11-15,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000006,SOL-2022-00038,PAC-00766,2022-11-18,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000007,SOL-2022-00002,PAC-00859,2022-11-28,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000008,SOL-2022-00015,PAC-00168,2022-12-05,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000009,SOL-2023-00017,PAC-00232,2022-12-16,pronto_socorro,atendido_liberado,,Atendimento em PS por colica renal (anterior a inclusao na fila).,Emergencia HPS
+EVT-000010,SOL-2023-00017,PAC-00232,2022-12-29,pronto_socorro,atendido_liberado,,Atendimento em PS por colica renal (anterior a inclusao na fila).,PS municipal
+EVT-000011,SOL-2022-00044,PAC-00111,2023-01-06,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000012,SOL-2022-00035,PAC-00065,2023-01-11,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000013,SOL-2023-00010,PAC-00467,2023-01-30,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000014,SOL-2023-00002,PAC-00152,2023-02-14,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000015,SOL-2022-00005,PAC-00632,2023-03-13,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000016,SOL-2023-00013,PAC-00576,2023-04-16,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000017,SOL-2023-00045,PAC-00425,2023-05-27,biopsia,negativo,,AP: adenoma tubular sem displasia de alto grau.,laboratorio de patologia
+EVT-000018,SOL-2023-00060,PAC-00045,2023-06-23,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite (anterior a inclusao na fila).,UPA Moacyr Scliar
+EVT-000019,SOL-2022-00014,PAC-00201,2023-07-05,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000020,SOL-2023-00034,PAC-00809,2023-07-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000021,SOL-2022-00012,PAC-00409,2023-07-28,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000022,SOL-2023-00031,PAC-00733,2023-08-07,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000023,SOL-2023-00017,PAC-00232,2023-08-13,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000024,SOL-2023-00013,PAC-00576,2023-08-14,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000025,SOL-2023-00060,PAC-00045,2023-09-04,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite (anterior a inclusao na fila).,PS Hospital Sao Lucas
+EVT-000026,SOL-2022-00032,PAC-00533,2023-09-13,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000027,SOL-2023-00013,PAC-00576,2023-09-14,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000028,SOL-2022-00053,PAC-00092,2023-09-27,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000029,SOL-2023-00074,PAC-00685,2023-09-28,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000030,SOL-2022-00054,PAC-00303,2023-09-30,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000031,SOL-2023-00082,PAC-00585,2023-10-16,biopsia,negativo,,AP: sem sinais de malignidade.,laboratorio de patologia
+EVT-000032,SOL-2023-00030,PAC-00225,2023-10-31,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000033,SOL-2022-00053,PAC-00092,2023-11-06,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000034,SOL-2023-00039,PAC-00507,2023-11-08,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000035,SOL-2022-00044,PAC-00111,2023-11-15,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000036,SOL-2023-00024,PAC-00184,2023-11-25,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000037,SOL-2023-00010,PAC-00467,2023-11-26,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000038,SOL-2023-00009,PAC-00841,2023-12-02,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000039,SOL-2023-00017,PAC-00232,2023-12-11,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000040,SOL-2023-00065,PAC-00747,2023-12-14,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000041,SOL-2023-00051,PAC-00375,2023-12-20,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000042,SOL-2023-00071,PAC-00520,2023-12-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000043,SOL-2022-00044,PAC-00111,2023-12-23,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000044,SOL-2024-00006,PAC-00224,2023-12-31,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000045,SOL-2022-00042,PAC-00613,2024-01-07,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000046,SOL-2022-00012,PAC-00409,2024-01-16,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000047,SOL-2023-00039,PAC-00507,2024-01-21,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000048,SOL-2023-00065,PAC-00747,2024-01-22,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000049,SOL-2023-00039,PAC-00507,2024-02-13,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000050,SOL-2023-00083,PAC-00238,2024-02-17,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000051,SOL-2023-00083,PAC-00238,2024-02-17,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000052,SOL-2024-00016,PAC-00725,2024-02-28,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000053,SOL-2023-00028,PAC-00283,2024-03-06,hba1c,resultado,7.5,"HbA1c 7,5%.",laboratorio
+EVT-000054,SOL-2023-00013,PAC-00576,2024-03-18,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000055,SOL-2023-00023,PAC-00365,2024-03-20,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000056,SOL-2023-00023,PAC-00365,2024-03-20,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000057,SOL-2024-00016,PAC-00725,2024-03-25,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000058,SOL-2024-00006,PAC-00224,2024-03-26,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000059,SOL-2023-00028,PAC-00283,2024-04-03,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000060,SOL-2024-00007,PAC-00397,2024-04-05,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000061,SOL-2024-00059,PAC-00528,2024-04-10,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite (anterior a inclusao na fila).,PS municipal
+EVT-000062,SOL-2024-00058,PAC-00655,2024-04-18,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000063,SOL-2024-00036,PAC-00429,2024-04-24,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000064,SOL-2024-00068,PAC-00096,2024-05-05,biopsia,negativo,,AP: adenoma tubular sem displasia de alto grau.,laboratorio de patologia
+EVT-000065,SOL-2024-00071,PAC-00660,2024-05-06,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000066,SOL-2024-00059,PAC-00528,2024-05-08,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite (anterior a inclusao na fila).,Emergencia HPS
+EVT-000067,SOL-2023-00060,PAC-00045,2024-05-16,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000068,SOL-2024-00007,PAC-00397,2024-05-24,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000069,SOL-2024-00011,PAC-00218,2024-05-26,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000070,SOL-2022-00012,PAC-00409,2024-05-30,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000071,SOL-2024-00082,PAC-00694,2024-06-13,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000072,SOL-2023-00058,PAC-00390,2024-06-15,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000073,SOL-2023-00024,PAC-00184,2024-06-26,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000074,SOL-2024-00149,PAC-00350,2024-07-03,internacao,alta,3,"Internacao por 3 dias (colica renal), anterior a inclusao na fila.",Hospital Sao Lucas
+EVT-000075,SOL-2023-00085,PAC-00389,2024-07-13,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000076,SOL-2024-00050,PAC-00901,2024-07-14,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000077,SOL-2023-00071,PAC-00520,2024-07-24,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000078,SOL-2023-00053,PAC-00650,2024-07-25,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000079,SOL-2023-00043,PAC-00804,2024-07-28,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000080,SOL-2024-00079,PAC-00908,2024-08-02,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000081,SOL-2023-00071,PAC-00520,2024-08-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000082,SOL-2024-00127,PAC-00577,2024-08-10,biopsia,negativo,,AP: adenoma tubular sem displasia de alto grau.,laboratorio de patologia
+EVT-000083,SOL-2024-00130,PAC-00824,2024-08-22,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000084,SOL-2022-00012,PAC-00409,2024-09-07,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000085,SOL-2024-00027,PAC-00165,2024-09-11,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000086,SOL-2024-00147,PAC-00704,2024-09-14,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000087,SOL-2023-00010,PAC-00467,2024-09-17,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000088,SOL-2024-00007,PAC-00397,2024-09-19,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000089,SOL-2024-00007,PAC-00397,2024-09-19,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000090,SOL-2023-00013,PAC-00576,2024-09-27,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000091,SOL-2024-00155,PAC-00462,2024-09-29,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000092,SOL-2024-00104,PAC-00213,2024-09-30,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000093,SOL-2023-00060,PAC-00045,2024-10-06,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000094,SOL-2024-00052,PAC-00374,2024-10-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000095,SOL-2024-00063,PAC-00460,2024-10-11,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000096,SOL-2024-00133,PAC-00497,2024-10-19,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000097,SOL-2023-00082,PAC-00585,2024-10-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000098,SOL-2024-00165,PAC-00358,2024-10-24,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000099,SOL-2022-00009,PAC-00688,2024-10-26,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000100,SOL-2024-00056,PAC-00812,2024-11-05,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000101,SOL-2024-00011,PAC-00218,2024-11-10,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000102,SOL-2025-00011,PAC-00090,2024-11-28,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000103,SOL-2024-00076,PAC-00264,2024-12-04,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000104,SOL-2023-00017,PAC-00232,2024-12-05,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000105,SOL-2024-00133,PAC-00497,2024-12-13,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000106,SOL-2024-00133,PAC-00497,2024-12-15,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000107,SOL-2024-00095,PAC-00581,2024-12-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000108,SOL-2024-00098,PAC-00256,2024-12-22,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000109,SOL-2025-00025,PAC-00171,2024-12-22,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000110,SOL-2023-00065,PAC-00747,2024-12-23,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000111,SOL-2024-00079,PAC-00908,2024-12-23,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000112,SOL-2023-00031,PAC-00733,2024-12-29,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000113,SOL-2024-00007,PAC-00397,2024-12-29,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000114,SOL-2023-00085,PAC-00389,2025-01-01,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000115,SOL-2024-00162,PAC-00418,2025-01-02,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000116,SOL-2023-00075,PAC-00827,2025-01-03,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000117,SOL-2024-00166,PAC-00816,2025-01-05,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000118,SOL-2023-00068,PAC-00789,2025-01-12,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000119,SOL-2023-00013,PAC-00576,2025-01-16,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000120,SOL-2024-00066,PAC-00598,2025-01-17,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000121,SOL-2024-00095,PAC-00581,2025-01-20,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000122,SOL-2024-00180,PAC-00521,2025-01-20,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000123,SOL-2023-00043,PAC-00804,2025-01-23,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000124,SOL-2022-00019,PAC-00019,2025-01-27,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000125,SOL-2022-00005,PAC-00632,2025-02-01,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000126,SOL-2023-00031,PAC-00733,2025-02-01,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000127,SOL-2024-00117,PAC-00915,2025-02-04,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000128,SOL-2025-00109,PAC-00713,2025-02-06,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite (anterior a inclusao na fila).,UPA Lomba do Pinheiro
+EVT-000129,SOL-2024-00016,PAC-00725,2025-02-10,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000130,SOL-2025-00118,PAC-00115,2025-02-10,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual (anterior a inclusao na fila).",PS Hospital Sao Lucas
+EVT-000131,SOL-2023-00079,PAC-00584,2025-02-11,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000132,SOL-2022-00007,PAC-00899,2025-02-14,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000133,SOL-2024-00076,PAC-00264,2025-02-17,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000134,SOL-2025-00078,PAC-00872,2025-02-19,biopsia,negativo,,AP: sem sinais de malignidade.,laboratorio de patologia
+EVT-000135,SOL-2022-00003,PAC-00502,2025-02-21,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000136,SOL-2024-00104,PAC-00213,2025-02-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000137,SOL-2024-00183,PAC-00093,2025-02-23,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000138,SOL-2022-00047,PAC-00330,2025-02-26,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000139,SOL-2023-00075,PAC-00827,2025-02-27,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000140,SOL-2022-00015,PAC-00168,2025-03-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000141,SOL-2025-00053,PAC-00158,2025-03-10,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000142,SOL-2025-00125,PAC-00563,2025-03-11,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000143,SOL-2024-00085,PAC-00568,2025-03-20,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000144,SOL-2025-00109,PAC-00713,2025-03-20,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite (anterior a inclusao na fila).,UPA Zona Norte
+EVT-000145,SOL-2025-00059,PAC-00331,2025-03-22,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000146,SOL-2023-00085,PAC-00389,2025-03-23,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000147,SOL-2023-00045,PAC-00425,2025-03-27,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000148,SOL-2025-00087,PAC-00079,2025-03-28,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000149,SOL-2023-00027,PAC-00621,2025-03-31,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000150,SOL-2025-00017,PAC-00535,2025-03-31,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000151,SOL-2024-00171,PAC-00847,2025-04-08,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000152,SOL-2022-00003,PAC-00502,2025-04-16,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000153,SOL-2023-00031,PAC-00733,2025-04-16,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000154,SOL-2025-00002,PAC-00543,2025-04-16,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000155,SOL-2025-00149,PAC-00392,2025-04-16,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000156,SOL-2023-00060,PAC-00045,2025-04-19,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000157,SOL-2025-00017,PAC-00535,2025-04-21,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000158,SOL-2025-00126,PAC-00791,2025-04-23,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000159,SOL-2024-00059,PAC-00528,2025-04-26,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000160,SOL-2024-00183,PAC-00093,2025-05-01,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000161,SOL-2024-00137,PAC-00691,2025-05-02,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000162,SOL-2025-00169,PAC-00112,2025-05-04,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000163,SOL-2025-00099,PAC-00098,2025-05-07,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000164,SOL-2025-00028,PAC-00506,2025-05-09,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000165,SOL-2025-00135,PAC-00252,2025-05-09,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000166,SOL-2024-00158,PAC-00077,2025-05-10,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000167,SOL-2024-00144,PAC-00405,2025-05-11,hba1c,resultado,8.9,"HbA1c 8,9%.",laboratorio
+EVT-000168,SOL-2022-00020,PAC-00403,2025-05-15,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000169,SOL-2024-00040,PAC-00801,2025-05-16,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000170,SOL-2024-00134,PAC-00295,2025-05-16,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000171,SOL-2025-00125,PAC-00563,2025-05-16,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000172,SOL-2025-00074,PAC-00701,2025-05-23,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000173,SOL-2025-00287,PAC-00885,2025-05-24,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual (anterior a inclusao na fila).",UPA Moacyr Scliar
+EVT-000174,SOL-2024-00120,PAC-00181,2025-05-26,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000175,SOL-2025-00274,PAC-00442,2025-05-29,internacao,alta,7,"Internacao por 7 dias (dor toracica / angina), anterior a inclusao na fila.",Hospital Sao Lucas
+EVT-000176,SOL-2025-00006,PAC-00739,2025-05-30,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000177,SOL-2024-00120,PAC-00181,2025-06-04,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000178,SOL-2025-00030,PAC-00445,2025-06-04,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000179,SOL-2025-00053,PAC-00158,2025-06-04,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000180,SOL-2023-00016,PAC-00088,2025-06-05,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-000181,SOL-2024-00106,PAC-00883,2025-06-06,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000182,SOL-2023-00016,PAC-00088,2025-06-07,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-000183,SOL-2023-00068,PAC-00789,2025-06-07,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000184,SOL-2025-00183,PAC-00890,2025-06-13,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000185,SOL-2025-00104,PAC-00819,2025-06-15,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000186,SOL-2025-00109,PAC-00713,2025-06-15,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000187,SOL-2023-00047,PAC-00261,2025-06-20,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000188,SOL-2025-00053,PAC-00158,2025-06-23,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000189,SOL-2024-00144,PAC-00405,2025-06-25,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000190,SOL-2025-00142,PAC-00357,2025-06-25,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000191,SOL-2025-00301,PAC-00594,2025-06-25,internacao,alta,3,"Internacao por 3 dias (dor toracica / angina), anterior a inclusao na fila.",Hospital Sao Lucas
+EVT-000192,SOL-2024-00027,PAC-00165,2025-06-28,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000193,SOL-2024-00155,PAC-00462,2025-06-29,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000194,SOL-2023-00058,PAC-00390,2025-07-01,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000195,SOL-2025-00109,PAC-00713,2025-07-05,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000196,SOL-2023-00006,PAC-00795,2025-07-10,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000197,SOL-2024-00117,PAC-00915,2025-07-12,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000198,SOL-2025-00287,PAC-00885,2025-07-15,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual (anterior a inclusao na fila).",PS municipal
+EVT-000199,SOL-2022-00035,PAC-00065,2025-07-17,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000200,SOL-2025-00130,PAC-00262,2025-07-18,hba1c,resultado,8.9,"HbA1c 8,9%.",laboratorio
+EVT-000201,SOL-2023-00084,PAC-00509,2025-07-21,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000202,SOL-2022-00023,PAC-00480,2025-07-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000203,SOL-2025-00190,PAC-00647,2025-07-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000204,SOL-2025-00002,PAC-00543,2025-07-27,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000205,SOL-2025-00146,PAC-00706,2025-07-30,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000206,SOL-2025-00192,PAC-00006,2025-07-31,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000207,SOL-2025-00224,PAC-00534,2025-08-01,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000208,SOL-2025-00173,PAC-00124,2025-08-05,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000209,SOL-2025-00203,PAC-00354,2025-08-06,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000210,SOL-2025-00177,PAC-00538,2025-08-07,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000211,SOL-2024-00052,PAC-00374,2025-08-15,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000212,SOL-2025-00135,PAC-00252,2025-08-17,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000213,SOL-2024-00016,PAC-00725,2025-08-23,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000214,SOL-2022-00057,PAC-00672,2025-08-24,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000215,SOL-2023-00045,PAC-00425,2025-08-27,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000216,SOL-2025-00051,PAC-00476,2025-08-27,hba1c,resultado,8.4,"HbA1c 8,4%.",laboratorio
+EVT-000217,SOL-2025-00172,PAC-00023,2025-08-27,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000218,SOL-2025-00231,PAC-00644,2025-08-27,hba1c,resultado,9.5,"HbA1c 9,5%.",laboratorio
+EVT-000219,SOL-2024-00020,PAC-00587,2025-08-28,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000220,SOL-2024-00134,PAC-00295,2025-08-28,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000221,SOL-2025-00173,PAC-00124,2025-08-28,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000222,SOL-2023-00079,PAC-00584,2025-08-30,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000223,SOL-2025-00106,PAC-00692,2025-08-30,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000224,SOL-2025-00307,PAC-00895,2025-08-30,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000225,SOL-2025-00295,PAC-00850,2025-09-01,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000226,SOL-2025-00180,PAC-00821,2025-09-02,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000227,SOL-2025-00263,PAC-00340,2025-09-05,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000228,SOL-2025-00357,PAC-00477,2025-09-05,biopsia,negativo,,LAUDO AP: PROCESSO INFLAMATORIO CRONICO. SEM ATIPIAS.,laboratorio de patologia
+EVT-000229,SOL-2025-00137,PAC-00040,2025-09-07,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000230,SOL-2025-00248,PAC-00378,2025-09-07,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000231,SOL-2023-00056,PAC-00832,2025-09-08,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000232,SOL-2025-00315,PAC-00202,2025-09-08,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000233,SOL-2023-00068,PAC-00789,2025-09-12,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000234,SOL-2025-00124,PAC-00130,2025-09-14,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000235,SOL-2025-00233,PAC-00013,2025-09-15,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000236,SOL-2025-00101,PAC-00323,2025-09-16,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000237,SOL-2023-00023,PAC-00365,2025-09-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000238,SOL-2025-00278,PAC-00867,2025-09-23,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000239,SOL-2025-00053,PAC-00158,2025-09-26,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000240,SOL-2023-00031,PAC-00733,2025-09-28,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000241,SOL-2025-00030,PAC-00445,2025-09-29,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000242,SOL-2025-00417,PAC-00337,2025-09-29,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000243,SOL-2025-00228,PAC-00880,2025-10-04,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000244,SOL-2025-00278,PAC-00867,2025-10-04,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000245,SOL-2024-00182,PAC-00190,2025-10-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000246,SOL-2024-00189,PAC-00606,2025-10-10,hba1c,resultado,7.5,"HbA1c 7,5%.",laboratorio
+EVT-000247,SOL-2025-00177,PAC-00538,2025-10-10,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000248,SOL-2023-00041,PAC-00615,2025-10-11,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000249,SOL-2024-00079,PAC-00908,2025-10-11,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000250,SOL-2025-00395,PAC-00698,2025-10-14,pronto_socorro,atendido_liberado,,Atendimento em PS por colica renal (anterior a inclusao na fila).,UPA Moacyr Scliar
+EVT-000251,SOL-2025-00078,PAC-00872,2025-10-20,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000252,SOL-2025-00087,PAC-00079,2025-10-25,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000253,SOL-2024-00181,PAC-00344,2025-10-26,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000254,SOL-2025-00492,PAC-00545,2025-10-27,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000255,SOL-2022-00029,PAC-00849,2025-10-29,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-000256,SOL-2025-00478,PAC-00199,2025-10-29,biopsia,negativo,,LAUDO AP: PROCESSO INFLAMATORIO CRONICO. SEM ATIPIAS.,laboratorio de patologia
+EVT-000257,SOL-2024-00003,PAC-00087,2025-10-30,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000258,SOL-2024-00032,PAC-00154,2025-10-30,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000259,SOL-2025-00017,PAC-00535,2025-10-30,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000260,SOL-2022-00003,PAC-00502,2025-11-01,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000261,SOL-2025-00276,PAC-00422,2025-11-01,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000262,SOL-2025-00998,PAC-02391,2025-11-02,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000263,SOL-2025-00441,PAC-00657,2025-11-03,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000264,SOL-2025-00190,PAC-00647,2025-11-04,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000265,SOL-2025-00036,PAC-00569,2025-11-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000266,SOL-2022-00019,PAC-00019,2025-11-09,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000267,SOL-2025-00904,PAC-02734,2025-11-09,hba1c,resultado,8.4,"HbA1c 8,4%.",laboratorio
+EVT-000268,SOL-2025-00161,PAC-00471,2025-11-10,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000269,SOL-2025-00174,PAC-00823,2025-11-11,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000270,SOL-2025-00386,PAC-00041,2025-11-11,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000271,SOL-2023-00083,PAC-00238,2025-11-12,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000272,SOL-2025-00326,PAC-00492,2025-11-12,hba1c,resultado,9.2,"HbA1c 9,2%.",laboratorio
+EVT-000273,SOL-2022-00003,PAC-00502,2025-11-13,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000274,SOL-2025-00080,PAC-00622,2025-11-13,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000275,SOL-2026-00016,PAC-00756,2025-11-15,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000276,SOL-2025-00420,PAC-00234,2025-11-16,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000277,SOL-2025-00146,PAC-00706,2025-11-17,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000278,SOL-2025-00312,PAC-00058,2025-11-18,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000279,SOL-2025-00091,PAC-00536,2025-11-19,hba1c,resultado,9.7,"HbA1c 9,7%.",laboratorio
+EVT-000280,SOL-2025-00109,PAC-00713,2025-11-19,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000281,SOL-2023-00024,PAC-00184,2025-11-22,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000282,SOL-2025-00157,PAC-00565,2025-11-22,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000283,SOL-2025-00157,PAC-00565,2025-11-23,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000284,SOL-2025-00180,PAC-00821,2025-11-23,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000285,SOL-2026-00009,PAC-00342,2025-11-23,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000286,SOL-2023-00047,PAC-00261,2025-11-24,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000287,SOL-2023-00941,PAC-02238,2025-11-24,falta,consulta,,Registro de solicitacao removida da fila.,ambulatorio
+EVT-000288,SOL-2025-00184,PAC-00231,2025-11-24,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000289,SOL-2025-00339,PAC-00717,2025-11-24,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000290,SOL-2024-00168,PAC-00014,2025-11-26,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000291,SOL-2023-00010,PAC-00467,2025-11-27,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000292,SOL-2025-00155,PAC-00206,2025-11-29,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000293,SOL-2025-00276,PAC-00422,2025-11-29,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000294,SOL-2024-00140,PAC-00814,2025-11-30,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000295,SOL-2025-00087,PAC-00079,2025-12-01,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000296,SOL-2025-00391,PAC-00451,2025-12-01,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000297,SOL-2025-00142,PAC-00357,2025-12-03,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000298,SOL-2025-00518,PAC-00469,2025-12-03,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000299,SOL-2025-00184,PAC-00231,2025-12-05,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000300,SOL-2025-00412,PAC-00638,2025-12-07,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000301,SOL-2025-00442,PAC-00366,2025-12-07,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000302,SOL-2025-00458,PAC-00042,2025-12-07,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000303,SOL-2022-00032,PAC-00533,2025-12-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000304,SOL-2025-00257,PAC-00479,2025-12-08,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000305,SOL-2025-00428,PAC-00129,2025-12-09,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-000306,SOL-2025-00011,PAC-00090,2025-12-10,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000307,SOL-2024-00095,PAC-00581,2025-12-11,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000308,SOL-2025-00287,PAC-00885,2025-12-11,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000309,SOL-2025-00130,PAC-00262,2025-12-12,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000310,SOL-2025-00271,PAC-00305,2025-12-12,hba1c,resultado,9.7,"HbA1c 9,7%.",laboratorio
+EVT-000311,SOL-2026-00098,PAC-00761,2025-12-12,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000312,SOL-2025-00002,PAC-00543,2025-12-13,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000313,SOL-2025-00435,PAC-00123,2025-12-17,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000314,SOL-2025-00414,PAC-00742,2025-12-19,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000315,SOL-2025-00386,PAC-00041,2025-12-20,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000316,SOL-2025-00266,PAC-00550,2025-12-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000317,SOL-2025-00287,PAC-00885,2025-12-22,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000318,SOL-2025-00192,PAC-00006,2025-12-23,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000319,SOL-2023-00009,PAC-00841,2025-12-24,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000320,SOL-2024-00133,PAC-00497,2025-12-24,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000321,SOL-2025-00431,PAC-00843,2025-12-24,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000322,SOL-2025-00036,PAC-00569,2025-12-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000323,SOL-2026-00036,PAC-00796,2025-12-25,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000324,SOL-2026-00036,PAC-00796,2025-12-25,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000325,SOL-2025-00045,PAC-00562,2025-12-26,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000326,SOL-2025-00177,PAC-00538,2025-12-27,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000327,SOL-2025-00322,PAC-00457,2025-12-27,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000328,SOL-2025-00278,PAC-00867,2025-12-29,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-000329,SOL-2025-00287,PAC-00885,2025-12-29,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000330,SOL-2023-00027,PAC-00621,2025-12-31,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000331,SOL-2023-00013,PAC-00576,2026-01-01,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000332,SOL-2025-00321,PAC-00071,2026-01-01,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000333,SOL-2023-00060,PAC-00045,2026-01-02,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000334,SOL-2026-00072,PAC-00212,2026-01-02,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000335,SOL-2024-00081,PAC-00764,2026-01-03,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000336,SOL-2025-00347,PAC-00148,2026-01-03,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000337,SOL-2025-00412,PAC-00638,2026-01-03,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000338,SOL-2023-00083,PAC-00238,2026-01-04,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000339,SOL-2025-00188,PAC-00582,2026-01-06,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-000340,SOL-2025-00307,PAC-00895,2026-01-06,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000341,SOL-2023-00075,PAC-00827,2026-01-07,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000342,SOL-2025-00504,PAC-00211,2026-01-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000343,SOL-2026-00131,PAC-00608,2026-01-08,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000344,SOL-2025-00257,PAC-00479,2026-01-09,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000345,SOL-2025-00909,PAC-02088,2026-01-09,falta,consulta,,Registro de solicitacao removida da fila.,ambulatorio
+EVT-000346,SOL-2024-00027,PAC-00165,2026-01-11,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000347,SOL-2026-00103,PAC-00464,2026-01-11,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000348,SOL-2026-00031,PAC-00407,2026-01-13,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000349,SOL-2025-00193,PAC-00359,2026-01-15,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000350,SOL-2023-00027,PAC-00621,2026-01-16,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000351,SOL-2025-00492,PAC-00545,2026-01-16,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000352,SOL-2024-00133,PAC-00497,2026-01-18,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000353,SOL-2025-00359,PAC-00783,2026-01-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000354,SOL-2026-00013,PAC-00002,2026-01-18,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000355,SOL-2025-00260,PAC-00580,2026-01-19,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000356,SOL-2025-00326,PAC-00492,2026-01-19,hba1c,resultado,8.7,"HbA1c 8,7%.",laboratorio
+EVT-000357,SOL-2025-00328,PAC-00913,2026-01-20,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000358,SOL-2025-00125,PAC-00563,2026-01-21,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000359,SOL-2025-00328,PAC-00913,2026-01-21,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000360,SOL-2025-00200,PAC-00135,2026-01-22,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000361,SOL-2025-00331,PAC-00297,2026-01-22,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000362,SOL-2025-00461,PAC-00028,2026-01-23,hba1c,resultado,9.4,"HbA1c 9,4%.",laboratorio
+EVT-000363,SOL-2025-00403,PAC-00744,2026-01-24,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000364,SOL-2026-00155,PAC-00155,2026-01-25,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000365,SOL-2024-00050,PAC-00901,2026-01-26,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000366,SOL-2025-00278,PAC-00867,2026-01-26,hba1c,resultado,9.3,"HbA1c 9,3%.",laboratorio
+EVT-000367,SOL-2025-00149,PAC-00392,2026-01-28,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000368,SOL-2025-00053,PAC-00158,2026-01-29,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000369,SOL-2025-00116,PAC-00387,2026-01-29,hba1c,resultado,9.6,"HbA1c 9,6%.",laboratorio
+EVT-000370,SOL-2026-00202,PAC-00802,2026-01-29,internacao,alta,4,"Internacao por 4 dias (colica biliar / colecistite), anterior a inclusao na fila.",Hospital Sao Lucas
+EVT-000371,SOL-2023-00002,PAC-00152,2026-01-30,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000372,SOL-2025-00095,PAC-00244,2026-01-30,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000373,SOL-2025-00080,PAC-00622,2026-01-31,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000374,SOL-2025-00142,PAC-00357,2026-01-31,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000375,SOL-2025-00365,PAC-00573,2026-01-31,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000376,SOL-2026-00073,PAC-00439,2026-01-31,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000377,SOL-2026-00078,PAC-00825,2026-01-31,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000378,SOL-2026-00232,PAC-00472,2026-01-31,biopsia,negativo,,Biopsia negativa para neoplasia. Fibroadenoma.,laboratorio de patologia
+EVT-000379,SOL-2025-00266,PAC-00550,2026-02-01,hba1c,resultado,8.2,"HbA1c 8,2%.",laboratorio
+EVT-000380,SOL-2026-00012,PAC-00591,2026-02-03,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000381,SOL-2022-00049,PAC-00805,2026-02-04,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000382,SOL-2024-00027,PAC-00165,2026-02-04,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000383,SOL-2026-00009,PAC-00342,2026-02-04,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000384,SOL-2022-00015,PAC-00168,2026-02-07,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000385,SOL-2025-00188,PAC-00582,2026-02-09,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000386,SOL-2025-00412,PAC-00638,2026-02-09,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-000387,SOL-2024-00124,PAC-00537,2026-02-11,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000388,SOL-2025-00414,PAC-00742,2026-02-11,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000389,SOL-2024-00052,PAC-00374,2026-02-13,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000390,SOL-2025-00028,PAC-00506,2026-02-15,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000391,SOL-2025-00312,PAC-00058,2026-02-15,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000392,SOL-2023-00004,PAC-00075,2026-02-16,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000393,SOL-2024-00088,PAC-00072,2026-02-17,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000394,SOL-2024-00161,PAC-00682,2026-02-17,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000395,SOL-2026-00191,PAC-00524,2026-02-18,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000396,SOL-2024-00130,PAC-00824,2026-02-19,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000397,SOL-2025-00271,PAC-00305,2026-02-19,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-000398,SOL-2025-00343,PAC-00743,2026-02-19,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000399,SOL-2023-00071,PAC-00520,2026-02-22,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000400,SOL-2025-00381,PAC-00074,2026-02-22,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000401,SOL-2025-00030,PAC-00445,2026-02-23,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000402,SOL-2025-00045,PAC-00562,2026-02-23,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000403,SOL-2025-00494,PAC-00268,2026-02-23,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000404,SOL-2025-00510,PAC-00772,2026-02-23,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000405,SOL-2026-00229,PAC-00917,2026-02-23,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000406,SOL-2026-00011,PAC-00500,2026-02-27,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000407,SOL-2024-00030,PAC-00729,2026-02-28,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000408,SOL-2024-00117,PAC-00915,2026-03-01,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000409,SOL-2023-00043,PAC-00804,2026-03-02,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000410,SOL-2025-00002,PAC-00543,2026-03-02,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000411,SOL-2025-00494,PAC-00268,2026-03-03,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000412,SOL-2025-00157,PAC-00565,2026-03-04,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000413,SOL-2026-00035,PAC-00015,2026-03-06,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000414,SOL-2026-00322,PAC-00068,2026-03-06,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000415,SOL-2025-00495,PAC-00009,2026-03-07,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000416,SOL-2026-00107,PAC-00456,2026-03-07,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000417,SOL-2023-00002,PAC-00152,2026-03-08,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000418,SOL-2025-00368,PAC-00689,2026-03-09,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000419,SOL-2026-00262,PAC-00612,2026-03-09,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000420,SOL-2025-00135,PAC-00252,2026-03-10,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-000421,SOL-2025-00184,PAC-00231,2026-03-10,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000422,SOL-2025-00371,PAC-00400,2026-03-11,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000423,SOL-2025-00017,PAC-00535,2026-03-12,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000424,SOL-2025-00210,PAC-00866,2026-03-14,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000425,SOL-2025-00495,PAC-00009,2026-03-14,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000426,SOL-2026-00108,PAC-00769,2026-03-14,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000427,SOL-2026-00160,PAC-00162,2026-03-14,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000428,SOL-2022-00005,PAC-00632,2026-03-15,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000429,SOL-2024-00189,PAC-00606,2026-03-16,hba1c,resultado,7.5,"HbA1c 7,5%.",laboratorio
+EVT-000430,SOL-2026-00195,PAC-00708,2026-03-16,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000431,SOL-2025-00461,PAC-00028,2026-03-18,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000432,SOL-2025-00478,PAC-00199,2026-03-18,biopsia,inconclusivo,,Biopsia com atipias indeterminadas. Revisao de laminas solicitada.,laboratorio de patologia
+EVT-000433,SOL-2026-00037,PAC-00108,2026-03-18,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000434,SOL-2026-00011,PAC-00500,2026-03-19,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000435,SOL-2026-00331,PAC-00617,2026-03-20,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000436,SOL-2025-00017,PAC-00535,2026-03-21,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000437,SOL-2025-00231,PAC-00644,2026-03-21,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-000438,SOL-2025-00248,PAC-00378,2026-03-21,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000439,SOL-2025-00414,PAC-00742,2026-03-21,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000440,SOL-2026-00104,PAC-00889,2026-03-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000441,SOL-2024-00058,PAC-00655,2026-03-22,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-000442,SOL-2025-00386,PAC-00041,2026-03-22,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000443,SOL-2026-00192,PAC-00466,2026-03-22,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-000444,SOL-2026-00101,PAC-00627,2026-03-23,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000445,SOL-2022-00009,PAC-00688,2026-03-24,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000446,SOL-2025-00295,PAC-00850,2026-03-24,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000447,SOL-2025-00002,PAC-00543,2026-03-25,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000448,SOL-2026-00019,PAC-00395,2026-03-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000449,SOL-2024-00144,PAC-00405,2026-03-26,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000450,SOL-2026-00340,PAC-00531,2026-03-26,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000451,SOL-2024-00002,PAC-00666,2026-03-27,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000452,SOL-2025-00014,PAC-00035,2026-03-27,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000453,SOL-2026-00505,PAC-00868,2026-03-27,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual (anterior a inclusao na fila).",PS municipal
+EVT-000454,SOL-2025-00407,PAC-00656,2026-03-28,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000455,SOL-2025-00321,PAC-00071,2026-03-29,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000456,SOL-2026-00012,PAC-00591,2026-03-30,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-000457,SOL-2025-00045,PAC-00562,2026-03-31,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000458,SOL-2025-00260,PAC-00580,2026-03-31,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000459,SOL-2026-00397,PAC-00113,2026-04-03,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000460,SOL-2025-00066,PAC-00602,2026-04-04,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000461,SOL-2025-00228,PAC-00880,2026-04-04,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000462,SOL-2025-00173,PAC-00124,2026-04-05,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000463,SOL-2026-00056,PAC-00549,2026-04-06,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000464,SOL-2023-00070,PAC-00431,2026-04-07,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000465,SOL-2025-00399,PAC-00156,2026-04-08,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000466,SOL-2026-00035,PAC-00015,2026-04-12,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000467,SOL-2025-00011,PAC-00090,2026-04-13,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-000468,SOL-2026-00232,PAC-00472,2026-04-13,biopsia,inconclusivo,,"AP inconclusivo, material insuficiente. Repetir biopsia.",laboratorio de patologia
+EVT-000469,SOL-2026-00283,PAC-00910,2026-04-13,biopsia,inconclusivo,,Biopsia com atipias indeterminadas. Revisao de laminas solicitada.,laboratorio de patologia
+EVT-000470,SOL-2024-00147,PAC-00704,2026-04-14,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000471,SOL-2025-00104,PAC-00819,2026-04-14,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000472,SOL-2025-00357,PAC-00477,2026-04-14,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-000473,SOL-2026-00006,PAC-00066,2026-04-15,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000474,SOL-2025-00228,PAC-00880,2026-04-16,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000475,SOL-2023-00049,PAC-00061,2026-04-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000476,SOL-2025-00309,PAC-00060,2026-04-18,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000477,SOL-2026-00076,PAC-00625,2026-04-18,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000478,SOL-2026-00489,PAC-00433,2026-04-18,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000479,SOL-2026-00332,PAC-00327,2026-04-19,hba1c,resultado,8.7,"HbA1c 8,7%.",laboratorio
+EVT-000480,SOL-2026-00011,PAC-00500,2026-04-20,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000481,SOL-2026-00359,PAC-00835,2026-04-20,biopsia,negativo,,AP: sem sinais de malignidade.,laboratorio de patologia
+EVT-000482,SOL-2026-00705,PAC-00086,2026-04-20,pronto_socorro,atendido_liberado,,Atendimento em PS por dor toracica / angina (anterior a inclusao na fila).,UPA Moacyr Scliar
+EVT-000483,SOL-2026-00699,PAC-00394,2026-04-23,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual (anterior a inclusao na fila).",PS Hospital Sao Lucas
+EVT-000484,SOL-2026-00078,PAC-00825,2026-04-24,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000485,SOL-2026-00105,PAC-00618,2026-04-24,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000486,SOL-2024-00014,PAC-00818,2026-04-25,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000487,SOL-2025-00192,PAC-00006,2026-04-25,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000488,SOL-2025-00240,PAC-00864,2026-04-25,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000489,SOL-2025-00473,PAC-00334,2026-04-25,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000490,SOL-2026-00530,PAC-00325,2026-04-26,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000491,SOL-2023-00926,PAC-02573,2026-04-27,hba1c,resultado,9.3,"HbA1c 9,3%.",laboratorio
+EVT-000492,SOL-2024-00095,PAC-00581,2026-04-27,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000493,SOL-2024-00180,PAC-00521,2026-04-27,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000494,SOL-2024-00092,PAC-00510,2026-04-28,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000495,SOL-2024-00109,PAC-00474,2026-04-28,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000496,SOL-2024-00147,PAC-00704,2026-04-28,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000497,SOL-2025-00006,PAC-00739,2026-04-29,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000498,SOL-2026-00331,PAC-00617,2026-04-29,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000499,SOL-2026-00478,PAC-00273,2026-04-29,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000500,SOL-2025-00312,PAC-00058,2026-04-30,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000501,SOL-2025-00386,PAC-00041,2026-05-01,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000502,SOL-2022-00047,PAC-00330,2026-05-03,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000503,SOL-2024-00068,PAC-00096,2026-05-03,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000504,SOL-2025-00080,PAC-00622,2026-05-03,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000505,SOL-2026-00262,PAC-00612,2026-05-03,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000506,SOL-2026-00263,PAC-00253,2026-05-03,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000507,SOL-2026-00097,PAC-00012,2026-05-04,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000508,SOL-2024-00035,PAC-00081,2026-05-05,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000509,SOL-2025-00053,PAC-00158,2026-05-05,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000510,SOL-2025-00418,PAC-00353,2026-05-05,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000511,SOL-2026-00543,PAC-00008,2026-05-05,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000512,SOL-2023-00002,PAC-00152,2026-05-06,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000513,SOL-2024-00011,PAC-00218,2026-05-06,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-000514,SOL-2025-00116,PAC-00387,2026-05-06,hba1c,resultado,9.1,"HbA1c 9,1%.",laboratorio
+EVT-000515,SOL-2025-00321,PAC-00071,2026-05-07,hba1c,resultado,8.5,"HbA1c 8,5%.",laboratorio
+EVT-000516,SOL-2025-00420,PAC-00234,2026-05-07,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000517,SOL-2026-00069,PAC-00886,2026-05-07,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000518,SOL-2023-00076,PAC-00107,2026-05-08,contato_telefonico,informou_cirurgia_outro_servico,,Pct informa que ja realizou o procedimento em outro servico.,call center
+EVT-000519,SOL-2025-00099,PAC-00098,2026-05-08,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000520,SOL-2025-00351,PAC-00274,2026-05-08,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000521,SOL-2026-00460,PAC-00558,2026-05-08,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000522,SOL-2026-00084,PAC-00282,2026-05-09,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000523,SOL-2025-00130,PAC-00262,2026-05-10,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-000524,SOL-2025-00435,PAC-00123,2026-05-10,contato_telefonico,informou_cirurgia_outro_servico,,Pct informa que ja realizou o procedimento em outro servico.,call center
+EVT-000525,SOL-2025-00478,PAC-00199,2026-05-10,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000526,SOL-2026-00056,PAC-00549,2026-05-10,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000527,SOL-2024-00089,PAC-00193,2026-05-11,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000528,SOL-2025-00515,PAC-00398,2026-05-11,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000529,SOL-2025-00432,PAC-00182,2026-05-12,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000530,SOL-2026-00076,PAC-00625,2026-05-12,hba1c,resultado,7.5,"HbA1c 7,5%.",laboratorio
+EVT-000531,SOL-2026-00097,PAC-00012,2026-05-12,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000532,SOL-2026-00552,PAC-00662,2026-05-13,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000533,SOL-2025-00498,PAC-00881,2026-05-14,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000534,SOL-2026-00031,PAC-00407,2026-05-14,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000535,SOL-2023-00009,PAC-00841,2026-05-15,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000536,SOL-2026-00336,PAC-00053,2026-05-15,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000537,SOL-2022-00014,PAC-00201,2026-05-16,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000538,SOL-2023-00056,PAC-00832,2026-05-16,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000539,SOL-2023-00083,PAC-00238,2026-05-16,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000540,SOL-2024-00040,PAC-00801,2026-05-16,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000541,SOL-2025-00428,PAC-00129,2026-05-16,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000542,SOL-2024-00157,PAC-00149,2026-05-17,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000543,SOL-2026-00336,PAC-00053,2026-05-17,hba1c,resultado,8.4,"HbA1c 8,4%.",laboratorio
+EVT-000544,SOL-2026-00343,PAC-00891,2026-05-17,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000545,SOL-2024-00101,PAC-00122,2026-05-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000546,SOL-2026-00120,PAC-00296,2026-05-18,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000547,SOL-2024-00011,PAC-00218,2026-05-19,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000548,SOL-2025-00184,PAC-00231,2026-05-19,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000549,SOL-2025-00445,PAC-00776,2026-05-20,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000550,SOL-2026-00237,PAC-00214,2026-05-20,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000551,SOL-2026-00408,PAC-00526,2026-05-20,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000552,SOL-2025-00116,PAC-00387,2026-05-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000553,SOL-2025-00260,PAC-00580,2026-05-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000554,SOL-2025-00266,PAC-00550,2026-05-21,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000555,SOL-2026-00741,PAC-00495,2026-05-21,internacao,alta,3,"Internacao por 3 dias (dor toracica / angina), anterior a inclusao na fila.",Hospital Sao Lucas
+EVT-000556,SOL-2025-00334,PAC-00376,2026-05-22,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-000557,SOL-2026-00178,PAC-00844,2026-05-22,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000558,SOL-2024-00165,PAC-00358,2026-05-23,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000559,SOL-2025-00357,PAC-00477,2026-05-23,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000560,SOL-2026-00023,PAC-00697,2026-05-23,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000561,SOL-2026-00626,PAC-00665,2026-05-23,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000562,SOL-2023-00927,PAC-02397,2026-05-24,falta,consulta,,Registro de solicitacao removida da fila.,ambulatorio
+EVT-000563,SOL-2025-00091,PAC-00536,2026-05-24,hba1c,resultado,8.7,"HbA1c 8,7%.",laboratorio
+EVT-000564,SOL-2026-00655,PAC-00732,2026-05-24,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000565,SOL-2024-00157,PAC-00149,2026-05-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000566,SOL-2026-00305,PAC-00874,2026-05-25,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-000567,SOL-2026-00505,PAC-00868,2026-05-25,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual (anterior a inclusao na fila).",UPA Lomba do Pinheiro
+EVT-000568,SOL-2026-00563,PAC-00396,2026-05-25,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000569,SOL-2024-00137,PAC-00691,2026-05-26,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,UPA Moacyr Scliar
+EVT-000570,SOL-2026-00425,PAC-00032,2026-05-26,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000571,SOL-2026-00049,PAC-00056,2026-05-27,hba1c,resultado,6.5,"HbA1c 6,5%.",laboratorio
+EVT-000572,SOL-2026-00078,PAC-00825,2026-05-27,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000573,SOL-2026-00229,PAC-00917,2026-05-28,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000574,SOL-2025-00495,PAC-00009,2026-05-29,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-000575,SOL-2025-00461,PAC-00028,2026-05-31,hba1c,resultado,8.9,"HbA1c 8,9%.",laboratorio
+EVT-000576,SOL-2025-00228,PAC-00880,2026-06-01,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000577,SOL-2026-00237,PAC-00214,2026-06-01,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000578,SOL-2026-00408,PAC-00526,2026-06-01,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000579,SOL-2025-00309,PAC-00060,2026-06-02,biopsia,inconclusivo,,"AP inconclusivo, material insuficiente. Repetir biopsia.",laboratorio de patologia
+EVT-000580,SOL-2026-00533,PAC-00250,2026-06-02,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000581,SOL-2025-00336,PAC-00730,2026-06-03,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000582,SOL-2025-00238,PAC-00094,2026-06-04,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,UPA Moacyr Scliar
+EVT-000583,SOL-2026-00178,PAC-00844,2026-06-04,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000584,SOL-2026-00557,PAC-00272,2026-06-04,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000585,SOL-2022-00045,PAC-00478,2026-06-05,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000586,SOL-2023-00036,PAC-00633,2026-06-05,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000587,SOL-2025-00326,PAC-00492,2026-06-05,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000588,SOL-2025-00384,PAC-00084,2026-06-05,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-000589,SOL-2026-00178,PAC-00844,2026-06-05,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000590,SOL-2026-00212,PAC-00767,2026-06-05,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000591,SOL-2025-00157,PAC-00565,2026-06-06,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000592,SOL-2026-00527,PAC-00690,2026-06-06,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000593,SOL-2026-00638,PAC-00326,2026-06-07,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000594,SOL-2023-00087,PAC-00610,2026-06-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000595,SOL-2024-00052,PAC-00374,2026-06-08,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000596,SOL-2026-00380,PAC-00386,2026-06-08,biopsia,inconclusivo,,"AP inconclusivo, material insuficiente. Repetir biopsia.",laboratorio de patologia
+EVT-000597,SOL-2026-00657,PAC-00180,2026-06-08,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000598,SOL-2025-00091,PAC-00536,2026-06-09,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000599,SOL-2025-00206,PAC-00863,2026-06-09,pronto_socorro,observacao,,Atendimento em PS por dispneia / hemoptise.,UPA Zona Norte
+EVT-000600,SOL-2026-00084,PAC-00282,2026-06-09,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000601,SOL-2026-00466,PAC-00361,2026-06-09,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,Emergencia HPS
+EVT-000602,SOL-2024-00127,PAC-00577,2026-06-10,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000603,SOL-2026-00705,PAC-00086,2026-06-10,pronto_socorro,atendido_liberado,,Atendimento em PS por dor toracica / angina (anterior a inclusao na fila).,PS municipal
+EVT-000604,SOL-2025-00075,PAC-00894,2026-06-11,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000605,SOL-2025-00447,PAC-00204,2026-06-11,falta,consulta,,Paciente nao compareceu - informou falta de transporte.,ambulatorio
+EVT-000606,SOL-2026-00167,PAC-00592,2026-06-11,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000607,SOL-2024-00082,PAC-00694,2026-06-12,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000608,SOL-2025-00028,PAC-00506,2026-06-12,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000609,SOL-2024-00179,PAC-00887,2026-06-13,contato_telefonico,informou_cirurgia_outro_servico,,Pct informa que ja realizou o procedimento em outro servico.,call center
+EVT-000610,SOL-2026-00263,PAC-00253,2026-06-13,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000611,SOL-2026-00387,PAC-00738,2026-06-13,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000612,SOL-2022-00029,PAC-00849,2026-06-14,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000613,SOL-2024-00047,PAC-00197,2026-06-14,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000614,SOL-2025-00271,PAC-00305,2026-06-15,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-000615,SOL-2025-00280,PAC-00260,2026-06-15,pronto_socorro,atendido_liberado,,Atendimento em PS por dor incapacitante em quadril.,Emergencia HPS
+EVT-000616,SOL-2026-00239,PAC-00611,2026-06-15,pronto_socorro,observacao,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",PS municipal
+EVT-000617,SOL-2025-00313,PAC-00754,2026-06-16,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000618,SOL-2025-00428,PAC-00129,2026-06-16,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000619,SOL-2025-00420,PAC-00234,2026-06-17,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000620,SOL-2026-00237,PAC-00214,2026-06-17,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000621,SOL-2025-00015,PAC-00140,2026-06-18,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual.",PS Hospital Sao Lucas
+EVT-000622,SOL-2025-00464,PAC-00450,2026-06-18,pronto_socorro,observacao,,Atendimento em PS por celulite em ulcera venosa.,PS Hospital Sao Lucas
+EVT-000623,SOL-2025-00955,PAC-02044,2026-06-18,contato_telefonico,atendeu,,Registro de solicitacao removida da fila.,call center
+EVT-000624,SOL-2026-00105,PAC-00618,2026-06-18,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-000625,SOL-2026-00387,PAC-00738,2026-06-18,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000626,SOL-2024-00066,PAC-00598,2026-06-19,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000627,SOL-2025-00104,PAC-00819,2026-06-19,pronto_socorro,atendido_liberado,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",PS municipal
+EVT-000628,SOL-2025-00256,PAC-00306,2026-06-19,pronto_socorro,observacao,,Atendimento em PS por epistaxe.,UPA Moacyr Scliar
+EVT-000629,SOL-2026-00213,PAC-00178,2026-06-19,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000630,SOL-2026-00263,PAC-00253,2026-06-20,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000631,SOL-2024-00149,PAC-00350,2026-06-21,hba1c,resultado,8.7,"HbA1c 8,7%.",laboratorio
+EVT-000632,SOL-2025-00272,PAC-00018,2026-06-21,pronto_socorro,observacao,,"Atendimento em PS por hernia encarcerada, reducao manual.",PS municipal
+EVT-000633,SOL-2025-00515,PAC-00398,2026-06-21,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-000634,SOL-2026-00107,PAC-00456,2026-06-21,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000635,SOL-2026-00274,PAC-00916,2026-06-21,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,PS municipal
+EVT-000636,SOL-2026-00581,PAC-00428,2026-06-21,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000637,SOL-2025-00030,PAC-00445,2026-06-22,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000638,SOL-2025-00087,PAC-00079,2026-06-22,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000639,SOL-2025-00206,PAC-00863,2026-06-22,pronto_socorro,observacao,,Atendimento em PS por dispneia / hemoptise.,PS Hospital Sao Lucas
+EVT-000640,SOL-2026-00134,PAC-00258,2026-06-22,pronto_socorro,atendido_liberado,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",PS Hospital Sao Lucas
+EVT-000641,SOL-2026-00428,PAC-00120,2026-06-22,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual.",UPA Zona Norte
+EVT-000642,SOL-2026-00500,PAC-00702,2026-06-22,hba1c,resultado,8.9,"HbA1c 8,9%.",laboratorio
+EVT-000643,SOL-2025-00286,PAC-00116,2026-06-23,pronto_socorro,observacao,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",PS Hospital Sao Lucas
+EVT-000644,SOL-2025-00461,PAC-00028,2026-06-23,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000645,SOL-2026-00128,PAC-00459,2026-06-23,pronto_socorro,atendido_liberado,,Atendimento em PS por dor incapacitante em quadril.,PS Hospital Sao Lucas
+EVT-000646,SOL-2026-00184,PAC-00391,2026-06-23,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,UPA Lomba do Pinheiro
+EVT-000647,SOL-2026-00430,PAC-00487,2026-06-23,pronto_socorro,atendido_liberado,,Atendimento em PS por colica renal.,UPA Zona Norte
+EVT-000648,SOL-2024-00168,PAC-00014,2026-06-24,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000649,SOL-2024-00177,PAC-00414,2026-06-24,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000650,SOL-2026-00304,PAC-00726,2026-06-24,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000651,SOL-2026-00436,PAC-00210,2026-06-24,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000652,SOL-2023-00054,PAC-00029,2026-06-25,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-000653,SOL-2024-00149,PAC-00350,2026-06-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000654,SOL-2025-00264,PAC-00815,2026-06-25,pronto_socorro,observacao,,Atendimento em PS por dor abdominal / suboclusao.,Emergencia HPS
+EVT-000655,SOL-2026-00462,PAC-00572,2026-06-25,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,PS Hospital Sao Lucas
+EVT-000656,SOL-2024-00030,PAC-00729,2026-06-26,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000657,SOL-2025-00280,PAC-00260,2026-06-26,pronto_socorro,observacao,,Atendimento em PS por dor incapacitante em quadril.,PS municipal
+EVT-000658,SOL-2025-00321,PAC-00071,2026-06-26,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000659,SOL-2026-00035,PAC-00015,2026-06-26,hba1c,resultado,9.4,"HbA1c 9,4%.",laboratorio
+EVT-000660,SOL-2026-00120,PAC-00296,2026-06-26,hba1c,resultado,9.9,"HbA1c 9,9%.",laboratorio
+EVT-000661,SOL-2025-00418,PAC-00353,2026-06-27,pronto_socorro,observacao,,Atendimento em PS por dispneia por compressao cervical.,PS Hospital Sao Lucas
+EVT-000662,SOL-2026-00288,PAC-00736,2026-06-27,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000663,SOL-2026-00602,PAC-00595,2026-06-27,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000664,SOL-2026-00782,PAC-00703,2026-06-27,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000665,SOL-2026-00032,PAC-00759,2026-06-28,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,Emergencia HPS
+EVT-000666,SOL-2026-00235,PAC-00652,2026-06-28,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,PS municipal
+EVT-000667,SOL-2026-00274,PAC-00916,2026-06-28,pronto_socorro,observacao,,Atendimento em PS por dor intensa em mao.,Emergencia HPS
+EVT-000668,SOL-2026-00431,PAC-00658,2026-06-28,pronto_socorro,atendido_liberado,,Atendimento em PS por queda / dor em joelho.,UPA Zona Norte
+EVT-000669,SOL-2024-00041,PAC-00308,2026-06-29,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000670,SOL-2026-00237,PAC-00214,2026-06-29,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000671,SOL-2026-00305,PAC-00874,2026-06-29,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000672,SOL-2026-00376,PAC-00205,2026-06-29,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000673,SOL-2026-00420,PAC-00645,2026-06-29,pronto_socorro,atendido_liberado,,Atendimento em PS por dispneia / insuficiencia respiratoria.,PS Hospital Sao Lucas
+EVT-000674,SOL-2025-00063,PAC-00430,2026-06-30,pronto_socorro,atendido_liberado,,"Atendimento em PS por retencao urinaria aguda, sondagem.",PS Hospital Sao Lucas
+EVT-000675,SOL-2026-00229,PAC-00917,2026-06-30,pronto_socorro,atendido_liberado,,Atendimento em PS por hematemese / vomitos.,PS Hospital Sao Lucas
+EVT-000676,SOL-2026-00332,PAC-00327,2026-06-30,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-000677,SOL-2026-00795,PAC-00699,2026-06-30,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000678,SOL-2025-00099,PAC-00098,2026-07-01,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000679,SOL-2024-00039,PAC-00808,2026-07-02,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000680,SOL-2025-00011,PAC-00090,2026-07-02,pronto_socorro,observacao,,Atendimento em PS por dor e secrecao em mama.,PS municipal
+EVT-000681,SOL-2025-00403,PAC-00744,2026-07-02,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-000682,SOL-2026-00489,PAC-00433,2026-07-02,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,PS Hospital Sao Lucas
+EVT-000683,SOL-2026-00558,PAC-00179,2026-07-02,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000684,SOL-2026-00572,PAC-00110,2026-07-02,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000685,SOL-2024-00041,PAC-00308,2026-07-03,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000686,SOL-2025-00039,PAC-00281,2026-07-03,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000687,SOL-2026-00049,PAC-00056,2026-07-03,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000688,SOL-2026-00332,PAC-00327,2026-07-03,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000689,SOL-2026-00392,PAC-00552,2026-07-03,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-000690,SOL-2026-00516,PAC-00909,2026-07-03,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000691,SOL-2026-00229,PAC-00917,2026-07-04,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000692,SOL-2026-00462,PAC-00572,2026-07-04,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000693,SOL-2026-00812,PAC-00888,2026-07-04,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000694,SOL-2024-00107,PAC-00840,2026-07-05,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,UPA Zona Norte
+EVT-000695,SOL-2024-00112,PAC-00639,2026-07-05,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000696,SOL-2025-00425,PAC-00862,2026-07-05,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000697,SOL-2026-00229,PAC-00917,2026-07-05,pronto_socorro,observacao,,Atendimento em PS por hematemese / vomitos.,Emergencia HPS
+EVT-000698,SOL-2026-00359,PAC-00835,2026-07-05,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000699,SOL-2026-00536,PAC-00746,2026-07-05,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-000700,SOL-2026-00740,PAC-00434,2026-07-05,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000701,SOL-2026-00108,PAC-00769,2026-07-06,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000702,SOL-2026-00572,PAC-00110,2026-07-06,hba1c,resultado,10.0,"HbA1c 10,0%.",laboratorio
+EVT-000703,SOL-2023-00053,PAC-00650,2026-07-07,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000704,SOL-2025-00044,PAC-00848,2026-07-07,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000705,SOL-2026-00335,PAC-00310,2026-07-07,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,UPA Lomba do Pinheiro
+EVT-000706,SOL-2026-00803,PAC-00649,2026-07-07,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000707,SOL-2026-00860,PAC-00740,2026-07-07,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000708,SOL-2024-00088,PAC-00072,2026-07-08,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000709,SOL-2025-00231,PAC-00644,2026-07-08,hba1c,resultado,8.2,"HbA1c 8,2%.",laboratorio
+EVT-000710,SOL-2026-00160,PAC-00162,2026-07-08,hba1c,resultado,8.2,"HbA1c 8,2%.",laboratorio
+EVT-000711,SOL-2026-00219,PAC-00248,2026-07-08,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000712,SOL-2026-00335,PAC-00310,2026-07-08,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,PS Hospital Sao Lucas
+EVT-000713,SOL-2026-00335,PAC-00310,2026-07-08,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,UPA Lomba do Pinheiro
+EVT-000714,SOL-2026-00362,PAC-00636,2026-07-08,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-000715,SOL-2026-00392,PAC-00552,2026-07-08,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Zona Norte
+EVT-000716,SOL-2025-00381,PAC-00074,2026-07-09,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-000717,SOL-2025-00418,PAC-00353,2026-07-09,pronto_socorro,observacao,,Atendimento em PS por dispneia por compressao cervical.,PS Hospital Sao Lucas
+EVT-000718,SOL-2026-00250,PAC-00249,2026-07-09,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000719,SOL-2026-00500,PAC-00702,2026-07-09,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-000720,SOL-2026-00615,PAC-00768,2026-07-09,biopsia,inconclusivo,,Biopsia com atipias indeterminadas. Revisao de laminas solicitada.,laboratorio de patologia
+EVT-000721,SOL-2026-00648,PAC-00570,2026-07-09,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000722,SOL-2025-00409,PAC-00143,2026-07-10,pronto_socorro,observacao,,Atendimento em PS por dor intensa em mao.,Emergencia HPS
+EVT-000723,SOL-2026-00237,PAC-00214,2026-07-10,hba1c,resultado,7.5,"HbA1c 7,5%.",laboratorio
+EVT-000724,SOL-2026-00902,PAC-00596,2026-07-10,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000725,SOL-2026-00903,PAC-00383,2026-07-10,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000726,SOL-2023-00053,PAC-00650,2026-07-11,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000727,SOL-2024-00059,PAC-00528,2026-07-11,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000728,SOL-2025-00046,PAC-00501,2026-07-11,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000729,SOL-2026-00025,PAC-00126,2026-07-11,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000730,SOL-2026-00263,PAC-00253,2026-07-11,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000731,SOL-2026-00781,PAC-00284,2026-07-11,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000732,SOL-2023-00030,PAC-00225,2026-07-13,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000733,SOL-2025-00476,PAC-00817,2026-07-13,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,PS Hospital Sao Lucas
+EVT-000734,SOL-2026-00127,PAC-00663,2026-07-13,pronto_socorro,observacao,,Atendimento em PS por queda / dor em joelho.,Emergencia HPS
+EVT-000735,SOL-2026-00602,PAC-00595,2026-07-13,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000736,SOL-2025-00339,PAC-00717,2026-07-14,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000737,SOL-2025-00515,PAC-00398,2026-07-14,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Zona Norte
+EVT-000738,SOL-2026-00448,PAC-00492,2026-07-14,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000739,SOL-2026-00683,PAC-00861,2026-07-14,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000740,SOL-2026-00830,PAC-00189,2026-07-14,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000741,SOL-2026-00836,PAC-00050,2026-07-14,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000742,SOL-2022-00002,PAC-00859,2026-07-15,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-000743,SOL-2025-00039,PAC-00281,2026-07-15,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-000744,SOL-2026-00192,PAC-00466,2026-07-15,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-000745,SOL-2026-00352,PAC-00037,2026-07-15,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000746,SOL-2026-00597,PAC-00292,2026-07-15,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,Emergencia HPS
+EVT-000747,SOL-2026-00638,PAC-00326,2026-07-15,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000748,SOL-2026-00752,PAC-00038,2026-07-15,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000749,SOL-2026-00846,PAC-00319,2026-07-15,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000750,SOL-2025-00099,PAC-00098,2026-07-16,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000751,SOL-2025-00321,PAC-00071,2026-07-16,hba1c,resultado,9.6,"HbA1c 9,6%.",laboratorio
+EVT-000752,SOL-2025-00442,PAC-00366,2026-07-16,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000753,SOL-2025-00512,PAC-00164,2026-07-16,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000754,SOL-2026-00543,PAC-00008,2026-07-16,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000755,SOL-2026-00897,PAC-00320,2026-07-16,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000756,SOL-2025-00186,PAC-00127,2026-07-17,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-000757,SOL-2025-00173,PAC-00124,2026-07-18,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-000758,SOL-2026-00181,PAC-00085,2026-07-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000759,SOL-2026-00799,PAC-00153,2026-07-18,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000760,SOL-2026-00776,PAC-00073,2026-07-19,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000761,SOL-2022-00042,PAC-00613,2026-07-20,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000762,SOL-2023-00027,PAC-00621,2026-07-20,hba1c,resultado,6.7,"HbA1c 6,7%.",laboratorio
+EVT-000763,SOL-2024-00088,PAC-00072,2026-07-20,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-000764,SOL-2024-00101,PAC-00122,2026-07-20,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-000765,SOL-2025-00186,PAC-00127,2026-07-20,pronto_socorro,atendido_liberado,,Atendimento em PS por dor abdominal / suboclusao.,Emergencia HPS
+EVT-000766,SOL-2025-00515,PAC-00398,2026-07-20,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-000767,SOL-2026-00012,PAC-00591,2026-07-20,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-000768,SOL-2024-00960,PAC-02914,2026-07-21,falta,consulta,,Registro de solicitacao removida da fila.,ambulatorio
+EVT-000769,SOL-2025-00143,PAC-00338,2026-07-21,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-000770,SOL-2025-00312,PAC-00058,2026-07-21,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000771,SOL-2026-00032,PAC-00759,2026-07-21,pronto_socorro,observacao,,Atendimento em PS por colica biliar / colecistite.,UPA Lomba do Pinheiro
+EVT-000772,SOL-2025-00515,PAC-00398,2026-07-22,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000773,SOL-2026-00340,PAC-00531,2026-07-22,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000774,SOL-2026-00343,PAC-00891,2026-07-22,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000775,SOL-2026-00808,PAC-00721,2026-07-22,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000776,SOL-2026-00809,PAC-00904,2026-07-22,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000777,SOL-2026-00823,PAC-00266,2026-07-22,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000778,SOL-2026-00853,PAC-00362,2026-07-22,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000779,SOL-2023-00082,PAC-00585,2026-07-23,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000780,SOL-2026-00161,PAC-00021,2026-07-23,hba1c,resultado,9.5,"HbA1c 9,5%.",laboratorio
+EVT-000781,SOL-2026-00235,PAC-00652,2026-07-23,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,PS Hospital Sao Lucas
+EVT-000782,SOL-2026-00574,PAC-00798,2026-07-23,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,Emergencia HPS
+EVT-000783,SOL-2026-00825,PAC-00709,2026-07-23,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000784,SOL-2022-00018,PAC-00384,2026-07-24,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-000785,SOL-2026-00128,PAC-00459,2026-07-24,pronto_socorro,observacao,,Atendimento em PS por dor incapacitante em quadril.,PS municipal
+EVT-000786,SOL-2026-00343,PAC-00891,2026-07-24,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000787,SOL-2026-00743,PAC-00307,2026-07-24,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000788,SOL-2026-00792,PAC-00034,2026-07-24,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000789,SOL-2025-00334,PAC-00376,2026-07-25,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-000790,SOL-2026-00101,PAC-00627,2026-07-25,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000791,SOL-2026-00105,PAC-00618,2026-07-25,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-000792,SOL-2026-00352,PAC-00037,2026-07-25,hba1c,resultado,7.5,"HbA1c 7,5%.",laboratorio
+EVT-000793,SOL-2026-00430,PAC-00487,2026-07-25,internacao,alta,4,Internacao por 4 dias (colica renal).,Hospital Sao Lucas
+EVT-000794,SOL-2026-00732,PAC-00619,2026-07-25,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000795,SOL-2026-00763,PAC-00822,2026-07-25,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000796,SOL-2024-00058,PAC-00655,2026-07-26,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000797,SOL-2024-00165,PAC-00358,2026-07-26,exame_imagem,progressao,,TC de controle: aumento da lesao em relacao ao exame anterior.,radiologia
+EVT-000798,SOL-2025-00036,PAC-00569,2026-07-26,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-000799,SOL-2025-00417,PAC-00337,2026-07-26,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000800,SOL-2026-00099,PAC-00643,2026-07-26,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,UPA Lomba do Pinheiro
+EVT-000801,SOL-2026-00466,PAC-00361,2026-07-26,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,UPA Moacyr Scliar
+EVT-000802,SOL-2022-00020,PAC-00403,2026-07-27,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000803,SOL-2025-00487,PAC-00547,2026-07-27,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000804,SOL-2026-00189,PAC-00089,2026-07-27,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-000805,SOL-2026-00331,PAC-00617,2026-07-27,pronto_socorro,observacao,,Atendimento em PS por retencao urinaria.,Emergencia HPS
+EVT-000806,SOL-2026-00430,PAC-00487,2026-07-27,pronto_socorro,atendido_liberado,,Atendimento em PS por colica renal.,PS Hospital Sao Lucas
+EVT-000807,SOL-2026-00444,PAC-00267,2026-07-27,hba1c,resultado,9.3,"HbA1c 9,3%.",laboratorio
+EVT-000808,SOL-2026-00457,PAC-00059,2026-07-27,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Lomba do Pinheiro
+EVT-000809,SOL-2026-00637,PAC-00109,2026-07-27,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,PS Hospital Sao Lucas
+EVT-000810,SOL-2023-00002,PAC-00152,2026-07-28,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000811,SOL-2023-00068,PAC-00789,2026-07-28,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000812,SOL-2024-00058,PAC-00655,2026-07-28,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000813,SOL-2025-00031,PAC-00102,2026-07-28,internacao,alta,2,Internacao por 2 dias (dispneia por compressao cervical).,Hospital Sao Lucas
+EVT-000814,SOL-2025-00130,PAC-00262,2026-07-28,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000815,SOL-2026-00016,PAC-00756,2026-07-28,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000816,SOL-2026-00637,PAC-00109,2026-07-28,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,UPA Lomba do Pinheiro
+EVT-000817,SOL-2026-00719,PAC-00215,2026-07-28,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000818,SOL-2022-00039,PAC-00897,2026-07-29,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000819,SOL-2024-00104,PAC-00213,2026-07-29,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-000820,SOL-2025-00287,PAC-00885,2026-07-29,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000821,SOL-2025-00342,PAC-00293,2026-07-29,hba1c,resultado,9.6,"HbA1c 9,6%.",laboratorio
+EVT-000822,SOL-2026-00328,PAC-00103,2026-07-29,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,UPA Moacyr Scliar
+EVT-000823,SOL-2026-00352,PAC-00037,2026-07-29,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-000824,SOL-2026-00932,PAC-00668,2026-07-29,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000825,SOL-2024-00180,PAC-00521,2026-07-30,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000826,SOL-2025-00224,PAC-00534,2026-07-30,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-000827,SOL-2025-00260,PAC-00580,2026-07-30,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000828,SOL-2025-00506,PAC-00557,2026-07-30,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Zona Norte
+EVT-000829,SOL-2026-00120,PAC-00296,2026-07-30,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-000830,SOL-2026-00553,PAC-00624,2026-07-30,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000831,SOL-2022-00044,PAC-00111,2026-07-31,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-000832,SOL-2024-00047,PAC-00197,2026-07-31,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-000833,SOL-2024-00182,PAC-00190,2026-07-31,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000834,SOL-2025-00066,PAC-00602,2026-07-31,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-000835,SOL-2025-00402,PAC-00229,2026-07-31,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000836,SOL-2026-00535,PAC-00055,2026-07-31,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000837,SOL-2026-00683,PAC-00861,2026-07-31,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000838,SOL-2026-00786,PAC-00560,2026-07-31,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000839,SOL-2023-00024,PAC-00184,2026-08-01,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-000840,SOL-2024-00006,PAC-00224,2026-08-01,exame_imagem,progressao,,TC de controle: aumento da lesao em relacao ao exame anterior.,radiologia
+EVT-000841,SOL-2025-00307,PAC-00895,2026-08-01,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000842,SOL-2026-00396,PAC-00669,2026-08-01,pronto_socorro,observacao,,Atendimento em PS por dor e secrecao em mama.,PS municipal
+EVT-000843,SOL-2026-00396,PAC-00669,2026-08-01,internacao,alta,8,Internacao por 8 dias (dor e secrecao em mama).,Hospital Sao Lucas
+EVT-000844,SOL-2026-00397,PAC-00113,2026-08-01,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-000845,SOL-2026-00599,PAC-00762,2026-08-01,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-000846,SOL-2024-00020,PAC-00587,2026-08-02,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000847,SOL-2024-00039,PAC-00808,2026-08-02,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000848,SOL-2025-00107,PAC-00016,2026-08-02,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-000849,SOL-2025-00441,PAC-00657,2026-08-02,exame_imagem,progressao,,TC de controle: aumento da lesao em relacao ao exame anterior.,radiologia
+EVT-000850,SOL-2026-00099,PAC-00643,2026-08-02,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Lomba do Pinheiro
+EVT-000851,SOL-2026-00129,PAC-00070,2026-08-02,internacao,alta,5,Internacao por 5 dias (sangramento uterino intenso).,Hospital Sao Lucas
+EVT-000852,SOL-2026-00478,PAC-00273,2026-08-02,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-000853,SOL-2026-00734,PAC-00263,2026-08-02,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000854,SOL-2026-00783,PAC-00026,2026-08-02,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000855,SOL-2026-00936,PAC-00892,2026-08-02,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000856,SOL-2024-00137,PAC-00691,2026-08-03,pronto_socorro,observacao,,Atendimento em PS por celulite em ulcera venosa.,UPA Lomba do Pinheiro
+EVT-000857,SOL-2025-00015,PAC-00140,2026-08-03,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000858,SOL-2026-00035,PAC-00015,2026-08-03,hba1c,resultado,10.1,"HbA1c 10,1%.",laboratorio
+EVT-000859,SOL-2026-00049,PAC-00056,2026-08-03,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000860,SOL-2026-00331,PAC-00617,2026-08-03,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000861,SOL-2026-00720,PAC-00024,2026-08-03,pronto_socorro,atendido_liberado,,Atendimento em PS por dor incapacitante em quadril.,PS Hospital Sao Lucas
+EVT-000862,SOL-2026-00972,PAC-00603,2026-08-03,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000863,SOL-2025-00126,PAC-00791,2026-08-04,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000864,SOL-2025-00504,PAC-00211,2026-08-04,internacao,alta,5,Internacao por 5 dias (celulite em ulcera venosa).,Hospital Sao Lucas
+EVT-000865,SOL-2026-00172,PAC-00896,2026-08-04,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,UPA Lomba do Pinheiro
+EVT-000866,SOL-2026-00235,PAC-00652,2026-08-04,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,UPA Zona Norte
+EVT-000867,SOL-2026-00895,PAC-00043,2026-08-04,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000868,SOL-2026-00899,PAC-00680,2026-08-04,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000869,SOL-2024-00164,PAC-00635,2026-08-05,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-000870,SOL-2026-00037,PAC-00108,2026-08-05,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000871,SOL-2026-00192,PAC-00466,2026-08-05,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-000872,SOL-2026-00682,PAC-00186,2026-08-05,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000873,SOL-2026-00887,PAC-00741,2026-08-05,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000874,SOL-2026-00985,PAC-00352,2026-08-05,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000875,SOL-2024-00140,PAC-00814,2026-08-06,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-000876,SOL-2025-00131,PAC-00318,2026-08-06,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-000877,SOL-2025-00414,PAC-00742,2026-08-06,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000878,SOL-2026-00098,PAC-00761,2026-08-06,internacao,alta,4,Internacao por 4 dias (sangramento uterino intenso).,Hospital Sao Lucas
+EVT-000879,SOL-2024-00035,PAC-00081,2026-08-07,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000880,SOL-2024-00083,PAC-00628,2026-08-07,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-000881,SOL-2025-00053,PAC-00158,2026-08-07,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-000882,SOL-2025-00063,PAC-00430,2026-08-07,internacao,alta,3,"Internacao por 3 dias (retencao urinaria aguda, sondagem).",Hospital Sao Lucas
+EVT-000883,SOL-2026-00019,PAC-00395,2026-08-07,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000884,SOL-2026-00819,PAC-00678,2026-08-07,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000885,SOL-2025-00058,PAC-00722,2026-08-08,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000886,SOL-2025-00063,PAC-00430,2026-08-08,pronto_socorro,observacao,,"Atendimento em PS por retencao urinaria aguda, sondagem.",UPA Moacyr Scliar
+EVT-000887,SOL-2025-00180,PAC-00821,2026-08-08,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000888,SOL-2025-00260,PAC-00580,2026-08-08,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-000889,SOL-2025-00518,PAC-00469,2026-08-08,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000890,SOL-2026-00049,PAC-00056,2026-08-08,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000891,SOL-2026-00599,PAC-00762,2026-08-08,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000892,SOL-2024-00107,PAC-00840,2026-08-09,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,PS municipal
+EVT-000893,SOL-2025-00292,PAC-00291,2026-08-09,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Zona Norte
+EVT-000894,SOL-2025-00346,PAC-00076,2026-08-09,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000895,SOL-2026-00297,PAC-00380,2026-08-09,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000896,SOL-2026-00408,PAC-00526,2026-08-09,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000897,SOL-2026-00527,PAC-00690,2026-08-09,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-000898,SOL-2026-00553,PAC-00624,2026-08-09,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-000899,SOL-2026-00632,PAC-00221,2026-08-09,hba1c,resultado,9.2,"HbA1c 9,2%.",laboratorio
+EVT-000900,SOL-2026-00636,PAC-00240,2026-08-09,hba1c,resultado,8.4,"HbA1c 8,4%.",laboratorio
+EVT-000901,SOL-2026-00682,PAC-00186,2026-08-09,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-000902,SOL-2025-00011,PAC-00090,2026-08-10,internacao,alta,4,Internacao por 4 dias (dor e secrecao em mama).,Hospital Sao Lucas
+EVT-000903,SOL-2026-00478,PAC-00273,2026-08-10,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000904,SOL-2026-00881,PAC-00857,2026-08-10,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-000905,SOL-2026-00448,PAC-00492,2026-08-11,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000906,SOL-2026-00741,PAC-00495,2026-08-11,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,UPA Zona Norte
+EVT-000907,SOL-2026-00784,PAC-00553,2026-08-11,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000908,SOL-2026-00979,PAC-00371,2026-08-11,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000909,SOL-2024-00007,PAC-00397,2026-08-12,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000910,SOL-2024-00120,PAC-00181,2026-08-12,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000911,SOL-2025-00407,PAC-00656,2026-08-12,pronto_socorro,atendido_liberado,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",UPA Lomba do Pinheiro
+EVT-000912,SOL-2026-00322,PAC-00068,2026-08-12,pronto_socorro,observacao,,Atendimento em PS por dor e secrecao em mama.,PS municipal
+EVT-000913,SOL-2026-00843,PAC-00620,2026-08-12,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-000914,SOL-2026-00929,PAC-00675,2026-08-12,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000915,SOL-2026-00969,PAC-00175,2026-08-12,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000916,SOL-2023-00060,PAC-00045,2026-08-13,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000917,SOL-2024-00168,PAC-00014,2026-08-13,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-000918,SOL-2026-00536,PAC-00746,2026-08-13,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,PS municipal
+EVT-000919,SOL-2026-00657,PAC-00180,2026-08-13,internacao,alta,8,Internacao por 8 dias (retencao urinaria).,Hospital Sao Lucas
+EVT-000920,SOL-2026-00741,PAC-00495,2026-08-13,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000921,SOL-2026-00835,PAC-00133,2026-08-13,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-000922,SOL-2026-00934,PAC-00173,2026-08-13,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000923,SOL-2022-00003,PAC-00502,2026-08-14,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-000924,SOL-2023-00046,PAC-00030,2026-08-14,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-000925,SOL-2025-00113,PAC-00919,2026-08-14,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000926,SOL-2026-00131,PAC-00608,2026-08-14,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-000927,SOL-2026-00190,PAC-00101,2026-08-14,hba1c,resultado,9.8,"HbA1c 9,8%.",laboratorio
+EVT-000928,SOL-2026-00492,PAC-00105,2026-08-14,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000929,SOL-2026-00552,PAC-00662,2026-08-14,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-000930,SOL-2026-00642,PAC-00192,2026-08-14,pronto_socorro,atendido_liberado,,Atendimento em PS por dor e secrecao em mama.,Emergencia HPS
+EVT-000931,SOL-2025-00031,PAC-00102,2026-08-15,pronto_socorro,observacao,,Atendimento em PS por dispneia por compressao cervical.,PS municipal
+EVT-000932,SOL-2025-00135,PAC-00252,2026-08-15,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000933,SOL-2025-00257,PAC-00479,2026-08-15,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-000934,SOL-2025-00296,PAC-00784,2026-08-15,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000935,SOL-2024-00016,PAC-00725,2026-08-16,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000936,SOL-2025-00183,PAC-00890,2026-08-16,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000937,SOL-2026-00480,PAC-00278,2026-08-16,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-000938,SOL-2026-00626,PAC-00665,2026-08-16,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-000939,SOL-2025-00031,PAC-00102,2026-08-17,pronto_socorro,observacao,,Atendimento em PS por dispneia por compressao cervical.,UPA Lomba do Pinheiro
+EVT-000940,SOL-2025-00186,PAC-00127,2026-08-17,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000941,SOL-2025-00478,PAC-00199,2026-08-17,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-000942,SOL-2026-00291,PAC-00388,2026-08-17,internacao,alta,3,Internacao por 3 dias (dispneia / insuficiencia respiratoria).,Hospital Sao Lucas
+EVT-000943,SOL-2026-00560,PAC-00813,2026-08-17,contato_telefonico,informou_cirurgia_outro_servico,,Pct informa que ja realizou o procedimento em outro servico.,call center
+EVT-000944,SOL-2026-00707,PAC-00522,2026-08-17,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,Emergencia HPS
+EVT-000945,SOL-2026-00710,PAC-00046,2026-08-17,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000946,SOL-2026-00710,PAC-00046,2026-08-17,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000947,SOL-2026-00894,PAC-00486,2026-08-17,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000948,SOL-2025-00268,PAC-00893,2026-08-18,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-000949,SOL-2025-00414,PAC-00742,2026-08-18,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000950,SOL-2026-00069,PAC-00886,2026-08-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000951,SOL-2026-00420,PAC-00645,2026-08-18,internacao,alta,6,Internacao por 6 dias (dispneia / insuficiencia respiratoria).,Hospital Sao Lucas
+EVT-000952,SOL-2026-00577,PAC-00406,2026-08-18,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-000953,SOL-2026-00720,PAC-00024,2026-08-18,pronto_socorro,observacao,,Atendimento em PS por dor incapacitante em quadril.,PS municipal
+EVT-000954,SOL-2026-00915,PAC-00245,2026-08-18,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000955,SOL-2026-00926,PAC-00751,2026-08-18,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000956,SOL-2026-00981,PAC-00745,2026-08-18,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000957,SOL-2025-00002,PAC-00543,2026-08-19,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000958,SOL-2025-00109,PAC-00713,2026-08-19,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000959,SOL-2026-00535,PAC-00055,2026-08-19,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-000960,SOL-2026-00574,PAC-00798,2026-08-19,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,UPA Lomba do Pinheiro
+EVT-000961,SOL-2024-00162,PAC-00418,2026-08-20,pronto_socorro,atendido_liberado,,Atendimento em PS por dispneia por compressao cervical.,UPA Moacyr Scliar
+EVT-000962,SOL-2025-00384,PAC-00084,2026-08-20,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-000963,SOL-2026-00120,PAC-00296,2026-08-20,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-000964,SOL-2026-00423,PAC-00870,2026-08-20,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-000965,SOL-2026-00522,PAC-00373,2026-08-20,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000966,SOL-2026-00707,PAC-00522,2026-08-20,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-000967,SOL-2026-00746,PAC-00508,2026-08-20,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-000968,SOL-2026-00948,PAC-00838,2026-08-20,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-000969,SOL-2025-00142,PAC-00357,2026-08-21,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-000970,SOL-2026-00128,PAC-00459,2026-08-21,internacao,alta,1,Internacao por 1 dias (dor incapacitante em quadril).,Hospital Sao Lucas
+EVT-000971,SOL-2026-00495,PAC-00128,2026-08-21,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-000972,SOL-2026-00535,PAC-00055,2026-08-21,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-000973,SOL-2026-00563,PAC-00396,2026-08-21,internacao,alta,5,Internacao por 5 dias (dor abdominal / suboclusao).,Hospital Sao Lucas
+EVT-000974,SOL-2026-00577,PAC-00406,2026-08-21,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-000975,SOL-2026-00637,PAC-00109,2026-08-21,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,UPA Moacyr Scliar
+EVT-000976,SOL-2026-00927,PAC-00781,2026-08-21,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-000977,SOL-2026-00971,PAC-00298,2026-08-21,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000978,SOL-2025-00211,PAC-00483,2026-08-22,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-000979,SOL-2025-00506,PAC-00557,2026-08-22,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-000980,SOL-2026-00032,PAC-00759,2026-08-22,pronto_socorro,observacao,,Atendimento em PS por colica biliar / colecistite.,PS municipal
+EVT-000981,SOL-2026-00297,PAC-00380,2026-08-22,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-000982,SOL-2026-00905,PAC-00346,2026-08-22,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000983,SOL-2024-00180,PAC-00521,2026-08-23,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-000984,SOL-2026-00136,PAC-00254,2026-08-23,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000985,SOL-2026-00160,PAC-00162,2026-08-23,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-000986,SOL-2026-00336,PAC-00053,2026-08-23,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-000987,SOL-2026-00615,PAC-00768,2026-08-23,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-000988,SOL-2024-00008,PAC-00432,2026-08-24,internacao,alta,1,"Internacao por 1 dias (hernia encarcerada, reducao manual).",Hospital Sao Lucas
+EVT-000989,SOL-2025-00137,PAC-00040,2026-08-24,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000990,SOL-2025-00256,PAC-00306,2026-08-24,pronto_socorro,observacao,,Atendimento em PS por epistaxe.,UPA Zona Norte
+EVT-000991,SOL-2026-00270,PAC-00329,2026-08-24,hba1c,resultado,6.9,"HbA1c 6,9%.",laboratorio
+EVT-000992,SOL-2026-00428,PAC-00120,2026-08-24,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual.",PS municipal
+EVT-000993,SOL-2026-00597,PAC-00292,2026-08-24,pronto_socorro,atendido_liberado,,Atendimento em PS por dor toracica / angina.,UPA Moacyr Scliar
+EVT-000994,SOL-2026-00808,PAC-00721,2026-08-24,pronto_socorro,atendido_liberado,,Atendimento em PS por dor e secrecao em mama.,UPA Lomba do Pinheiro
+EVT-000995,SOL-2025-00186,PAC-00127,2026-08-25,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-000996,SOL-2025-00417,PAC-00337,2026-08-25,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-000997,SOL-2025-00473,PAC-00334,2026-08-25,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-000998,SOL-2025-00473,PAC-00334,2026-08-25,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-000999,SOL-2026-00003,PAC-00138,2026-08-25,biopsia,positivo,,"AP: melanoma, Breslow 1,2 mm.",laboratorio de patologia
+EVT-001000,SOL-2025-00028,PAC-00506,2026-08-26,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001001,SOL-2025-00492,PAC-00545,2026-08-26,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001002,SOL-2026-00412,PAC-00031,2026-08-26,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001003,SOL-2026-00539,PAC-00830,2026-08-26,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001004,SOL-2023-00041,PAC-00615,2026-08-27,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001005,SOL-2025-00213,PAC-00839,2026-08-27,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001006,SOL-2025-00453,PAC-00223,2026-08-27,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-001007,SOL-2026-00250,PAC-00249,2026-08-27,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001008,SOL-2026-00448,PAC-00492,2026-08-27,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-001009,SOL-2026-00531,PAC-00564,2026-08-27,hba1c,resultado,6.6,"HbA1c 6,6%.",laboratorio
+EVT-001010,SOL-2026-00781,PAC-00284,2026-08-27,pronto_socorro,atendido_liberado,,Atendimento em PS por dispneia / hemoptise.,UPA Moacyr Scliar
+EVT-001011,SOL-2025-00022,PAC-00294,2026-08-28,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001012,SOL-2025-00260,PAC-00580,2026-08-28,hba1c,resultado,9.9,"HbA1c 9,9%.",laboratorio
+EVT-001013,SOL-2026-00824,PAC-00790,2026-08-28,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001014,SOL-2026-00884,PAC-00753,2026-08-28,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001015,SOL-2026-00996,PAC-00125,2026-08-28,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-001016,SOL-2024-00058,PAC-00655,2026-08-29,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001017,SOL-2024-00076,PAC-00264,2026-08-29,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-001018,SOL-2024-00085,PAC-00568,2026-08-29,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001019,SOL-2024-00152,PAC-00630,2026-08-29,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-001020,SOL-2024-00962,PAC-02218,2026-08-29,falta,consulta,,Registro de solicitacao removida da fila.,ambulatorio
+EVT-001021,SOL-2025-00458,PAC-00042,2026-08-29,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001022,SOL-2025-00463,PAC-00440,2026-08-29,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001023,SOL-2026-00297,PAC-00380,2026-08-29,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-001024,SOL-2026-00406,PAC-00727,2026-08-29,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001025,SOL-2026-00525,PAC-00091,2026-08-29,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-001026,SOL-2026-00913,PAC-00723,2026-08-29,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001027,SOL-2026-00009,PAC-00342,2026-08-30,exame_imagem,progressao,,TC de controle: aumento da lesao em relacao ao exame anterior.,radiologia
+EVT-001028,SOL-2026-00229,PAC-00917,2026-08-30,exame_imagem,progressao,,RNM: crescimento da lesao e invasao de estruturas adjacentes.,radiologia
+EVT-001029,SOL-2026-00642,PAC-00192,2026-08-30,pronto_socorro,atendido_liberado,,Atendimento em PS por dor e secrecao em mama.,UPA Lomba do Pinheiro
+EVT-001030,SOL-2025-00045,PAC-00562,2026-08-31,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,Emergencia HPS
+EVT-001031,SOL-2025-00045,PAC-00562,2026-08-31,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,Emergencia HPS
+EVT-001032,SOL-2025-00473,PAC-00334,2026-08-31,hba1c,resultado,7.2,"HbA1c 7,2%.",laboratorio
+EVT-001033,SOL-2025-00476,PAC-00817,2026-08-31,pronto_socorro,observacao,,Atendimento em PS por colica biliar / colecistite.,UPA Moacyr Scliar
+EVT-001034,SOL-2026-00478,PAC-00273,2026-08-31,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001035,SOL-2026-00743,PAC-00307,2026-08-31,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-001036,SOL-2025-00140,PAC-00005,2026-09-01,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-001037,SOL-2026-00362,PAC-00636,2026-09-01,hba1c,resultado,8.2,"HbA1c 8,2%.",laboratorio
+EVT-001038,SOL-2023-00027,PAC-00621,2026-09-02,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001039,SOL-2024-00082,PAC-00694,2026-09-02,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001040,SOL-2024-00184,PAC-00623,2026-09-02,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-001041,SOL-2025-00286,PAC-00116,2026-09-02,pronto_socorro,observacao,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",PS Hospital Sao Lucas
+EVT-001042,SOL-2025-00445,PAC-00776,2026-09-02,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-001043,SOL-2025-00504,PAC-00211,2026-09-02,pronto_socorro,observacao,,Atendimento em PS por celulite em ulcera venosa.,Emergencia HPS
+EVT-001044,SOL-2026-00013,PAC-00002,2026-09-02,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001045,SOL-2026-00072,PAC-00212,2026-09-02,internacao,alta,6,Internacao por 6 dias (sangramento em lesao de pele).,Hospital Sao Lucas
+EVT-001046,SOL-2026-00376,PAC-00205,2026-09-02,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001047,SOL-2026-00553,PAC-00624,2026-09-02,hba1c,resultado,8.5,"HbA1c 8,5%.",laboratorio
+EVT-001048,SOL-2026-00563,PAC-00396,2026-09-02,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001049,SOL-2026-00719,PAC-00215,2026-09-02,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001050,SOL-2026-00879,PAC-00246,2026-09-02,biopsia,inconclusivo,,"AP inconclusivo, material insuficiente. Repetir biopsia.",laboratorio de patologia
+EVT-001051,SOL-2022-00051,PAC-00121,2026-09-03,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001052,SOL-2023-00033,PAC-00488,2026-09-03,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001053,SOL-2024-00157,PAC-00149,2026-09-03,hba1c,resultado,9.5,"HbA1c 9,5%.",laboratorio
+EVT-001054,SOL-2025-00418,PAC-00353,2026-09-03,pronto_socorro,observacao,,Atendimento em PS por dispneia por compressao cervical.,UPA Moacyr Scliar
+EVT-001055,SOL-2026-00006,PAC-00066,2026-09-03,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-001056,SOL-2026-00288,PAC-00736,2026-09-03,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-001057,SOL-2026-00480,PAC-00278,2026-09-03,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-001058,SOL-2026-00648,PAC-00570,2026-09-03,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001059,SOL-2026-00757,PAC-00047,2026-09-03,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-001060,SOL-2026-00782,PAC-00703,2026-09-03,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001061,SOL-2026-00836,PAC-00050,2026-09-03,pronto_socorro,observacao,,Atendimento em PS por dispneia por compressao cervical.,Emergencia HPS
+EVT-001062,SOL-2026-00881,PAC-00857,2026-09-03,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento em lesao de pele.,UPA Moacyr Scliar
+EVT-001063,SOL-2026-00893,PAC-00220,2026-09-03,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001064,SOL-2026-00966,PAC-00235,2026-09-03,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-001065,SOL-2024-00162,PAC-00418,2026-09-04,pronto_socorro,atendido_liberado,,Atendimento em PS por dispneia por compressao cervical.,PS municipal
+EVT-001066,SOL-2025-00339,PAC-00717,2026-09-04,hba1c,resultado,8.4,"HbA1c 8,4%.",laboratorio
+EVT-001067,SOL-2026-00264,PAC-00684,2026-09-04,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-001068,SOL-2026-00331,PAC-00617,2026-09-04,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001069,SOL-2026-00531,PAC-00564,2026-09-04,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-001070,SOL-2026-00577,PAC-00406,2026-09-04,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001071,SOL-2026-00605,PAC-00914,2026-09-04,pronto_socorro,observacao,,Atendimento em PS por sangramento hemorroidario.,UPA Zona Norte
+EVT-001072,SOL-2026-00819,PAC-00678,2026-09-04,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001073,SOL-2022-00014,PAC-00201,2026-09-05,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001074,SOL-2024-00089,PAC-00193,2026-09-05,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-001075,SOL-2024-00166,PAC-00816,2026-09-05,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001076,SOL-2025-00374,PAC-00911,2026-09-05,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-001077,SOL-2026-00262,PAC-00612,2026-09-05,internacao,alta,3,Internacao por 3 dias (dor e secrecao em mama).,Hospital Sao Lucas
+EVT-001078,SOL-2026-00557,PAC-00272,2026-09-05,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001079,SOL-2026-00574,PAC-00798,2026-09-05,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001080,SOL-2026-00740,PAC-00434,2026-09-05,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001081,SOL-2026-00938,PAC-00222,2026-09-05,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-001082,SOL-2025-00095,PAC-00244,2026-09-06,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001083,SOL-2025-00125,PAC-00563,2026-09-06,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001084,SOL-2025-00378,PAC-00079,2026-09-06,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-001085,SOL-2025-00445,PAC-00776,2026-09-06,hba1c,resultado,9.1,"HbA1c 9,1%.",laboratorio
+EVT-001086,SOL-2025-00504,PAC-00211,2026-09-06,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,Emergencia HPS
+EVT-001087,SOL-2026-00138,PAC-00444,2026-09-06,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,PS Hospital Sao Lucas
+EVT-001088,SOL-2026-00884,PAC-00753,2026-09-06,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001089,SOL-2022-00054,PAC-00303,2026-09-07,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001090,SOL-2025-00014,PAC-00035,2026-09-07,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001091,SOL-2026-00006,PAC-00066,2026-09-07,hba1c,resultado,8.7,"HbA1c 8,7%.",laboratorio
+EVT-001092,SOL-2026-00270,PAC-00329,2026-09-07,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-001093,SOL-2026-00387,PAC-00738,2026-09-07,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-001094,SOL-2026-00976,PAC-00575,2026-09-07,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-001095,SOL-2023-00041,PAC-00615,2026-09-08,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-001096,SOL-2023-00074,PAC-00685,2026-09-08,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001097,SOL-2025-00125,PAC-00563,2026-09-08,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001098,SOL-2026-00457,PAC-00059,2026-09-08,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Zona Norte
+EVT-001099,SOL-2026-00605,PAC-00914,2026-09-08,internacao,alta,5,Internacao por 5 dias (sangramento hemorroidario).,Hospital Sao Lucas
+EVT-001100,SOL-2026-00809,PAC-00904,2026-09-08,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001101,SOL-2022-00057,PAC-00672,2026-09-09,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001102,SOL-2025-00109,PAC-00713,2026-09-09,hba1c,resultado,8.7,"HbA1c 8,7%.",laboratorio
+EVT-001103,SOL-2025-00121,PAC-00421,2026-09-09,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001104,SOL-2025-00409,PAC-00143,2026-09-09,pronto_socorro,observacao,,Atendimento em PS por dor intensa em mao.,UPA Zona Norte
+EVT-001105,SOL-2026-00013,PAC-00002,2026-09-09,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-001106,SOL-2026-00239,PAC-00611,2026-09-09,internacao,alta,1,"Internacao por 1 dias (dor em hernia inguinal, reducao manual).",Hospital Sao Lucas
+EVT-001107,SOL-2026-00263,PAC-00253,2026-09-09,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-001108,SOL-2026-00336,PAC-00053,2026-09-09,hba1c,resultado,10.0,"HbA1c 10,0%.",laboratorio
+EVT-001109,SOL-2026-00705,PAC-00086,2026-09-09,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,UPA Zona Norte
+EVT-001110,SOL-2026-00710,PAC-00046,2026-09-09,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001111,SOL-2026-00732,PAC-00619,2026-09-09,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001112,SOL-2026-00910,PAC-00322,2026-09-09,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001113,SOL-2022-00023,PAC-00480,2026-09-10,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-001114,SOL-2023-00028,PAC-00283,2026-09-10,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001115,SOL-2024-00008,PAC-00432,2026-09-10,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual.",UPA Zona Norte
+EVT-001116,SOL-2024-00171,PAC-00847,2026-09-10,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001117,SOL-2025-00025,PAC-00171,2026-09-10,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001118,SOL-2025-00157,PAC-00565,2026-09-10,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001119,SOL-2025-00473,PAC-00334,2026-09-10,hba1c,resultado,8.0,"HbA1c 8,0%.",laboratorio
+EVT-001120,SOL-2026-00099,PAC-00643,2026-09-10,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,Emergencia HPS
+EVT-001121,SOL-2026-00295,PAC-00187,2026-09-10,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001122,SOL-2026-00322,PAC-00068,2026-09-10,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001123,SOL-2026-00448,PAC-00492,2026-09-10,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001124,SOL-2026-00894,PAC-00486,2026-09-10,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001125,SOL-2025-00072,PAC-00601,2026-09-11,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-001126,SOL-2025-00315,PAC-00202,2026-09-11,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001127,SOL-2026-00098,PAC-00761,2026-09-11,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001128,SOL-2026-00229,PAC-00917,2026-09-11,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001129,SOL-2026-00719,PAC-00215,2026-09-11,pronto_socorro,observacao,,Atendimento em PS por sangramento em lesao de pele.,UPA Lomba do Pinheiro
+EVT-001130,SOL-2024-00055,PAC-00860,2026-09-12,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001131,SOL-2025-00296,PAC-00784,2026-09-12,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001132,SOL-2025-00473,PAC-00334,2026-09-12,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,UPA Zona Norte
+EVT-001133,SOL-2026-00011,PAC-00500,2026-09-12,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001134,SOL-2026-00352,PAC-00037,2026-09-12,hba1c,resultado,9.6,"HbA1c 9,6%.",laboratorio
+EVT-001135,SOL-2026-00355,PAC-00530,2026-09-12,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-001136,SOL-2026-00682,PAC-00186,2026-09-12,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-001137,SOL-2026-00781,PAC-00284,2026-09-12,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001138,SOL-2026-00907,PAC-00064,2026-09-12,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001139,SOL-2025-00441,PAC-00657,2026-09-13,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001140,SOL-2025-00445,PAC-00776,2026-09-13,hba1c,resultado,9.9,"HbA1c 9,9%.",laboratorio
+EVT-001141,SOL-2026-00072,PAC-00212,2026-09-13,pronto_socorro,observacao,,Atendimento em PS por sangramento em lesao de pele.,PS Hospital Sao Lucas
+EVT-001142,SOL-2026-00351,PAC-00475,2026-09-13,biopsia,positivo,,LAUDO AP: NEOPLASIA MALIGNA. ENCAMINHAR ONCOLOGIA.,laboratorio de patologia
+EVT-001143,SOL-2026-00379,PAC-00503,2026-09-13,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001144,SOL-2026-00508,PAC-00057,2026-09-13,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual.",PS municipal
+EVT-001145,SOL-2026-00657,PAC-00180,2026-09-13,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001146,SOL-2026-00129,PAC-00070,2026-09-14,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,UPA Moacyr Scliar
+EVT-001147,SOL-2026-00243,PAC-00799,2026-09-14,pronto_socorro,observacao,,"Atendimento em PS por hernia encarcerada, reducao manual.",UPA Moacyr Scliar
+EVT-001148,SOL-2026-00322,PAC-00068,2026-09-14,internacao,alta,8,Internacao por 8 dias (dor e secrecao em mama).,Hospital Sao Lucas
+EVT-001149,SOL-2026-00657,PAC-00180,2026-09-14,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001150,SOL-2026-00808,PAC-00721,2026-09-14,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001151,SOL-2026-00990,PAC-00571,2026-09-14,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-001152,SOL-2026-00448,PAC-00492,2026-09-15,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-001153,SOL-2026-00719,PAC-00215,2026-09-15,pronto_socorro,observacao,,Atendimento em PS por sangramento em lesao de pele.,PS municipal
+EVT-001154,SOL-2026-00808,PAC-00721,2026-09-15,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001155,SOL-2026-00920,PAC-00837,2026-09-15,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001156,SOL-2023-00045,PAC-00425,2026-09-16,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001157,SOL-2024-00008,PAC-00432,2026-09-16,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001158,SOL-2025-00113,PAC-00919,2026-09-16,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001159,SOL-2025-00264,PAC-00815,2026-09-16,pronto_socorro,atendido_liberado,,Atendimento em PS por dor abdominal / suboclusao.,UPA Zona Norte
+EVT-001160,SOL-2026-00019,PAC-00395,2026-09-16,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001161,SOL-2026-00127,PAC-00663,2026-09-16,pronto_socorro,observacao,,Atendimento em PS por queda / dor em joelho.,UPA Lomba do Pinheiro
+EVT-001162,SOL-2026-00283,PAC-00910,2026-09-16,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-001163,SOL-2026-00340,PAC-00531,2026-09-16,pronto_socorro,observacao,,Atendimento em PS por dor abdominal / suboclusao.,PS municipal
+EVT-001164,SOL-2026-00746,PAC-00508,2026-09-16,contato_telefonico,nao_atendeu,,Caixa postal.,call center
+EVT-001165,SOL-2026-00915,PAC-00245,2026-09-16,internacao,alta,3,Internacao por 3 dias (sangramento em lesao de pele).,Hospital Sao Lucas
+EVT-001166,SOL-2024-00006,PAC-00224,2026-09-17,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001167,SOL-2026-00184,PAC-00391,2026-09-17,internacao,alta,3,Internacao por 3 dias (sangramento uterino intenso).,Hospital Sao Lucas
+EVT-001168,SOL-2026-00366,PAC-00763,2026-09-17,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001169,SOL-2026-00480,PAC-00278,2026-09-17,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-001170,SOL-2026-00577,PAC-00406,2026-09-17,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-001171,SOL-2026-00642,PAC-00192,2026-09-17,internacao,alta,4,Internacao por 4 dias (dor e secrecao em mama).,Hospital Sao Lucas
+EVT-001172,SOL-2026-00836,PAC-00050,2026-09-17,exame_imagem,progressao,,RNM: crescimento da lesao e invasao de estruturas adjacentes.,radiologia
+EVT-001173,SOL-2026-00915,PAC-00245,2026-09-17,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001174,SOL-2026-01012,PAC-00147,2026-09-17,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001175,SOL-2023-00065,PAC-00747,2026-09-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001176,SOL-2025-00146,PAC-00706,2026-09-18,pronto_socorro,observacao,,Atendimento em PS por retencao urinaria.,Emergencia HPS
+EVT-001177,SOL-2025-00292,PAC-00291,2026-09-18,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001178,SOL-2025-00334,PAC-00376,2026-09-18,hba1c,resultado,7.0,"HbA1c 7,0%.",laboratorio
+EVT-001179,SOL-2025-00457,PAC-00417,2026-09-18,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-001180,SOL-2026-00009,PAC-00342,2026-09-18,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001181,SOL-2026-00343,PAC-00891,2026-09-18,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001182,SOL-2023-00018,PAC-00345,2026-09-19,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001183,SOL-2025-00058,PAC-00722,2026-09-19,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,PS Hospital Sao Lucas
+EVT-001184,SOL-2025-00063,PAC-00430,2026-09-19,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001185,SOL-2025-00346,PAC-00076,2026-09-19,hba1c,resultado,10.2,"HbA1c 10,2%.",laboratorio
+EVT-001186,SOL-2025-00410,PAC-00435,2026-09-19,hba1c,resultado,10.2,"HbA1c 10,2%.",laboratorio
+EVT-001187,SOL-2026-00098,PAC-00761,2026-09-19,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001188,SOL-2026-00452,PAC-00413,2026-09-19,pronto_socorro,atendido_liberado,,Atendimento em PS por dor incapacitante em quadril.,PS municipal
+EVT-001189,SOL-2026-00647,PAC-00714,2026-09-19,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-001190,SOL-2026-00668,PAC-00062,2026-09-19,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-001191,SOL-2026-00707,PAC-00522,2026-09-19,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Zona Norte
+EVT-001192,SOL-2026-00720,PAC-00024,2026-09-19,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001193,SOL-2026-00915,PAC-00245,2026-09-19,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001194,SOL-2026-00936,PAC-00892,2026-09-19,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001195,SOL-2026-00957,PAC-00833,2026-09-19,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,PS municipal
+EVT-001196,SOL-2023-00016,PAC-00088,2026-09-20,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001197,SOL-2024-00087,PAC-00194,2026-09-20,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-001198,SOL-2025-00051,PAC-00476,2026-09-20,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001199,SOL-2025-00135,PAC-00252,2026-09-20,exame_imagem,progressao,,TC de controle: aumento da lesao em relacao ao exame anterior.,radiologia
+EVT-001200,SOL-2025-00480,PAC-00333,2026-09-20,hba1c,resultado,7.1,"HbA1c 7,1%.",laboratorio
+EVT-001201,SOL-2026-00035,PAC-00015,2026-09-20,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,UPA Zona Norte
+EVT-001202,SOL-2026-00105,PAC-00618,2026-09-20,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,UPA Lomba do Pinheiro
+EVT-001203,SOL-2026-00194,PAC-00436,2026-09-20,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001204,SOL-2026-00563,PAC-00396,2026-09-20,pronto_socorro,observacao,,Atendimento em PS por dor abdominal / suboclusao.,UPA Zona Norte
+EVT-001205,SOL-2026-00610,PAC-00679,2026-09-20,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-001206,SOL-2026-00814,PAC-00145,2026-09-20,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,PS Hospital Sao Lucas
+EVT-001207,SOL-2026-00938,PAC-00222,2026-09-20,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001208,SOL-2026-00992,PAC-00160,2026-09-20,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-001209,SOL-2025-00438,PAC-00302,2026-09-21,hba1c,resultado,9.1,"HbA1c 9,1%.",laboratorio
+EVT-001210,SOL-2026-00138,PAC-00444,2026-09-21,pronto_socorro,observacao,,Atendimento em PS por dor intensa em mao.,PS Hospital Sao Lucas
+EVT-001211,SOL-2026-00291,PAC-00388,2026-09-21,pronto_socorro,atendido_liberado,,Atendimento em PS por dispneia / insuficiencia respiratoria.,PS Hospital Sao Lucas
+EVT-001212,SOL-2026-00392,PAC-00552,2026-09-21,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-001213,SOL-2026-00412,PAC-00031,2026-09-21,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001214,SOL-2026-00425,PAC-00032,2026-09-21,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001215,SOL-2026-00443,PAC-00551,2026-09-21,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001216,SOL-2026-00462,PAC-00572,2026-09-21,internacao,alta,6,Internacao por 6 dias (sangramento uterino intenso).,Hospital Sao Lucas
+EVT-001217,SOL-2026-00466,PAC-00361,2026-09-21,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,Emergencia HPS
+EVT-001218,SOL-2022-00042,PAC-00613,2026-09-22,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001219,SOL-2024-00052,PAC-00374,2026-09-22,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-001220,SOL-2024-00107,PAC-00840,2026-09-22,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,UPA Moacyr Scliar
+EVT-001221,SOL-2026-00011,PAC-00500,2026-09-22,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-001222,SOL-2026-00280,PAC-00788,2026-09-22,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001223,SOL-2026-00297,PAC-00380,2026-09-22,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,PS Hospital Sao Lucas
+EVT-001224,SOL-2026-00478,PAC-00273,2026-09-22,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-001225,SOL-2026-00489,PAC-00433,2026-09-22,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001226,SOL-2026-00531,PAC-00564,2026-09-22,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,PS Hospital Sao Lucas
+EVT-001227,SOL-2026-00746,PAC-00508,2026-09-22,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001228,SOL-2026-00814,PAC-00145,2026-09-22,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,UPA Zona Norte
+EVT-001229,SOL-2024-00002,PAC-00666,2026-09-23,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001230,SOL-2024-00006,PAC-00224,2026-09-23,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001231,SOL-2025-00432,PAC-00182,2026-09-23,hba1c,resultado,8.1,"HbA1c 8,1%.",laboratorio
+EVT-001232,SOL-2025-00494,PAC-00268,2026-09-23,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-001233,SOL-2026-00037,PAC-00108,2026-09-23,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001234,SOL-2026-00174,PAC-00207,2026-09-23,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-001235,SOL-2026-00239,PAC-00611,2026-09-23,pronto_socorro,atendido_liberado,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",UPA Moacyr Scliar
+EVT-001236,SOL-2026-00255,PAC-00670,2026-09-23,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001237,SOL-2026-00272,PAC-00312,2026-09-23,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-001238,SOL-2026-00301,PAC-00063,2026-09-23,hba1c,resultado,10.4,"HbA1c 10,4%.",laboratorio
+EVT-001239,SOL-2026-00359,PAC-00835,2026-09-23,consulta_reavaliacao,piora,,AP positivo para malignidade. Necessario atualizar CID e prioridade.,ambulatorio
+EVT-001240,SOL-2026-00547,PAC-00259,2026-09-23,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001241,SOL-2026-00710,PAC-00046,2026-09-23,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001242,SOL-2026-00881,PAC-00857,2026-09-23,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento em lesao de pele.,PS municipal
+EVT-001243,SOL-2026-00927,PAC-00781,2026-09-23,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001244,SOL-2026-00969,PAC-00175,2026-09-23,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001245,SOL-2025-00011,PAC-00090,2026-09-24,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001246,SOL-2026-00389,PAC-00139,2026-09-24,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001247,SOL-2025-00045,PAC-00562,2026-09-25,hba1c,resultado,7.6,"HbA1c 7,6%.",laboratorio
+EVT-001248,SOL-2025-00287,PAC-00885,2026-09-25,falta,avaliacao_pre_anestesica,,Paciente nao compareceu.,ambulatorio
+EVT-001249,SOL-2026-00012,PAC-00591,2026-09-25,hba1c,resultado,9.9,"HbA1c 9,9%.",laboratorio
+EVT-001250,SOL-2026-00078,PAC-00825,2026-09-25,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-001251,SOL-2026-00160,PAC-00162,2026-09-25,hba1c,resultado,10.5,"HbA1c 10,5%.",laboratorio
+EVT-001252,SOL-2026-00239,PAC-00611,2026-09-25,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001253,SOL-2026-00452,PAC-00413,2026-09-25,pronto_socorro,observacao,,Atendimento em PS por dor incapacitante em quadril.,UPA Moacyr Scliar
+EVT-001254,SOL-2026-00881,PAC-00857,2026-09-25,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001255,SOL-2026-00897,PAC-00320,2026-09-25,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001256,SOL-2025-00071,PAC-00875,2026-09-26,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001257,SOL-2025-00077,PAC-00853,2026-09-26,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001258,SOL-2025-00457,PAC-00417,2026-09-26,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001259,SOL-2026-00212,PAC-00767,2026-09-26,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001260,SOL-2026-00262,PAC-00612,2026-09-26,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001261,SOL-2026-00340,PAC-00531,2026-09-26,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001262,SOL-2026-00396,PAC-00669,2026-09-26,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001263,SOL-2026-00403,PAC-00037,2026-09-26,hba1c,resultado,6.3,"HbA1c 6,3%.",laboratorio
+EVT-001264,SOL-2026-00441,PAC-00716,2026-09-26,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-001265,SOL-2026-00480,PAC-00278,2026-09-26,hba1c,resultado,9.8,"HbA1c 9,8%.",laboratorio
+EVT-001266,SOL-2026-00605,PAC-00914,2026-09-26,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento hemorroidario.,UPA Zona Norte
+EVT-001267,SOL-2026-00779,PAC-00033,2026-09-26,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001268,SOL-2026-00846,PAC-00319,2026-09-26,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001269,SOL-2026-00881,PAC-00857,2026-09-26,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001270,SOL-2026-00881,PAC-00857,2026-09-26,exame_imagem,progressao,,RNM: crescimento da lesao e invasao de estruturas adjacentes.,radiologia
+EVT-001271,SOL-2026-00915,PAC-00245,2026-09-26,pronto_socorro,observacao,,Atendimento em PS por sangramento em lesao de pele.,PS Hospital Sao Lucas
+EVT-001272,SOL-2026-00105,PAC-00618,2026-09-27,hba1c,resultado,9.1,"HbA1c 9,1%.",laboratorio
+EVT-001273,SOL-2026-00273,PAC-00269,2026-09-27,biopsia,positivo,,Anatomopatologico POSITIVO para malignidade.,laboratorio de patologia
+EVT-001274,SOL-2026-00462,PAC-00572,2026-09-27,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,UPA Moacyr Scliar
+EVT-001275,SOL-2026-00599,PAC-00762,2026-09-27,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-001276,SOL-2026-00694,PAC-00027,2026-09-27,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-001277,SOL-2026-00854,PAC-00515,2026-09-27,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001278,SOL-2026-00879,PAC-00246,2026-09-27,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-001279,SOL-2026-00884,PAC-00753,2026-09-27,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001280,SOL-2024-00165,PAC-00358,2026-09-28,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001281,SOL-2026-00331,PAC-00617,2026-09-28,internacao,alta,8,Internacao por 8 dias (retencao urinaria).,Hospital Sao Lucas
+EVT-001282,SOL-2026-00563,PAC-00396,2026-09-28,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001283,SOL-2026-00563,PAC-00396,2026-09-28,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001284,SOL-2026-00736,PAC-00288,2026-09-28,pronto_socorro,atendido_liberado,,Atendimento em PS por dor e secrecao em mama.,UPA Moacyr Scliar
+EVT-001285,SOL-2026-00781,PAC-00284,2026-09-28,pronto_socorro,observacao,,Atendimento em PS por dispneia / hemoptise.,UPA Lomba do Pinheiro
+EVT-001286,SOL-2026-00920,PAC-00837,2026-09-28,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001287,SOL-2023-00018,PAC-00345,2026-09-29,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-001288,SOL-2025-00071,PAC-00875,2026-09-29,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001289,SOL-2026-00049,PAC-00056,2026-09-29,hba1c,resultado,8.9,"HbA1c 8,9%.",laboratorio
+EVT-001290,SOL-2026-00508,PAC-00057,2026-09-29,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual.",UPA Zona Norte
+EVT-001291,SOL-2026-00525,PAC-00091,2026-09-29,hba1c,resultado,7.7,"HbA1c 7,7%.",laboratorio
+EVT-001292,SOL-2025-00015,PAC-00140,2026-09-30,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001293,SOL-2025-00015,PAC-00140,2026-09-30,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001294,SOL-2026-00046,PAC-00735,2026-09-30,pronto_socorro,observacao,,Atendimento em PS por colica biliar / colecistite.,UPA Lomba do Pinheiro
+EVT-001295,SOL-2026-00235,PAC-00652,2026-09-30,internacao,alta,5,Internacao por 5 dias (celulite em ulcera venosa).,Hospital Sao Lucas
+EVT-001296,SOL-2026-00270,PAC-00329,2026-09-30,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-001297,SOL-2026-00328,PAC-00103,2026-09-30,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,UPA Lomba do Pinheiro
+EVT-001298,SOL-2026-00331,PAC-00617,2026-09-30,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001299,SOL-2026-00465,PAC-00150,2026-09-30,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001300,SOL-2026-00741,PAC-00495,2026-09-30,internacao,alta,6,Internacao por 6 dias (dor toracica / angina).,Hospital Sao Lucas
+EVT-001301,SOL-2026-00871,PAC-00290,2026-09-30,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001302,SOL-2026-00962,PAC-00316,2026-09-30,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-001303,SOL-2024-00181,PAC-00344,2026-10-01,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001304,SOL-2025-00280,PAC-00260,2026-10-01,internacao,alta,4,Internacao por 4 dias (dor incapacitante em quadril).,Hospital Sao Lucas
+EVT-001305,SOL-2025-00286,PAC-00116,2026-10-01,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001306,SOL-2025-00478,PAC-00199,2026-10-01,consulta_reavaliacao,piora,,AP positivo para malignidade. Necessario atualizar CID e prioridade.,ambulatorio
+EVT-001307,SOL-2026-00262,PAC-00612,2026-10-01,pronto_socorro,atendido_liberado,,Atendimento em PS por dor e secrecao em mama.,Emergencia HPS
+EVT-001308,SOL-2026-00428,PAC-00120,2026-10-01,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001309,SOL-2026-00655,PAC-00732,2026-10-01,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001310,SOL-2026-00923,PAC-00443,2026-10-01,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001311,SOL-2025-00130,PAC-00262,2026-10-02,contato_telefonico,relata_melhora,,Pct refere melhora dos sintomas com tratamento clinico.,call center
+EVT-001312,SOL-2025-00183,PAC-00890,2026-10-02,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001313,SOL-2025-00186,PAC-00127,2026-10-02,internacao,alta,7,Internacao por 7 dias (dor abdominal / suboclusao).,Hospital Sao Lucas
+EVT-001314,SOL-2025-00274,PAC-00442,2026-10-02,pronto_socorro,atendido_liberado,,Atendimento em PS por dor toracica / angina.,UPA Lomba do Pinheiro
+EVT-001315,SOL-2025-00309,PAC-00060,2026-10-02,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001316,SOL-2025-00312,PAC-00058,2026-10-02,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-001317,SOL-2025-00442,PAC-00366,2026-10-02,hba1c,resultado,9.0,"HbA1c 9,0%.",laboratorio
+EVT-001318,SOL-2025-00492,PAC-00545,2026-10-02,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001319,SOL-2026-00127,PAC-00663,2026-10-02,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-001320,SOL-2026-00380,PAC-00386,2026-10-02,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001321,SOL-2026-00849,PAC-00593,2026-10-02,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001322,SOL-2024-00082,PAC-00694,2026-10-03,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001323,SOL-2025-00031,PAC-00102,2026-10-03,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001324,SOL-2025-00109,PAC-00713,2026-10-03,hba1c,resultado,9.6,"HbA1c 9,6%.",laboratorio
+EVT-001325,SOL-2025-00125,PAC-00563,2026-10-03,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001326,SOL-2025-00256,PAC-00306,2026-10-03,pronto_socorro,atendido_liberado,,Atendimento em PS por epistaxe.,UPA Lomba do Pinheiro
+EVT-001327,SOL-2025-00351,PAC-00274,2026-10-03,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-001328,SOL-2025-00508,PAC-00022,2026-10-03,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001329,SOL-2026-00243,PAC-00799,2026-10-03,internacao,alta,4,"Internacao por 4 dias (hernia encarcerada, reducao manual).",Hospital Sao Lucas
+EVT-001330,SOL-2026-00262,PAC-00612,2026-10-03,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001331,SOL-2026-00288,PAC-00736,2026-10-03,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,UPA Moacyr Scliar
+EVT-001332,SOL-2026-00337,PAC-00616,2026-10-03,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,UPA Zona Norte
+EVT-001333,SOL-2026-00362,PAC-00636,2026-10-03,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-001334,SOL-2026-00763,PAC-00822,2026-10-03,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001335,SOL-2026-00830,PAC-00189,2026-10-03,hba1c,resultado,6.8,"HbA1c 6,8%.",laboratorio
+EVT-001336,SOL-2026-00861,PAC-00914,2026-10-03,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001337,SOL-2024-00028,PAC-00285,2026-10-04,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001338,SOL-2024-00092,PAC-00510,2026-10-04,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001339,SOL-2024-00165,PAC-00358,2026-10-04,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001340,SOL-2025-00161,PAC-00471,2026-10-04,consulta_reavaliacao,estavel,,Reavaliacao anual.,ambulatorio
+EVT-001341,SOL-2025-00280,PAC-00260,2026-10-04,pronto_socorro,observacao,,Atendimento em PS por dor incapacitante em quadril.,UPA Lomba do Pinheiro
+EVT-001342,SOL-2026-00178,PAC-00844,2026-10-04,contato_telefonico,nao_atendeu,,Numero inexistente.,call center
+EVT-001343,SOL-2026-00288,PAC-00736,2026-10-04,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001344,SOL-2026-00322,PAC-00068,2026-10-04,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001345,SOL-2026-00525,PAC-00091,2026-10-04,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-001346,SOL-2026-00537,PAC-00846,2026-10-04,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001347,SOL-2026-00549,PAC-00083,2026-10-04,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001348,SOL-2023-00062,PAC-00792,2026-10-05,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001349,SOL-2024-00058,PAC-00655,2026-10-05,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001350,SOL-2024-00112,PAC-00639,2026-10-05,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001351,SOL-2024-00120,PAC-00181,2026-10-05,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-001352,SOL-2026-00134,PAC-00258,2026-10-05,internacao,alta,3,"Internacao por 3 dias (dor em hernia inguinal, reducao manual).",Hospital Sao Lucas
+EVT-001353,SOL-2026-00577,PAC-00406,2026-10-05,hba1c,resultado,9.3,"HbA1c 9,3%.",laboratorio
+EVT-001354,SOL-2023-00013,PAC-00576,2026-10-06,pronto_socorro,observacao,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-001355,SOL-2025-00257,PAC-00479,2026-10-06,hba1c,resultado,8.5,"HbA1c 8,5%.",laboratorio
+EVT-001356,SOL-2025-00272,PAC-00018,2026-10-06,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001357,SOL-2026-00127,PAC-00663,2026-10-06,pronto_socorro,atendido_liberado,,Atendimento em PS por queda / dor em joelho.,UPA Zona Norte
+EVT-001358,SOL-2026-00335,PAC-00310,2026-10-06,internacao,alta,2,Internacao por 2 dias (sangramento uterino intenso).,Hospital Sao Lucas
+EVT-001359,SOL-2026-00340,PAC-00531,2026-10-06,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001360,SOL-2026-00553,PAC-00624,2026-10-06,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,UPA Zona Norte
+EVT-001361,SOL-2023-00075,PAC-00827,2026-10-07,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001362,SOL-2025-00409,PAC-00143,2026-10-07,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,Emergencia HPS
+EVT-001363,SOL-2026-00009,PAC-00342,2026-10-07,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001364,SOL-2026-00056,PAC-00549,2026-10-07,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001365,SOL-2026-00127,PAC-00663,2026-10-07,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001366,SOL-2026-00812,PAC-00888,2026-10-07,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001367,SOL-2026-00820,PAC-00010,2026-10-07,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001368,SOL-2026-00897,PAC-00320,2026-10-07,hba1c,resultado,7.8,"HbA1c 7,8%.",laboratorio
+EVT-001369,SOL-2026-00966,PAC-00235,2026-10-07,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001370,SOL-2025-00030,PAC-00445,2026-10-08,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001371,SOL-2026-00107,PAC-00456,2026-10-08,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001372,SOL-2026-00108,PAC-00769,2026-10-08,hba1c,resultado,9.3,"HbA1c 9,3%.",laboratorio
+EVT-001373,SOL-2026-00134,PAC-00258,2026-10-08,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001374,SOL-2026-00232,PAC-00472,2026-10-08,consulta_reavaliacao,piora,,AP positivo para malignidade. Necessario atualizar CID e prioridade.,ambulatorio
+EVT-001375,SOL-2026-00710,PAC-00046,2026-10-08,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-001376,SOL-2026-00741,PAC-00495,2026-10-08,hba1c,resultado,7.5,"HbA1c 7,5%.",laboratorio
+EVT-001377,SOL-2026-00957,PAC-00833,2026-10-08,pronto_socorro,observacao,,Atendimento em PS por colica biliar / colecistite.,UPA Lomba do Pinheiro
+EVT-001378,SOL-2023-00013,PAC-00576,2026-10-09,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS municipal
+EVT-001379,SOL-2025-00036,PAC-00569,2026-10-09,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001380,SOL-2025-00080,PAC-00622,2026-10-09,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,PS Hospital Sao Lucas
+EVT-001381,SOL-2025-00441,PAC-00657,2026-10-09,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001382,SOL-2025-00518,PAC-00469,2026-10-09,contato_telefonico,relata_piora,,Pct refere piora dos sintomas e pergunta sobre data da cirurgia.,call center
+EVT-001383,SOL-2026-00098,PAC-00761,2026-10-09,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,PS municipal
+EVT-001384,SOL-2026-00502,PAC-00810,2026-10-09,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-001385,SOL-2026-00610,PAC-00679,2026-10-09,consulta_reavaliacao,piora,,AP positivo para malignidade. Necessario atualizar CID e prioridade.,ambulatorio
+EVT-001386,SOL-2026-00705,PAC-00086,2026-10-09,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,PS municipal
+EVT-001387,SOL-2026-00857,PAC-00236,2026-10-09,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001388,SOL-2023-00004,PAC-00075,2026-10-10,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001389,SOL-2025-00146,PAC-00706,2026-10-10,exame_imagem,progressao,,RNM: crescimento da lesao e invasao de estruturas adjacentes.,radiologia
+EVT-001390,SOL-2025-00476,PAC-00817,2026-10-10,pronto_socorro,observacao,,Atendimento em PS por colica biliar / colecistite.,PS Hospital Sao Lucas
+EVT-001391,SOL-2026-00212,PAC-00767,2026-10-10,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001392,SOL-2026-00232,PAC-00472,2026-10-10,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-001393,SOL-2026-00297,PAC-00380,2026-10-10,hba1c,resultado,9.4,"HbA1c 9,4%.",laboratorio
+EVT-001394,SOL-2026-00489,PAC-00433,2026-10-10,exame_imagem,progressao,,RNM: crescimento da lesao e invasao de estruturas adjacentes.,radiologia
+EVT-001395,SOL-2026-00660,PAC-00728,2026-10-10,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001396,SOL-2026-00954,PAC-00082,2026-10-10,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-001397,SOL-2026-00192,PAC-00466,2026-10-11,pronto_socorro,atendido_liberado,,Atendimento em PS por hiperglicemia (glicemia 380).,UPA Lomba do Pinheiro
+EVT-001398,SOL-2026-00741,PAC-00495,2026-10-11,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,UPA Zona Norte
+EVT-001399,SOL-2025-00504,PAC-00211,2026-10-12,pronto_socorro,atendido_liberado,,Atendimento em PS por celulite em ulcera venosa.,UPA Zona Norte
+EVT-001400,SOL-2025-00512,PAC-00164,2026-10-12,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001401,SOL-2026-00078,PAC-00825,2026-10-12,hba1c,resultado,8.4,"HbA1c 8,4%.",laboratorio
+EVT-001402,SOL-2026-00221,PAC-00463,2026-10-12,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-001403,SOL-2026-00274,PAC-00916,2026-10-12,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001404,SOL-2026-00359,PAC-00835,2026-10-12,biopsia,positivo,,Resultado de biopsia: carcinoma papilifero.,laboratorio de patologia
+EVT-001405,SOL-2026-00472,PAC-00304,2026-10-12,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001406,SOL-2026-00597,PAC-00292,2026-10-12,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,UPA Lomba do Pinheiro
+EVT-001407,SOL-2026-00812,PAC-00888,2026-10-12,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001408,SOL-2026-00887,PAC-00741,2026-10-12,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001409,SOL-2026-00981,PAC-00745,2026-10-12,hba1c,resultado,7.4,"HbA1c 7,4%.",laboratorio
+EVT-001410,SOL-2023-00027,PAC-00621,2026-10-13,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001411,SOL-2025-00044,PAC-00848,2026-10-13,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001412,SOL-2025-00180,PAC-00821,2026-10-13,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001413,SOL-2025-00322,PAC-00457,2026-10-13,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001414,SOL-2026-00072,PAC-00212,2026-10-13,exame_imagem,progressao,,"TC: progressao da lesao primaria, aumento de 40%.",radiologia
+EVT-001415,SOL-2026-00076,PAC-00625,2026-10-13,hba1c,resultado,8.6,"HbA1c 8,6%.",laboratorio
+EVT-001416,SOL-2026-00167,PAC-00592,2026-10-13,contato_telefonico,desistiu,,Pct informa que nao deseja mais realizar a cirurgia.,call center
+EVT-001417,SOL-2026-00340,PAC-00531,2026-10-13,internacao,alta,3,Internacao por 3 dias (dor abdominal / suboclusao).,Hospital Sao Lucas
+EVT-001418,SOL-2026-00679,PAC-00626,2026-10-13,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001419,SOL-2026-00710,PAC-00046,2026-10-13,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001420,SOL-2026-00981,PAC-00745,2026-10-13,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001421,SOL-2026-00987,PAC-00505,2026-10-13,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001422,SOL-2024-00063,PAC-00460,2026-10-14,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001423,SOL-2025-00015,PAC-00140,2026-10-14,pronto_socorro,atendido_liberado,,"Atendimento em PS por hernia encarcerada, reducao manual.",UPA Lomba do Pinheiro
+EVT-001424,SOL-2025-00360,PAC-00166,2026-10-14,biopsia,positivo,,AP: adenocarcinoma moderadamente diferenciado.,laboratorio de patologia
+EVT-001425,SOL-2026-00129,PAC-00070,2026-10-14,exame_imagem,progressao,,TC: surgimento de linfonodomegalias regionais.,radiologia
+EVT-001426,SOL-2026-00279,PAC-00555,2026-10-14,biopsia,positivo,,"AP: carcinoma ductal invasivo, grau 2.",laboratorio de patologia
+EVT-001427,SOL-2026-00380,PAC-00386,2026-10-14,consulta_reavaliacao,piora,,AP positivo para malignidade. Necessario atualizar CID e prioridade.,ambulatorio
+EVT-001428,SOL-2026-00519,PAC-00614,2026-10-14,biopsia,positivo,,Biopsia: carcinoma epidermoide invasor.,laboratorio de patologia
+EVT-001429,SOL-2026-00574,PAC-00798,2026-10-14,internacao,alta,6,Internacao por 6 dias (sangramento uterino intenso).,Hospital Sao Lucas
+EVT-001430,SOL-2026-00755,PAC-00858,2026-10-14,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001431,SOL-2026-00786,PAC-00560,2026-10-14,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001432,SOL-2025-00023,PAC-00020,2026-10-15,hba1c,resultado,8.7,"HbA1c 8,7%.",laboratorio
+EVT-001433,SOL-2025-00146,PAC-00706,2026-10-15,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001434,SOL-2025-00485,PAC-00854,2026-10-15,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001435,SOL-2025-00506,PAC-00557,2026-10-15,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS Hospital Sao Lucas
+EVT-001436,SOL-2026-00072,PAC-00212,2026-10-15,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001437,SOL-2026-00408,PAC-00526,2026-10-15,hba1c,resultado,8.8,"HbA1c 8,8%.",laboratorio
+EVT-001438,SOL-2026-00592,PAC-00185,2026-10-15,hba1c,resultado,7.9,"HbA1c 7,9%.",laboratorio
+EVT-001439,SOL-2026-00652,PAC-00760,2026-10-15,pronto_socorro,observacao,,Atendimento em PS por dor incapacitante em quadril.,PS municipal
+EVT-001440,SOL-2026-00838,PAC-00712,2026-10-15,pronto_socorro,atendido_liberado,,"Atendimento em PS por dor em hernia inguinal, reducao manual.",PS Hospital Sao Lucas
+EVT-001441,SOL-2025-00146,PAC-00706,2026-10-16,internacao,alta,2,Internacao por 2 dias (retencao urinaria).,Hospital Sao Lucas
+EVT-001442,SOL-2025-00161,PAC-00471,2026-10-16,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001443,SOL-2025-00418,PAC-00353,2026-10-16,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001444,SOL-2026-00036,PAC-00796,2026-10-16,contato_telefonico,relata_piora,,Pct refere piora dos sintomas por telefone.,call center
+EVT-001445,SOL-2026-00098,PAC-00761,2026-10-16,pronto_socorro,observacao,,Atendimento em PS por sangramento uterino intenso.,PS municipal
+EVT-001446,SOL-2026-00237,PAC-00214,2026-10-16,contato_telefonico,nao_atendeu,,Tentativa de contato sem sucesso.,call center
+EVT-001447,SOL-2026-00322,PAC-00068,2026-10-16,pronto_socorro,observacao,,Atendimento em PS por dor e secrecao em mama.,PS Hospital Sao Lucas
+EVT-001448,SOL-2026-00476,PAC-00648,2026-10-16,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001449,SOL-2026-00746,PAC-00508,2026-10-16,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001450,SOL-2026-00835,PAC-00133,2026-10-16,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001451,SOL-2024-00124,PAC-00537,2026-10-17,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001452,SOL-2024-00137,PAC-00691,2026-10-17,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001453,SOL-2025-00252,PAC-00279,2026-10-17,falta,exame,,Paciente nao compareceu.,ambulatorio
+EVT-001454,SOL-2025-00384,PAC-00084,2026-10-17,pronto_socorro,atendido_liberado,,Atendimento em PS por dor ocular / PIO elevada.,PS municipal
+EVT-001455,SOL-2025-00412,PAC-00638,2026-10-17,hba1c,resultado,10.1,"HbA1c 10,1%.",laboratorio
+EVT-001456,SOL-2025-00432,PAC-00182,2026-10-17,hba1c,resultado,8.9,"HbA1c 8,9%.",laboratorio
+EVT-001457,SOL-2026-00291,PAC-00388,2026-10-17,pronto_socorro,observacao,,Atendimento em PS por dispneia / insuficiencia respiratoria.,UPA Moacyr Scliar
+EVT-001458,SOL-2026-00500,PAC-00702,2026-10-17,hba1c,resultado,7.3,"HbA1c 7,3%.",laboratorio
+EVT-001459,SOL-2026-00574,PAC-00798,2026-10-17,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001460,SOL-2026-00647,PAC-00714,2026-10-17,consulta_reavaliacao,piora,,AP positivo para malignidade. Necessario atualizar CID e prioridade.,ambulatorio
+EVT-001461,SOL-2026-00741,PAC-00495,2026-10-17,pronto_socorro,observacao,,Atendimento em PS por dor toracica / angina.,UPA Zona Norte
+EVT-001462,SOL-2026-00808,PAC-00721,2026-10-17,internacao,alta,8,Internacao por 8 dias (dor e secrecao em mama).,Hospital Sao Lucas
+EVT-001463,SOL-2026-00808,PAC-00721,2026-10-17,exame_imagem,progressao,,RNM: crescimento da lesao e invasao de estruturas adjacentes.,radiologia
+EVT-001464,SOL-2026-00138,PAC-00444,2026-10-18,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,Emergencia HPS
+EVT-001465,SOL-2026-00387,PAC-00738,2026-10-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001466,SOL-2026-00387,PAC-00738,2026-10-18,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-001467,SOL-2026-00407,PAC-00641,2026-10-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001468,SOL-2026-00489,PAC-00433,2026-10-18,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001469,SOL-2026-00657,PAC-00180,2026-10-18,pronto_socorro,atendido_liberado,,Atendimento em PS por retencao urinaria.,UPA Moacyr Scliar
+EVT-001470,SOL-2026-00825,PAC-00709,2026-10-18,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001471,SOL-2026-00836,PAC-00050,2026-10-18,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001472,SOL-2026-00932,PAC-00668,2026-10-18,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001473,SOL-2026-01012,PAC-00147,2026-10-18,exame_imagem,estavel,,TC de controle: lesao estavel.,radiologia
+EVT-001474,SOL-2023-00034,PAC-00809,2026-10-19,contato_telefonico,informou_cirurgia_outro_servico,,Pct informa que ja realizou o procedimento em outro servico.,call center
+EVT-001475,SOL-2024-00137,PAC-00691,2026-10-19,pronto_socorro,observacao,,Atendimento em PS por celulite em ulcera venosa.,UPA Lomba do Pinheiro
+EVT-001476,SOL-2025-00238,PAC-00094,2026-10-19,internacao,alta,6,Internacao por 6 dias (celulite em ulcera venosa).,Hospital Sao Lucas
+EVT-001477,SOL-2026-00531,PAC-00564,2026-10-19,hba1c,resultado,8.5,"HbA1c 8,5%.",laboratorio
+EVT-001478,SOL-2026-00535,PAC-00055,2026-10-19,contato_telefonico,nao_atendeu,,Telefone fora de area.,call center
+EVT-001479,SOL-2026-00599,PAC-00762,2026-10-19,hba1c,resultado,9.9,"HbA1c 9,9%.",laboratorio
+EVT-001480,SOL-2026-00809,PAC-00904,2026-10-19,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001481,SOL-2026-00895,PAC-00043,2026-10-19,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001482,SOL-2026-00929,PAC-00675,2026-10-19,contato_telefonico,atendeu,,Contato de confirmacao de interesse. Pct mantem desejo de operar.,call center
+EVT-001483,SOL-2024-00183,PAC-00093,2026-10-20,contato_telefonico,relata_piora,,"Familiar relata piora da limitacao, pct nao sai mais de casa.",call center
+EVT-001484,SOL-2025-00135,PAC-00252,2026-10-20,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001485,SOL-2025-00140,PAC-00005,2026-10-20,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001486,SOL-2026-00104,PAC-00889,2026-10-20,pronto_socorro,observacao,,Atendimento em PS por dispneia / insuficiencia respiratoria.,UPA Moacyr Scliar
+EVT-001487,SOL-2026-00235,PAC-00652,2026-10-20,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001488,SOL-2026-00328,PAC-00103,2026-10-20,pronto_socorro,atendido_liberado,,Atendimento em PS por sangramento uterino intenso.,UPA Moacyr Scliar
+EVT-001489,SOL-2026-00397,PAC-00113,2026-10-20,falta,consulta,,Paciente nao compareceu.,ambulatorio
+EVT-001490,SOL-2026-00879,PAC-00246,2026-10-20,consulta_reavaliacao,piora,,AP positivo para malignidade. Necessario atualizar CID e prioridade.,ambulatorio
+EVT-001491,SOL-2026-00971,PAC-00298,2026-10-20,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001492,SOL-2025-00363,PAC-00525,2026-10-21,consulta_reavaliacao,piora,,"Reavaliacao: quadro clinico preocupante, ver justificativa.",ambulatorio
+EVT-001493,SOL-2026-00274,PAC-00916,2026-10-21,pronto_socorro,atendido_liberado,,Atendimento em PS por dor intensa em mao.,UPA Lomba do Pinheiro
+EVT-001494,SOL-2026-00337,PAC-00616,2026-10-21,consulta_reavaliacao,piora,,"Reavaliacao: quadro em piora, solicito reclassificacao de prioridade.",ambulatorio
+EVT-001495,SOL-2022-00060,PAC-00003,2026-10-22,contato_telefonico,atendeu,,Reconfirmacao anual de interesse. Pct mantem desejo de operar.,call center
+EVT-001496,SOL-2024-00014,PAC-00818,2026-10-22,consulta_reavaliacao,piora,,Reavaliacao anual.,ambulatorio
+EVT-001497,SOL-2025-00071,PAC-00875,2026-10-22,consulta_reavaliacao,piora,,Oncologia: solicita reavaliacao da prioridade. Doenca em evolucao.,ambulatorio oncologia
+EVT-001498,SOL-2025-00116,PAC-00387,2026-10-22,hba1c,resultado,8.3,"HbA1c 8,3%.",laboratorio
+EVT-001499,SOL-2026-00013,PAC-00002,2026-10-22,hba1c,resultado,8.9,"HbA1c 8,9%.",laboratorio
+EVT-001500,SOL-2026-00191,PAC-00524,2026-10-22,exame_imagem,estavel,,TC de controle sem sinais de progressao.,radiologia
+EVT-001501,SOL-2026-00372,PAC-00829,2026-10-22,pronto_socorro,observacao,,Atendimento em PS por epistaxe.,UPA Zona Norte
+EVT-001502,SOL-2026-00396,PAC-00669,2026-10-22,consulta_reavaliacao,piora,,"Reavaliacao ambulatorial: perda ponderal, dor em piora, ECOG 2. Solicito antecipacao.",ambulatorio oncologia
+EVT-001503,SOL-2026-00799,PAC-00153,2026-10-22,exame_imagem,estavel,,US/RNM: sem novas lesoes.,radiologia
+EVT-001504,SOL-2026-00869,PAC-00865,2026-10-22,exame_imagem,estavel,,TC de estadiamento sem metastases.,radiologia
+EVT-001505,SOL-2026-00957,PAC-00833,2026-10-22,pronto_socorro,atendido_liberado,,Atendimento em PS por colica biliar / colecistite.,UPA Lomba do Pinheiro

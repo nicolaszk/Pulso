@@ -1,0 +1,24 @@
+procedimento_id,procedimento,especialidade,porte,risco_cirurgico,duracao_media_min,necessita_uti
+PROC001,Facectomia com implante de lente intraocular,Oftalmologia,pequeno,1,30,nao
+PROC002,Herniorrafia inguinal,Cirurgia Geral,medio,2,60,nao
+PROC003,Herniorrafia umbilical / incisional,Cirurgia Geral,medio,2,60,nao
+PROC004,Colecistectomia videolaparoscopica,Cirurgia Geral,medio,2,90,nao
+PROC005,Hemorroidectomia,Coloproctologia,pequeno,2,45,nao
+PROC006,Safenectomia / tratamento cirurgico de varizes,Cirurgia Vascular,medio,2,90,nao
+PROC007,Artroplastia total de quadril,Ortopedia,grande,3,150,eventual
+PROC008,Artroplastia total de joelho,Ortopedia,grande,3,150,eventual
+PROC009,Artroscopia de joelho,Ortopedia,medio,2,60,nao
+PROC010,Liberacao do tunel do carpo,Ortopedia,pequeno,1,30,nao
+PROC011,Mastectomia / setorectomia de mama,Mastologia,medio,3,120,nao
+PROC012,Colectomia,Cirurgia Oncologica,grande,4,180,sim
+PROC013,Gastrectomia,Cirurgia Oncologica,grande,4,210,sim
+PROC014,Tireoidectomia,Cirurgia de Cabeca e Pescoco,medio,2,120,nao
+PROC015,Prostatectomia radical,Urologia,grande,3,180,eventual
+PROC016,Resseccao transuretral de prostata (RTU),Urologia,medio,2,60,nao
+PROC017,Ureterolitotripsia / nefrolitotripsia,Urologia,medio,2,75,nao
+PROC018,Histerectomia,Ginecologia,medio,3,120,nao
+PROC019,Septoplastia / turbinectomia,Otorrinolaringologia,pequeno,1,60,nao
+PROC020,Lobectomia pulmonar,Cirurgia Toracica,grande,4,200,sim
+PROC021,Gastroplastia (cirurgia bariatrica),Cirurgia Bariatrica,grande,3,150,eventual
+PROC022,Revascularizacao do miocardio,Cirurgia Cardiaca,especial,5,300,sim
+PROC023,Exerese de tumor de pele com reconstrucao,Cirurgia Oncologica,pequeno,2,60,nao

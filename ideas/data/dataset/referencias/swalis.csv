@@ -1,0 +1,6 @@
+classe,descricao,prazo_maximo_dias,exemplos
+A1,"Doenca de progressao rapida, com risco de vida ou de perda de orgao/funcao",15,Neoplasia maligna em progressao; angina instavel; obstrucao com risco de estrangulamento
+A2,"Doenca de progressao rapida, com risco de agravamento ou incapacidade",21,Neoplasia maligna confirmada e estavel; biopsia positiva aguardando cirurgia
+B,"Doenca com dor, disfuncao ou incapacidade importantes, sem progressao rapida",60,Coxartrose com dor em repouso; colelitiase com colecistites de repeticao; CBC de pele
+C,"Doenca com dor ou disfuncao moderadas, sem tendencia a agravamento",180,Hernia sintomatica redutivel; varizes com dor; catarata com limitacao moderada
+D,"Doenca sem dor, disfuncao ou incapacidade relevantes",360,Hernia assintomatica; nevo sem sinais de malignidade; desvio de septo leve

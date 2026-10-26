@@ -1,0 +1,4 @@
+.env
+saida/
+__pycache__/
+.pytest_cache/

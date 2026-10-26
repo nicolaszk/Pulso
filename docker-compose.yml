@@ -1,0 +1,39 @@
+# Pulso local: docker compose up -d --build
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: pulso
+      POSTGRES_PASSWORD: pulso
+      POSTGRES_DB: pulso
+    ports:
+      - "5432:5432"
+    volumes:
+      - pulso-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pulso"]
+      interval: 2s
+      retries: 30
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://pulso:pulso@db:5432/pulso
+      # O Ollama roda na maquina, fora do container: explicacoes sem cache sao geradas na hora
+      PULSO_LLM_URL: http://host.docker.internal:11434/v1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    # Primeira subida: carrega o dataset e processa os eventos (~1 min). Depois o banco ja esta populado e e pulado.
+    command: sh -c "python -m src.pipeline rodar --se-vazio && uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload"
+
+volumes:
+  pulso-db:
