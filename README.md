@@ -1,3 +1,6 @@
+
+
+
 # Pulso
 
 Desenvolvemos um motor de regras determinístico baseado em filas de prioridade: cada paciente cai num nível de urgência, e a cada evento clínico novo (ida ao PS, internação, laudo, biópsia) o motor reavalia esse paciente e, se for o caso, propõe que ele mude de nível. Quem decide é o médico regulador, que aprova ou rejeita cada proposta; a fila oficial só muda com o aval dele. Usamos um LLM local apenas para reescrever, em linguagem clara, os fatos que o motor já calculou, sem que ele interfira na ordem da fila.
@@ -74,3 +77,5 @@ Sem o Ollama, vale a justificativa do motor. Provedores hospedados (Groq, Gemini
 ## Stack
 
 Python 3.12, pandas, FastAPI, PostgreSQL 16, Docker Compose, Ollama (gemma4:e4b) · React 19, React Router, Tailwind CSS 4, Vite, TypeScript.
+
+https://github.com/user-attachments/assets/223146c7-5e4d-48cf-9b77-478f2d208c26
